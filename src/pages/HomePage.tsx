@@ -22,7 +22,7 @@ export default function HomePage() {
     <section className="hero">
       <div className="shell">
         <p className="hero-index">Nepal’s bonded-labour evidence repository</p>
-        <h1>Trace the evidence behind freedom <em>after</em> abolition.</h1>
+        <h1>Tracing the evidence of freedom <em>after</em> abolition.</h1>
         <p className="lead">A source-led hub for navigating research on bonded labour, rehabilitation, and post-liberation vulnerability in Nepal.</p>
         <form className="search-orbit" role="search" onSubmit={(event) => { event.preventDefault(); navigate(`/catalogue${query.trim() ? `?q=${encodeURIComponent(query.trim())}` : ''}`); }}>
           <input value={query} onChange={(event) => setQuery(event.target.value)} aria-label="Search the evidence hub" placeholder="Search a place, system, author, or theme" />
@@ -45,12 +45,7 @@ export default function HomePage() {
         <div><h2>Documentary perspectives</h2></div>
         <p>These films provide contextual perspectives alongside the written evidence in this repository. They are not treated as research evidence or substitutes for the original sources.</p>
       </div>
-      <div className="shell documentary-grid">
-        {videos.map((video) => <a key={video.id} className="documentary-card" href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer">
-          <img src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`} alt={`Thumbnail for ${video.title}`} loading="lazy" />
-          <div><p className="media-type">YouTube documentary</p><h3>{video.title}</h3><p className="documentary-channel">By {video.channel}</p><span>Watch on YouTube</span></div>
-        </a>)}
-      </div>
+      <DocumentaryRail videos={videos} />
     </section>
 
     <section className="section research-routes">
@@ -73,6 +68,44 @@ export default function HomePage() {
     </section>
 
   </Layout>;
+}
+
+type Documentary = { id: string; title: string; channel: string };
+
+function DocumentaryRail({ videos }: { videos: Documentary[] }) {
+  const railRef = useRef<HTMLDivElement>(null);
+  const [atStart, setAtStart] = useState(true);
+  const [atEnd, setAtEnd] = useState(false);
+
+  const syncEdges = () => {
+    const rail = railRef.current;
+    if (!rail) return;
+    setAtStart(rail.scrollLeft <= 2);
+    setAtEnd(rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 2);
+  };
+
+  useEffect(() => {
+    syncEdges();
+    window.addEventListener('resize', syncEdges);
+    return () => window.removeEventListener('resize', syncEdges);
+  }, [videos.length]);
+
+  // Easing comes from the rail's CSS scroll-behavior, which also honours reduced-motion.
+  const nudge = (direction: number) => {
+    const rail = railRef.current;
+    if (rail) rail.scrollBy({ left: direction * rail.clientWidth * .8 });
+  };
+
+  return <div className="shell documentary-rail-wrap">
+    <button type="button" className="rail-nav rail-nav--prev" aria-label="Show previous documentaries" disabled={atStart} onClick={() => nudge(-1)}>‹</button>
+    <div className="documentary-rail" ref={railRef} onScroll={syncEdges} tabIndex={0} role="group" aria-label="Documentary films, scroll horizontally for more">
+      {videos.map((video) => <a key={video.id} className="documentary-card" href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer">
+        <img src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`} alt={`Thumbnail for ${video.title}`} loading="lazy" />
+        <div><p className="media-type">YouTube documentary</p><h3>{video.title}</h3><p className="documentary-channel">By {video.channel}</p><span>Watch on YouTube</span></div>
+      </a>)}
+    </div>
+    <button type="button" className="rail-nav rail-nav--next" aria-label="Show more documentaries" disabled={atEnd} onClick={() => nudge(1)}>›</button>
+  </div>;
 }
 
 function IntroNarrative() {

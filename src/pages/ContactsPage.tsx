@@ -1,7 +1,14 @@
 import { Layout } from '../main.jsx';
 import { contacts } from '../../data/contacts.js';
 
-const team = ['Shuvam Upreti', 'Aaspad Lamichhane', 'Melish Prasai', 'Shushant Upreti', 'Kritika Luitel', 'Nirjhara Shrestha'];
+const team = [
+  { name: 'Shubham Upreti', url: 'https://shubhamupreti.com.np' },
+  { name: 'Aaspad Lamichhane' },
+  { name: 'Melish Prasai' },
+  { name: 'Shushant Upreti' },
+  { name: 'Kritika Luitel' },
+  { name: 'Nirjhara Shrestha' },
+];
 
 export default function ContactsPage() {
   return <Layout active="contacts">
@@ -35,7 +42,7 @@ export default function ContactsPage() {
           <p>This repository was built by Team Unbonded at the Uunchai Summer Mentorship Program, a Nepal-rooted initiative creating pathways for talented students to engage with real-world opportunities.</p>
         </div>
         <ul aria-label="Team Unbonded contributors">
-          {team.map((name) => <li key={name}>{name}</li>)}
+          {team.map((member) => <li key={member.name}>{member.url ? <a className="team-link" href={member.url} target="_blank" rel="noreferrer">{member.name}</a> : member.name}</li>)}
         </ul>
       </div>
     </section>

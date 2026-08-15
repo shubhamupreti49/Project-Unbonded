@@ -35,6 +35,26 @@
 /* Source records link out to the original material; citation text is not displayed in this repository. */
 .detail-citation { display: none; }
 
+/* Brand mark: a broken chain link, sized to sit inside the existing circular badge. */
+.brand b svg { display: block; width: 20px; height: 20px; }
+
+/* Documentary rail: horizontal scroller so the section holds any number of films. */
+.documentary-rail-wrap { display: flex; align-items: center; gap: 10px; }
+.documentary-rail { display: flex; gap: 20px; flex: 1; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scroll-padding-left: 2px; padding: 4px 2px 16px; scrollbar-width: thin; scrollbar-color: var(--aqua) #d7e7e3; }
+@media (prefers-reduced-motion: reduce) { .documentary-rail { scroll-behavior: auto; } }
+.documentary-rail > .documentary-card { flex: 0 0 clamp(255px, 31%, 370px); scroll-snap-align: start; }
+.documentary-rail:focus-visible { outline: 3px solid var(--aqua); outline-offset: 4px; }
+.rail-nav { flex: 0 0 auto; width: 40px; height: 40px; border: 1px solid #cfe2de; border-radius: 50%; background: var(--paper); color: var(--navy); font-size: 1.5rem; line-height: 1; cursor: pointer; transition: background .18s, color .18s, opacity .18s; }
+.rail-nav:hover:not(:disabled), .rail-nav:focus-visible:not(:disabled) { background: var(--navy); color: #fff; outline: none; }
+.rail-nav:disabled { opacity: .3; cursor: default; }
+@media (max-width: 800px) { .rail-nav { display: none; } .documentary-rail > .documentary-card { flex-basis: 80%; } }
+
+/* Geography callout uses the map's aqua/mint palette rather than the coral used elsewhere. */
+.geo-followup .callout { border-left-color: var(--aqua); background: #eaf4f0; }
+
+.team-link { color: inherit; font-weight: 750; text-underline-offset: 4px; }
+.team-link:hover, .team-link:focus-visible { color: var(--coral); outline: none; }
+
 /* Repository narrative: one petrol-to-ink field, deepening rather than changing themes. */
 .repository-narrative { --narrative-ink: .28; --scene-heading: var(--paper); --scene-copy: #d9e5db; --scene-line: var(--sun); --scene-numeral: rgba(230, 241, 232, .075); --marker-copy: #d9e5db; --marker-rule: rgba(230, 241, 232, .32); position: relative; height: 360vh; overflow: clip; isolation: isolate; background: radial-gradient(ellipse 80% 76% at 92% 6%, rgba(101, 167, 171, .38), transparent 66%), radial-gradient(ellipse 66% 74% at 6% 100%, rgba(23, 103, 120, .34), transparent 70%), linear-gradient(145deg, #16495a 0%, #123d51 51%, #0d3047 100%); }
 .repository-narrative--1 { --narrative-ink: .64; }

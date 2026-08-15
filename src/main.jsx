@@ -26,12 +26,12 @@ function useLenis() {
 function Header({ active }) {
   const [open, setOpen] = useState(false);
   return <header className="site-header"><div className="shell nav">
-    <Link className="brand" to={pages.home}><b>UN</b>Bonded Evidence Hub</Link>
+    <Link className="brand" to={pages.home}><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round"><path d="M10.1 13.9 7.8 16.2a3.6 3.6 0 0 1-5.1-5.1l2.3-2.3"/><path d="m13.9 10.1 2.3-2.3a3.6 3.6 0 0 1 5.1 5.1l-2.3 2.3"/></svg></b>Unbonded Archive</Link>
     <button className="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded={open} aria-label={open ? 'Close navigation' : 'Open navigation'} onClick={() => setOpen(value => !value)}><span aria-hidden="true">Menu</span></button>
     <nav id="primary-navigation" aria-label="Primary navigation" className={`nav-links ${open ? 'open' : ''}`}>{Object.entries(pages).map(([key, to]) => <Link key={key} className={key === active ? 'active' : ''} aria-current={key === active ? 'page' : undefined} to={to} onClick={() => setOpen(false)}>{key === 'home' ? 'Home' : key === 'catalogue' ? 'Source catalogue' : key === 'methodology' ? 'How to use' : key[0].toUpperCase() + key.slice(1)}</Link>)}</nav>
   </div></header>;
 }
-function Footer() { return <footer className="site-footer"><div className="shell footer-grid"><div><b>UNBonded Evidence Hub</b><p>A student-built, source-led research repository MVP for Team Unbonded.</p></div><div><p>Last compiled: 10 August 2026</p></div></div></footer>; }
+function Footer() { return <footer className="site-footer"><div className="shell footer-grid"><div><b>Unbonded Archive</b><p>Shubham Upreti, Aaspad Lamichhane, Shusant Upreti, Melish Prasai, Kritika Luitel, Nirjhara Shrestha</p></div><div><p>Last compiled: 15 August 2026</p></div></div></footer>; }
 function ScrollToRoute() { const { pathname } = useLocation(); useEffect(() => { window.scrollTo({ top: 0, behavior: 'auto' }); }, [pathname]); return null; }
 function Layout({ active, children, className = '' }) { useLenis(); return <><ScrollToRoute/><a className="skip-link" href="#main-content">Skip to main content</a><Header active={active}/><main id="main-content" tabIndex="-1" className={className}>{children}</main><Footer/></>; }
 function Chips({ values = [] }) { return <>{values.slice(0, 5).map(value => <span key={value} className="chip">{value}</span>)}</>; }
