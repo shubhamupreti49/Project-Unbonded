@@ -1,0 +1,10 @@
+# Installed dependencies and generated production files
+node_modules/
+dist/
+
+# Local configuration and operating-system files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
