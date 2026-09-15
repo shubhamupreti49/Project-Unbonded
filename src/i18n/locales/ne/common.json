@@ -1,0 +1,53 @@
+{
+  "brand": "अनबन्डेड आर्काइभ",
+  "skipToContent": "मुख्य सामग्रीमा जानुहोस्",
+  "nav": {
+    "label": "मुख्य नेभिगेसन",
+    "menu": "मेनु",
+    "open": "नेभिगेसन खोल्नुहोस्",
+    "close": "नेभिगेसन बन्द गर्नुहोस्",
+    "home": "गृहपृष्ठ",
+    "library": "पुस्तकालय",
+    "catalogue": "स्रोत सूची",
+    "dashboards": "ड्यासबोर्ड",
+    "oralHistories": "मौखिक इतिहास",
+    "timeline": "समयरेखा",
+    "geography": "भूगोल",
+    "methodology": "प्रयोग विधि",
+    "contacts": "सम्पर्क"
+  },
+  "language": {
+    "label": "भाषा छान्नुहोस्"
+  },
+  "status": {
+    "loadingPage": "पृष्ठ लोड हुँदैछ…"
+  },
+  "translationPending": "अनुवाद हुन बाँकी",
+  "vocab": {
+    "region": {
+      "koshi": "कोशी प्रदेश",
+      "madhesh": "मधेश प्रदेश",
+      "bagmati": "बागमती प्रदेश",
+      "gandaki": "गण्डकी प्रदेश",
+      "lumbini": "लुम्बिनी प्रदेश",
+      "karnali": "कर्णाली प्रदेश",
+      "sudurpashchim": "सुदूरपश्चिम प्रदेश",
+      "national": "राष्ट्रिय"
+    },
+    "community": {
+      "kamaiya": "कमैया",
+      "haliya": "हलिया",
+      "haruwa-charuwa": "हरुवा-चरुवा",
+      "kamlari": "कमलरी"
+    },
+    "documentType": {
+      "executive-summary": "कार्यकारी सारांश",
+      "policy-brief": "नीति संक्षेप तथा निवेदन",
+      "dataset": "डेटासेट",
+      "econometric-analysis": "अर्थमितीय विश्लेषण",
+      "research-article": "अनुसन्धान लेख",
+      "report": "प्रतिवेदन",
+      "legal-text": "कानुनी दस्तावेज"
+    }
+  }
+}

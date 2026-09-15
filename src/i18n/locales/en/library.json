@@ -1,0 +1,35 @@
+{
+  "page": {
+    "eyebrow": "Document library",
+    "title": "Archive documents",
+    "lead": "Browse catalogued documents by region, affected community and document type. Every record links back to its original source."
+  },
+  "search": {
+    "label": "Search titles and authors",
+    "placeholder": "Search titles and authors"
+  },
+  "filters": {
+    "heading": "Filter documents",
+    "toggle": "Filters",
+    "activeCount_one": "{{count, number}} active",
+    "activeCount_other": "{{count, number}} active",
+    "region": "Geographic region",
+    "community": "Affected community",
+    "documentType": "Document type",
+    "clear": "Clear all filters"
+  },
+  "results": {
+    "summary": "Showing {{shown, number}} of {{total, number}} documents",
+    "emptyTitle": "No documents match these filters.",
+    "emptyBody": "Remove a filter or try a broader search."
+  },
+  "card": {
+    "yearUnknown": "Year not recorded",
+    "viewRecord": "View source record",
+    "openFile": "Open {{format}}",
+    "lowData": "Low-data version",
+    "original": "Original source",
+    "pages_one": "{{count, number}} page",
+    "pages_other": "{{count, number}} pages"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "page": {
+    "eyebrow": "Data dashboards",
+    "title": "Interactive dashboards",
+    "lead": "Explore rehabilitation and coverage indicators interactively. Each dashboard can also be opened on its own page or read as a static summary."
+  },
+  "embed": {
+    "loadPrompt": "This interactive dashboard downloads about {{size}}.",
+    "loadPromptNoSize": "This interactive dashboard needs a steady connection.",
+    "dataSaver": "Your connection looks slow or Data Saver is on, so the dashboard waits until you ask for it.",
+    "load": "Load dashboard",
+    "loading": "Loading dashboard…",
+    "slow": "Still loading. The dashboard server may be waking up, which can take up to a minute.",
+    "error": "The dashboard did not respond.",
+    "retry": "Try again",
+    "openNewTab": "Open in a new tab",
+    "staticVersion": "View static summary",
+    "notPublished": "This dashboard has not been published yet."
+  }
+}

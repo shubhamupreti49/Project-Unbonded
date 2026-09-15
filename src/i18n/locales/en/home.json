@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "eyebrow": "Nepal’s bonded-labour evidence repository",
+    "title": "Tracing the evidence of freedom <em>after</em> abolition.",
+    "lead": "A source-led hub for navigating research on bonded labour, rehabilitation, and post-liberation vulnerability in Nepal.",
+    "searchLabel": "Search the evidence hub",
+    "searchPlaceholder": "Search a place, system, author, or theme",
+    "searchButton": "Search evidence",
+    "disclaimer": "<b>Read with care:</b> this is a curated student repository, not a systematic review or a causal evaluation."
+  },
+  "metrics": {
+    "label": "Repository coverage",
+    "papers": "catalogued papers & reports",
+    "claims": "recorded source claims",
+    "years": "publication years represented",
+    "districts": "named districts & regions"
+  },
+  "audiences": {
+    "heading": "Start from what you need.",
+    "intro": "The same evidence, organised three ways. Choose the route that matches the work in front of you.",
+    "policymakers": {
+      "label": "For policymakers",
+      "title": "Evidence for decisions",
+      "description": "Short executive summaries, policy submissions and dashboards tracking rehabilitation across districts.",
+      "links": {
+        "summaries": "Executive summaries & policy briefs",
+        "dashboards": "Data dashboards"
+      }
+    },
+    "researchers": {
+      "label": "For researchers",
+      "title": "Data and methods",
+      "description": "Datasets, econometric analyses and the full document archive, with the metadata needed to judge each source.",
+      "links": {
+        "datasets": "Datasets",
+        "econometrics": "Econometric analyses",
+        "archive": "Full document archive"
+      }
+    },
+    "public": {
+      "label": "For the public & educators",
+      "title": "The history, in people’s words",
+      "description": "How the Kamaiya, Haliya and Haruwa-Charuwa systems were abolished, told through timelines, places and the voices of freed families.",
+      "links": {
+        "timeline": "Timeline of abolition & policy",
+        "oralHistories": "Oral histories",
+        "geography": "Map of affected districts"
+      }
+    }
+  }
+}

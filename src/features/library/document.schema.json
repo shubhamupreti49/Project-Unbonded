@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://unbondedarchive.org/schemas/archive-documents.schema.json",
+  "title": "Unbonded Archive document collection",
+  "description": "Metadata for documents in the Unbonded Archive library. Controlled fields store stable IDs; display labels are translated in src/i18n/locales/*/common.json.",
+  "type": "object",
+  "required": ["documents"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "documents": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/document" }
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": ["en"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "ne": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "document": {
+      "type": "object",
+      "required": ["id", "title", "author", "publicationYear", "regions", "communities", "documentType", "languages"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^UA-DOC-[0-9]{4,}$" },
+        "title": { "$ref": "#/$defs/localizedText" },
+        "author": { "type": "string", "minLength": 1 },
+        "publicationYear": {
+          "description": "Four-digit year, or null when undated.",
+          "type": ["integer", "null"],
+          "minimum": 1900,
+          "maximum": 2100
+        },
+        "regions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["koshi", "madhesh", "bagmati", "gandaki", "lumbini", "karnali", "sudurpashchim", "national"] }
+        },
+        "geographyNote": { "type": "string" },
+        "communities": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["kamaiya", "haliya", "haruwa-charuwa", "kamlari"] }
+        },
+        "documentType": {
+          "enum": ["executive-summary", "policy-brief", "dataset", "econometric-analysis", "research-article", "report", "legal-text"]
+        },
+        "languages": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)*$" }
+        },
+        "summary": { "$ref": "#/$defs/localizedText" },
+        "file": {
+          "type": "object",
+          "required": ["url", "format"],
+          "additionalProperties": false,
+          "properties": {
+            "url": { "type": "string" },
+            "format": { "enum": ["pdf", "csv", "xlsx", "docx"] },
+            "sizeBytes": { "type": "integer", "minimum": 1 },
+            "pageCount": { "type": "integer", "minimum": 1 },
+            "lowBandwidthUrl": { "type": "string" },
+            "lowBandwidthSizeBytes": { "type": "integer", "minimum": 1 }
+          }
+        },
+        "externalUrl": { "type": "string", "format": "uri" },
+        "sourceRecordId": { "type": "string", "pattern": "^SRC-[0-9]{3,}$" }
+      }
+    }
+  }
+}

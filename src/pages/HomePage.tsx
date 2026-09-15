@@ -1,12 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Trans, useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+import { AudiencePathways } from '../features/home/AudiencePathways';
 import { Layout } from '../main.jsx';
-
-const paths = [
-  { to: '/catalogue', title: 'Search the catalogue', text: 'Find a source by title, author, system, theme, place, method, or publication year.', action: 'Browse all records' },
-  { to: '/geography', title: 'Start with a district', text: 'See where the repository records Kamaiya, Haliya, and Haruwa-Charuwa evidence.', action: 'Explore the map' },
-  { to: '/timeline?view=history', title: 'Follow the record over time', text: 'Read the policy history or trace publications through the evidence timeline.', action: 'Open the timeline' },
-];
 
 const videos = [
   { id: 'TUPh9pJV1pg', title: 'The Bridge Project: combatting bonded labour in Nepal', channel: 'International Labour Organization' },
@@ -17,26 +13,30 @@ const videos = [
 export default function HomePage() {
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
+  const { t } = useTranslation('home');
 
   return <Layout active="home">
     <section className="hero">
       <div className="shell">
-        <p className="hero-index">Nepal’s bonded-labour evidence repository</p>
-        <h1>Tracing the evidence of freedom <em>after</em> abolition.</h1>
-        <p className="lead">A source-led hub for navigating research on bonded labour, rehabilitation, and post-liberation vulnerability in Nepal.</p>
+        <p className="hero-index">{t('hero.eyebrow')}</p>
+        <h1><Trans t={t} i18nKey="hero.title" components={{ em: <em /> }} /></h1>
+        <p className="lead">{t('hero.lead')}</p>
         <form className="search-orbit" role="search" onSubmit={(event) => { event.preventDefault(); navigate(`/catalogue${query.trim() ? `?q=${encodeURIComponent(query.trim())}` : ''}`); }}>
-          <input value={query} onChange={(event) => setQuery(event.target.value)} aria-label="Search the evidence hub" placeholder="Search a place, system, author, or theme" />
-          <button type="submit">Search evidence</button>
+          <input value={query} onChange={(event) => setQuery(event.target.value)} aria-label={t('hero.searchLabel')} placeholder={t('hero.searchPlaceholder')} />
+          <button type="submit">{t('hero.searchButton')}</button>
         </form>
-        <p className="disclaimer"><b>Read with care:</b> this is a curated student repository, not a systematic review or a causal evaluation.</p>
+        <p className="disclaimer"><Trans t={t} i18nKey="hero.disclaimer" components={{ b: <b /> }} /></p>
       </div>
-      <section className="metrics" aria-label="Repository coverage">
-      <div><strong>40+</strong><span>catalogued papers &amp; reports</span></div>
-      <div><strong>70+</strong><span>recorded source claims</span></div>
-      <div><strong>2000–25</strong><span>publication years represented</span></div>
-      <div><strong>20+</strong><span>named districts &amp; regions</span></div>
+      <section className="metrics" aria-label={t('metrics.label')}>
+      <div><strong>40+</strong><span>{t('metrics.papers')}</span></div>
+      <div><strong>70+</strong><span>{t('metrics.claims')}</span></div>
+      <div><strong>2000–25</strong><span>{t('metrics.years')}</span></div>
+      <div><strong>20+</strong><span>{t('metrics.districts')}</span></div>
       </section>
     </section>
+
+    {/* Audience entry points come straight after the hero so each reader is routed quickly. */}
+    <AudiencePathways />
 
     <IntroNarrative />
 
@@ -46,18 +46,6 @@ export default function HomePage() {
         <p>These films provide contextual perspectives alongside the written evidence in this repository. They are not treated as research evidence or substitutes for the original sources.</p>
       </div>
       <DocumentaryRail videos={videos} />
-    </section>
-
-    <section className="section research-routes">
-      <div className="shell section-head">
-        <div><h2>Begin with the question you need to answer.</h2></div>
-        <p>Every route preserves the context needed to interpret a source responsibly: system, place, method, claim, and the limits recorded for that material.</p>
-      </div>
-      <div className="shell route-list">
-        {paths.map((path) => <Link key={path.to} className="research-route" to={path.to}>
-          <h3>{path.title}</h3><p>{path.text}</p><span>{path.action}</span>
-        </Link>)}
-      </div>
     </section>
 
     <section className="section home-context">

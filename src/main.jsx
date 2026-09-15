@@ -1,6 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Lenis from 'lenis';
+import { useTranslation } from 'react-i18next';
+import { LanguageToggle } from './components/LanguageToggle';
 import '../assets/site.css';
 import '../assets/site-repair.css';
 import { data } from '../data/sources.js';
@@ -8,6 +10,8 @@ import { contacts } from '../data/contacts.js';
 import { nepalDistricts } from '../data/nepal-districts.js';
 
 const pages = { home: '/', catalogue: '/catalogue', timeline: '/timeline', geography: '/geography', methodology: '/how-to-use', contacts: '/contacts' };
+// Header order. Keys double as translation keys under `nav.*` in src/i18n/locales/*/common.json.
+const navItems = [['home', '/'], ['library', '/library'], ['dashboards', '/dashboards'], ['oralHistories', '/oral-histories'], ['catalogue', pages.catalogue], ['timeline', pages.timeline], ['geography', pages.geography], ['methodology', pages.methodology], ['contacts', pages.contacts]];
 const esc = value => String(value ?? '');
 const recordUrl = id => `/source?id=${encodeURIComponent(id)}`;
 const sourceOrganisation = author => contacts.find(contact => contact.aliases.some(alias => author.toLowerCase().includes(alias.toLowerCase())));
@@ -25,15 +29,17 @@ function useLenis() {
 
 function Header({ active }) {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation('common');
   return <header className="site-header"><div className="shell nav">
     <Link className="brand" to={pages.home}><b aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round"><path d="M10.1 13.9 7.8 16.2a3.6 3.6 0 0 1-5.1-5.1l2.3-2.3"/><path d="m13.9 10.1 2.3-2.3a3.6 3.6 0 0 1 5.1 5.1l-2.3 2.3"/></svg></b>Unbonded Archive</Link>
-    <button className="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded={open} aria-label={open ? 'Close navigation' : 'Open navigation'} onClick={() => setOpen(value => !value)}><span aria-hidden="true">Menu</span></button>
-    <nav id="primary-navigation" aria-label="Primary navigation" className={`nav-links ${open ? 'open' : ''}`}>{Object.entries(pages).map(([key, to]) => <Link key={key} className={key === active ? 'active' : ''} aria-current={key === active ? 'page' : undefined} to={to} onClick={() => setOpen(false)}>{key === 'home' ? 'Home' : key === 'catalogue' ? 'Source catalogue' : key === 'methodology' ? 'How to use' : key[0].toUpperCase() + key.slice(1)}</Link>)}</nav>
+    <button className="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded={open} aria-label={open ? t('nav.close') : t('nav.open')} onClick={() => setOpen(value => !value)}><span aria-hidden="true">{t('nav.menu')}</span></button>
+    <nav id="primary-navigation" aria-label={t('nav.label')} className={`nav-links ${open ? 'open' : ''}`}>{navItems.map(([key, to]) => <Link key={key} className={key === active ? 'active' : ''} aria-current={key === active ? 'page' : undefined} to={to} onClick={() => setOpen(false)}>{t(`nav.${key}`)}</Link>)}</nav>
+    <LanguageToggle className="nav-language" />
   </div></header>;
 }
 function Footer() { return <footer className="site-footer"><div className="shell footer-grid"><div><b>Unbonded Archive</b><p>Shubham Upreti, Aaspad Lamichhane, Shusant Upreti, Melish Prasai, Kritika Luitel, Nirjhara Shrestha</p></div><div><p>Last compiled: 15 August 2026</p></div></div></footer>; }
 function ScrollToRoute() { const { pathname } = useLocation(); useEffect(() => { window.scrollTo({ top: 0, behavior: 'auto' }); }, [pathname]); return null; }
-function Layout({ active, children, className = '' }) { useLenis(); return <><ScrollToRoute/><a className="skip-link" href="#main-content">Skip to main content</a><Header active={active}/><main id="main-content" tabIndex="-1" className={className}>{children}</main><Footer/></>; }
+function Layout({ active, children, className = '' }) { useLenis(); const { t } = useTranslation('common'); return <><ScrollToRoute/><a className="skip-link" href="#main-content">{t('skipToContent')}</a><Header active={active}/><main id="main-content" tabIndex="-1" className={className}>{children}</main><Footer/></>; }
 function Chips({ values = [] }) { return <>{values.slice(0, 5).map(value => <span key={value} className="chip">{value}</span>)}</>; }
 function TitleLink({ source }) { return <Link className="source-title-link" to={recordUrl(source.id)}>{source.title}</Link>; }
 function SourceCard({ source }) { return <article className="source-card"><p className="source-author">{source.author}</p><h3><TitleLink source={source}/></h3><p className="source-meta">{source.year || 'Year not recorded'} · {source.methodType} · {source.geography}</p><p className="source-claim">{source.claims?.[0] || source.claim}</p><div className="source-footer"><Chips values={[...(source.systems || []), ...(source.themes || [])]}/></div></article>; }

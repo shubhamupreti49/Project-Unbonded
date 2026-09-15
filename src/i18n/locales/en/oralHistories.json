@@ -1,0 +1,40 @@
+{
+  "page": {
+    "eyebrow": "Oral histories",
+    "title": "Voices after abolition",
+    "lead": "Recorded testimony from families who lived under, and left, the Kamaiya, Haliya and Haruwa-Charuwa systems, with transcripts in Nepali and English.",
+    "ethics": "Recordings are published only with the narrator’s informed consent. Some names and places have been changed to protect narrators."
+  },
+  "meta": {
+    "recorded": "Recorded {{date}}",
+    "narrator": "Narrator",
+    "community": "Community",
+    "region": "Region",
+    "anonymised": "Name changed to protect the narrator"
+  },
+  "player": {
+    "play": "Play",
+    "pause": "Pause",
+    "seek": "Playback position",
+    "position": "{{current}} of {{total}}",
+    "skipBack": "Back {{count}} seconds",
+    "skipForward": "Forward {{count}} seconds",
+    "speed": "Speed",
+    "buffering": "Buffering…",
+    "error": "The audio could not be loaded.",
+    "download": "Download audio ({{size}})",
+    "downloadNoSize": "Download audio",
+    "dataNote": "Audio downloads only after you press play."
+  },
+  "transcript": {
+    "heading": "Transcript",
+    "modeLabel": "Transcript language",
+    "modes": {
+      "ne": "नेपाली",
+      "en": "English",
+      "both": "Both"
+    },
+    "follow": "Follow audio",
+    "playFrom": "Play from {{time}}"
+  }
+}

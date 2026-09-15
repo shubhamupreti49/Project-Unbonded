@@ -1,0 +1,53 @@
+{
+  "brand": "Unbonded Archive",
+  "skipToContent": "Skip to main content",
+  "nav": {
+    "label": "Primary navigation",
+    "menu": "Menu",
+    "open": "Open navigation",
+    "close": "Close navigation",
+    "home": "Home",
+    "library": "Library",
+    "catalogue": "Source catalogue",
+    "dashboards": "Dashboards",
+    "oralHistories": "Oral histories",
+    "timeline": "Timeline",
+    "geography": "Geography",
+    "methodology": "How to use",
+    "contacts": "Contacts"
+  },
+  "language": {
+    "label": "Choose language"
+  },
+  "status": {
+    "loadingPage": "Loading page…"
+  },
+  "translationPending": "Translation pending",
+  "vocab": {
+    "region": {
+      "koshi": "Koshi Province",
+      "madhesh": "Madhesh Province",
+      "bagmati": "Bagmati Province",
+      "gandaki": "Gandaki Province",
+      "lumbini": "Lumbini Province",
+      "karnali": "Karnali Province",
+      "sudurpashchim": "Sudurpashchim Province",
+      "national": "National"
+    },
+    "community": {
+      "kamaiya": "Kamaiya",
+      "haliya": "Haliya",
+      "haruwa-charuwa": "Haruwa-Charuwa",
+      "kamlari": "Kamlari"
+    },
+    "documentType": {
+      "executive-summary": "Executive summary",
+      "policy-brief": "Policy brief & submission",
+      "dataset": "Dataset",
+      "econometric-analysis": "Econometric analysis",
+      "research-article": "Research article",
+      "report": "Report",
+      "legal-text": "Legal text"
+    }
+  }
+}

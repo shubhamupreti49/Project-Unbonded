@@ -1,0 +1,154 @@
+/*
+ * Tailwind entry point for the Unbonded Archive.
+ *
+ * The site still ships hand-written CSS in /assets (site.css etc.). To add Tailwind
+ * without breaking those pages we deliberately:
+ *   1. Skip Tailwind's Preflight reset — it would restyle every legacy page.
+ *   2. Mark utilities `important`, so a utility like `normal-case` wins over the legacy
+ *      unlayered element rules (e.g. the global `label { text-transform: uppercase }`).
+ * Once the legacy CSS is retired, replace these imports with `@import "tailwindcss";`.
+ */
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities) important source(none);
+
+/*
+ * Scan only the Tailwind-based code. Legacy markup (src/main.jsx and the older pages) uses
+ * hand-written class names; scanning it could turn a name like "hidden" or "grid" into an
+ * !important utility and silently restyle a legacy page.
+ */
+@source "../components";
+@source "../features";
+@source "../pages/LibraryPage.tsx";
+@source "../pages/DashboardsPage.tsx";
+@source "../pages/OralHistoriesPage.tsx";
+
+@theme {
+  /* Brand palette, mirrored from the :root tokens in assets/site.css. */
+  --color-night: #081a2b;
+  --color-navy: #102d4a;
+  --color-aqua: #1687a7;
+  --color-mint: #dcece7;
+  --color-sun: #ffca5b;
+  --color-coral: #fa7859;
+  --color-paper: #fffdf8;
+  --color-ink: #102d4a;
+  --color-muted: #57717a;
+  --color-rule: #d5e7e3;
+
+  /* One colour per labour system, used consistently on chips and charts. */
+  --color-kamaiya: #f0b24c;
+  --color-haliya: #8068c5;
+  --color-haruwa: #36a89f;
+  --color-kamlari: #fa7859;
+
+  /*
+   * LOW-BANDWIDTH: no web fonts are downloaded. Latin text uses the fonts named in the
+   * legacy CSS if the device has them, and Devanagari falls through to the system font
+   * (Noto Sans Devanagari ships with Android; Kohinoor Devanagari with iOS/macOS).
+   * A Devanagari web font costs 100–250 KB per weight, which is a real cost on 3G.
+   */
+  --font-sans: Manrope, Arial, "Noto Sans Devanagari", "Kohinoor Devanagari", "Nirmala UI", sans-serif;
+  --font-serif: "Libre Baskerville", Georgia, "Noto Serif Devanagari", "Kohinoor Devanagari", serif;
+  --font-mono: "DM Mono", ui-monospace, monospace;
+}
+
+/*
+ * Devanagari has head-strokes and stacked vowel signs above and below the line, so it
+ * needs more leading than Latin text to stay legible. Uppercase/tracking has no meaning
+ * in Devanagari, so we neutralise it for Nepali content.
+ */
+:lang(ne) {
+  line-height: 1.75;
+}
+:lang(ne) h1,
+:lang(ne) h2,
+:lang(ne) h3 {
+  line-height: 1.35;
+}
+:lang(ne) .eyebrow,
+:lang(ne) .tw-eyebrow {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/*
+ * Scoped reset for new Tailwind components. Legacy element rules in site.css style every
+ * <label>, <input> and <select> globally; inside `.ua` we return those to neutral so
+ * utilities describe the whole look.
+ */
+.ua label {
+  font: inherit;
+  letter-spacing: normal;
+  text-transform: none;
+  color: inherit;
+}
+/* Without Preflight, buttons keep the browser's grey background and bevelled border. */
+.ua button {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+}
+.ua input[type="checkbox"],
+.ua input[type="range"] {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+/* ---------------------------------------------------------------------------
+ * Legacy header: make room for three new nav items and the language toggle.
+ * The original CSS collapses the menu at 800px; with nine links the desktop row
+ * overflows below ~1180px, so the collapsed menu now starts there.
+ * ------------------------------------------------------------------------ */
+.nav-links {
+  gap: 18px;
+  margin-left: auto;
+  font-size: 0.9rem;
+}
+.nav-links a {
+  white-space: nowrap;
+}
+.nav-language {
+  margin-left: 20px;
+}
+@media (max-width: 1180px) {
+  .nav-language {
+    order: 1;
+    margin-left: auto;
+    margin-right: 12px;
+  }
+  .nav-toggle {
+    order: 2;
+    display: block;
+    background: none;
+    border: 0;
+    color: #fff;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 15px 28px;
+    background: var(--night);
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+}
+@media (max-width: 800px) {
+  /* Matches the mobile header offset set in assets/redesign-fixes.css. */
+  .nav-links {
+    top: 70px;
+    padding: 15px 20px;
+  }
+}

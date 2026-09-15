@@ -1,0 +1,141 @@
+{
+  "$schema": "./document.schema.json",
+  "documents": [
+    {
+      "id": "UA-DOC-0001",
+      "title": { "en": "Factors Associated with Underweight among Children of Former-Kamaiyas in Nepal" },
+      "author": "Khatri, R.B., Mishra, S.R., Khanal, V., & Choulagai, B.",
+      "publicationYear": 2015,
+      "regions": ["lumbini"],
+      "geographyNote": "Kohalpur, Banke District",
+      "communities": ["kamaiya"],
+      "documentType": "research-article",
+      "languages": ["en"],
+      "summary": { "en": "Among children of former-Kamaiya families in Banke, 41.4% were underweight and 55.7% stunted, above national and regional averages." },
+      "externalUrl": "https://doi.org/10.3389/fpubh.2015.00011",
+      "sourceRecordId": "SRC-001"
+    },
+    {
+      "id": "UA-DOC-0002",
+      "title": { "en": "Harawa-Charawa, the Bonded Laborers in Agriculture: A Study of Three Municipalities of Dhanusha District in Eastern Terai" },
+      "author": "Community Self-Reliance Centre (CSRC)",
+      "publicationYear": 2020,
+      "regions": ["madhesh"],
+      "geographyNote": "Three municipalities of Dhanusha District",
+      "communities": ["haruwa-charuwa"],
+      "documentType": "report",
+      "languages": ["en"],
+      "summary": { "en": "Identified 3,636 Harawa-Charawa households across three municipalities; most remain landless, indebted and dependent on exploitative agricultural labour." },
+      "file": {
+        "url": "https://csrcnepal.org/wp-content/uploads/2021/03/Harawa-Charawa-the-Bonded-Laborers-in-Agriculture.pdf",
+        "format": "pdf",
+        "sizeBytes": 26567345
+      },
+      "sourceRecordId": "SRC-004"
+    },
+    {
+      "id": "UA-DOC-0003",
+      "title": { "en": "Kamlahari Movement in Nepal: Expanding Opportunities, Uncertain Achievements" },
+      "author": "Mahendra Sapkota",
+      "publicationYear": 2018,
+      "regions": ["lumbini", "sudurpashchim"],
+      "geographyNote": "Western and mid-western Tarai",
+      "communities": ["kamlari"],
+      "documentType": "research-article",
+      "languages": ["en"],
+      "summary": { "en": "Argues that the movement secured formal abolition of the Kamlahari system in 2013, but rehabilitation, education and long-term reintegration remain incomplete." },
+      "file": {
+        "url": "https://sdpi.org/sdpiweb/publications/files/SDPI_JOURNAL%28jan-dec%202018%29.pdf",
+        "format": "pdf",
+        "sizeBytes": 1880936
+      },
+      "sourceRecordId": "SRC-005"
+    },
+    {
+      "id": "UA-DOC-0004",
+      "title": { "en": "Nepal Child Labour Report 2021" },
+      "author": "Central Bureau of Statistics (CBS), Nepal, and International Labour Organization",
+      "publicationYear": 2021,
+      "regions": ["national"],
+      "communities": ["kamaiya", "haliya", "kamlari"],
+      "documentType": "report",
+      "languages": ["en"],
+      "summary": {
+        "en": "National survey estimate: 1.1 million children (15.3%) were in child labour in 2018, down from 1.6 million in 2008; 87% of child labour was in agriculture.",
+        "ne": "राष्ट्रिय सर्वेक्षणअनुसार सन् २०१८ मा ११ लाख (१५.३%) बालबालिका बालश्रममा थिए, जुन सन् २००८ को १६ लाखभन्दा कम हो; बालश्रमको ८७% कृषि क्षेत्रमा थियो।"
+      },
+      "file": {
+        "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40asia/%40ro-bangkok/%40ilo-kathmandu/documents/publication/wcms_784225.pdf",
+        "format": "pdf",
+        "sizeBytes": 3543974
+      },
+      "sourceRecordId": "SRC-024"
+    },
+    {
+      "id": "UA-DOC-0005",
+      "title": { "en": "Situation of Economic, Social and Cultural Rights of Freed Haliyas in Sudurpaschim Province of Nepal (ESCR Yearbook 2022)" },
+      "author": "Felm",
+      "publicationYear": 2023,
+      "regions": ["sudurpashchim"],
+      "geographyNote": "15 municipalities in Kanchanpur, Doti, Dadeldhura, Baitadi and Bajhang",
+      "communities": ["haliya"],
+      "documentType": "report",
+      "languages": ["en"],
+      "summary": {
+        "en": "97% of freed Haliyas surveyed are Dalit, only 10% of respondents had received the full rehabilitation package, and some men and women remain in the Haliya system.",
+        "ne": "सर्वेक्षण गरिएका मुक्त हलियामध्ये ९७% दलित छन्, १०% उत्तरदाताले मात्र पूर्ण पुनर्स्थापना प्याकेज पाएका छन्, र केही महिला तथा पुरुष अझै हलिया प्रथामै छन्।"
+      },
+      "file": {
+        "url": "https://felmnepal.org/wp-content/uploads/2023/03/ESCR-Yearbook-2022.pdf",
+        "format": "pdf",
+        "sizeBytes": 6186883
+      },
+      "sourceRecordId": "SRC-027"
+    },
+    {
+      "id": "UA-DOC-0006",
+      "title": { "en": "Joint Submission to the Human Rights Council for the 37th Session of the Universal Periodic Review (UPR) Nepal" },
+      "author": "LWF Nepal, Felm, FCA, LCWS, CAHURAST, RMHSF, SUS",
+      "publicationYear": 2020,
+      "regions": ["national"],
+      "communities": ["kamaiya", "haliya", "kamlari"],
+      "documentType": "policy-brief",
+      "languages": ["en"],
+      "summary": { "en": "Civil-society submission to the UN Universal Periodic Review documenting continuing abuse of freed Haliyas and gaps in rehabilitation." },
+      "file": {
+        "url": "https://upr-info.org/sites/default/files/documents/2021-08/js29_upr37_npl_e_main.pdf",
+        "format": "pdf",
+        "sizeBytes": 478521
+      },
+      "sourceRecordId": "SRC-028"
+    },
+    {
+      "id": "UA-DOC-0007",
+      "title": { "en": "Bonded labour among child workers of the Kamaiya system: A rapid assessment" },
+      "author": "International Labour Organization",
+      "publicationYear": 2001,
+      "regions": ["lumbini", "sudurpashchim"],
+      "geographyNote": "Dang, Banke, Bardiya, Kailali and Kanchanpur districts",
+      "communities": ["kamaiya"],
+      "documentType": "report",
+      "languages": ["en"],
+      "summary": { "en": "Found wage child labour among 30% of Kamaiya families, against a 4.4% rural average, linked to landlessness and indebtedness." },
+      "externalUrl": "https://un.info.np/Net/NeoDocs/View/3564",
+      "sourceRecordId": "SRC-029"
+    },
+    {
+      "id": "UA-DOC-0008",
+      "title": { "en": "The Bonded Labor System in Nepal: Exploring Halia and Kamaiya Children's Life-worlds" },
+      "author": "Birendra R. Giri",
+      "publicationYear": 2010,
+      "regions": ["koshi", "lumbini"],
+      "geographyNote": "Morang and Bardiya districts",
+      "communities": ["kamaiya", "haliya"],
+      "documentType": "research-article",
+      "languages": ["en"],
+      "summary": { "en": "Shows how generational family bonded-labour agreements shifted work onto children, with promises of education used to draw them in." },
+      "externalUrl": "https://digitalcommons.macalester.edu/himalaya/vol29/iss1/3/",
+      "sourceRecordId": "SRC-031"
+    }
+  ]
+}
