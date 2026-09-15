@@ -47,5 +47,55 @@
         "geography": "Map of affected districts"
       }
     }
+  },
+  "narrative": {
+    "label": "Introduction to the repository",
+    "scenes": [
+      {
+        "title": "Bonded labour in Nepal",
+        "text": "Bonded labour is a form of modern slavery in which people are compelled to work to repay a debt or obligation, often under conditions that make it difficult to leave. In Nepal, it has taken different forms shaped by poverty, social inequality, and economic dependence, affecting marginalised communities across different regions and periods.",
+        "marker": "The record is grounded in",
+        "terms": [
+          "Systems",
+          "Communities",
+          "History"
+        ]
+      },
+      {
+        "title": "Why this repository exists",
+        "text": "A dedicated repository makes scattered research, official records, and credible documentation easier to find, compare, and read with the context needed to interpret it responsibly.",
+        "marker": "Evidence becomes useful through",
+        "terms": [
+          "Access",
+          "Comparison",
+          "Context"
+        ]
+      },
+      {
+        "title": "What the record holds",
+        "text": "Nepal’s first dedicated repository focused exclusively on bonded labour brings together research studies, datasets, reports, government records, and other credible documentation. It covers Kamaiya, Haliya, Haruwa-Charuwa, Kamlari, and other forms of forced and bonded labour, structured by labour system, affected community, geography, historical period, and source type.",
+        "marker": "The collection brings together",
+        "terms": [
+          "Research",
+          "Records",
+          "Sources"
+        ]
+      }
+    ]
+  },
+  "documentaries": {
+    "heading": "Documentary perspectives",
+    "intro": "These films provide contextual perspectives alongside the written evidence in this repository. They are not treated as research evidence or substitutes for the original sources.",
+    "mediaType": "YouTube documentary",
+    "by": "By {{channel}}",
+    "watch": "Watch on YouTube",
+    "thumbnail": "Thumbnail for {{title}}",
+    "previous": "Show previous documentaries",
+    "next": "Show more documentaries",
+    "railLabel": "Documentary films, scroll horizontally for more"
+  },
+  "context": {
+    "heading": "Legal freedom is necessary. It is not, on its own, an economic outcome.",
+    "text": "Explore records across Kamaiya, Haliya, Haruwa-Charuwa, Kamlari, child labour, policy and more, while keeping geography, method, and data limits visible."
   }
 }

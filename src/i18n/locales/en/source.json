@@ -1,0 +1,26 @@
+{
+  "eyebrow": "Source record",
+  "back": "← Back to catalogue",
+  "noCitation": "Citation not yet recorded.",
+  "viewOriginal": "View original paper / source ↗",
+  "noOriginal": "No stable original-paper link is recorded for this source.",
+  "findings": "Recorded findings",
+  "noNote": "No additional repository note recorded.",
+  "notFound": {
+    "title": "Source record not found",
+    "back": "Return to the catalogue."
+  },
+  "related": {
+    "eyebrow": "Explore related evidence",
+    "heading": "Similar themed papers",
+    "shared_one": "Shared theme: {{themes}}",
+    "shared_other": "Shared themes: {{themes}}",
+    "none": "No other repository records share a coded theme with this source."
+  },
+  "organisation": {
+    "eyebrow": "Organisation contact",
+    "text": "Questions about this organisation’s work or publication may be directed through its public contact channels.",
+    "website": "Organisation website ↗",
+    "contact": "Contact details ↗"
+  }
+}

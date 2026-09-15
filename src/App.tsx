@@ -17,6 +17,7 @@ import { Layout } from './main.jsx';
 const LibraryPage = lazy(() => import('./pages/LibraryPage'));
 const DashboardsPage = lazy(() => import('./pages/DashboardsPage'));
 const OralHistoriesPage = lazy(() => import('./pages/OralHistoriesPage'));
+const ResearchersPage = lazy(() => import('./pages/ResearchersPage'));
 
 // Keeps the header visible while a route chunk downloads.
 const fallback = <Layout><RouteFallback /></Layout>;
@@ -28,6 +29,7 @@ export default function App() {
       <Route path="/library" element={<LibraryPage />} />
       <Route path="/dashboards" element={<DashboardsPage />} />
       <Route path="/oral-histories" element={<OralHistoriesPage />} />
+      <Route path="/researchers-phase-one" element={<ResearchersPage />} />
       <Route path="/catalogue" element={<CataloguePage />} />
       <Route path="/timeline" element={<TimelinePage />} />
       <Route path="/geography" element={<GeographyPage />} />

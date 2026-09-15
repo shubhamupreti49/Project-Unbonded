@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "eyebrow": "Evidence index",
+    "title": "Source catalogue",
+    "lead": "Search across the archive, then narrow the field using the details each record actually reports."
+  },
+  "search": {
+    "label": "Search source catalogue",
+    "placeholder": "Search title, author, geography or finding",
+    "button": "Search"
+  },
+  "filters": {
+    "label": "Filter source catalogue",
+    "system": "System",
+    "method": "Method",
+    "year": "Publication year",
+    "theme": "Theme",
+    "allSystem": "All systems",
+    "allMethod": "All methods",
+    "allYear": "All publication years",
+    "allTheme": "All themes",
+    "linkedOnly": "Show records with a DOI or stable document link only",
+    "clear": "Clear all filters",
+    "active": "Active filters",
+    "searchChip": "Search: {{query}}",
+    "linkedChip": "Stable link only",
+    "remove": "Remove filter"
+  },
+  "results": {
+    "count": "{{shown, number}} of {{total, number}} source records shown",
+    "emptyTitle": "No source records match these filters.",
+    "emptyBody": "Clear a filter or use a broader search term to return to the catalogue.",
+    "showAll": "Show all sources"
+  },
+  "note": {
+    "label": "Cataloguing note:",
+    "text": "Partial metadata means a core field was absent from the workbook. Verify records before citation."
+  }
+}

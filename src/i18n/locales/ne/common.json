@@ -14,7 +14,8 @@
     "timeline": "समयरेखा",
     "geography": "भूगोल",
     "methodology": "प्रयोग विधि",
-    "contacts": "सम्पर्क"
+    "contacts": "सम्पर्क",
+    "researchers": "अनुसन्धानकर्ता: पहिलो चरण"
   },
   "language": {
     "label": "भाषा छान्नुहोस्"
@@ -49,5 +50,38 @@
       "report": "प्रतिवेदन",
       "legal-text": "कानुनी दस्तावेज"
     }
+  },
+  "yearUnknown": "वर्ष उल्लेख छैन",
+  "originalLanguage": "स्रोत अभिलेख, शीर्षक तथा निष्कर्षहरू मूल भाषा (अङ्ग्रेजी) मै देखाइएका छन्।",
+  "footer": {
+    "lastCompiled": "पछिल्लो पटक सङ्कलन: {{date}}"
+  },
+  "notFound": {
+    "title": "पृष्ठ भेटिएन",
+    "home": "गृहपृष्ठमा फर्कनुहोस्।"
+  },
+  "dataLabels": {
+    "Brick industry": "इँटा उद्योग",
+    "Child labour": "बालश्रम",
+    "Cross-system / general": "बहुप्रणाली / सामान्य",
+    "Haliya": "हलिया",
+    "Haruwa-Charuwa": "हरुवा-चरुवा",
+    "Kamaiya": "कमैया",
+    "Kamlari": "कमलरी",
+    "Child labour & education": "बालश्रम तथा शिक्षा",
+    "Forced labour & debt": "जबरजस्ती श्रम तथा ऋण",
+    "Gender & social exclusion": "लैङ्गिकता तथा सामाजिक बहिष्करण",
+    "Land & livelihoods": "भूमि तथा जीविका",
+    "Legal abolition & policy": "कानुनी उन्मूलन तथा नीति",
+    "Migration": "बसाइँसराइ",
+    "Rehabilitation": "पुनर्स्थापना",
+    "Assessment / evaluation": "मूल्याङ्कन",
+    "Descriptive / advocacy": "वर्णनात्मक / पैरवी",
+    "Law / policy document": "कानुन / नीति दस्तावेज",
+    "Qualitative / mixed methods": "गुणात्मक / मिश्रित विधि",
+    "Survey / quantitative": "सर्वेक्षण / परिमाणात्मक",
+    "Unspecified": "उल्लेख नभएको",
+    "Complete metadata": "पूर्ण मेटाडेटा",
+    "Partial metadata": "आंशिक मेटाडेटा"
   }
 }

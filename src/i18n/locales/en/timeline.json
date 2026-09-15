@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "eyebrow": "Evidence in time",
+    "title": "History & publication timeline",
+    "lead": "Follow the legal and historical record, or move to the publication timeline for source-level research detail."
+  },
+  "tabs": {
+    "label": "Timeline views",
+    "history": "Policy & historical events",
+    "publications": "Publication record"
+  },
+  "history": {
+    "label": "Policy and historical timeline",
+    "recordType": "Policy / historical record",
+    "legalText": "Open official legal text"
+  },
+  "publications": {
+    "published": "Published {{year}}",
+    "filterLabel": "Filter publication records",
+    "system": "System",
+    "allSystems": "All systems",
+    "period": "Five-year period",
+    "allYears": "All years",
+    "clear": "Clear timeline filters",
+    "emptyTitle": "No publications match these filters.",
+    "emptyBody": "Clear a filter or choose a different five-year period to widen the record.",
+    "showAll": "Show all publications"
+  },
+  "events": {}
+}

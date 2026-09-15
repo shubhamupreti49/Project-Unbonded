@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { AudiencePathways } from '../features/home/AudiencePathways';
+import { localizeDigits } from '../lib/format';
 import { Layout } from '../main.jsx';
 
 const videos = [
@@ -13,7 +14,7 @@ const videos = [
 export default function HomePage() {
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
-  const { t } = useTranslation('home');
+  const { t, i18n } = useTranslation('home');
 
   return <Layout active="home">
     <section className="hero">
@@ -28,10 +29,10 @@ export default function HomePage() {
         <p className="disclaimer"><Trans t={t} i18nKey="hero.disclaimer" components={{ b: <b /> }} /></p>
       </div>
       <section className="metrics" aria-label={t('metrics.label')}>
-      <div><strong>40+</strong><span>{t('metrics.papers')}</span></div>
-      <div><strong>70+</strong><span>{t('metrics.claims')}</span></div>
-      <div><strong>2000–25</strong><span>{t('metrics.years')}</span></div>
-      <div><strong>20+</strong><span>{t('metrics.districts')}</span></div>
+      <div><strong>{localizeDigits('40+', i18n.language)}</strong><span>{t('metrics.papers')}</span></div>
+      <div><strong>{localizeDigits('70+', i18n.language)}</strong><span>{t('metrics.claims')}</span></div>
+      <div><strong>{localizeDigits('2000–25', i18n.language)}</strong><span>{t('metrics.years')}</span></div>
+      <div><strong>{localizeDigits('20+', i18n.language)}</strong><span>{t('metrics.districts')}</span></div>
       </section>
     </section>
 
@@ -42,16 +43,16 @@ export default function HomePage() {
 
     <section className="section documentary-section">
       <div className="shell section-head">
-        <div><h2>Documentary perspectives</h2></div>
-        <p>These films provide contextual perspectives alongside the written evidence in this repository. They are not treated as research evidence or substitutes for the original sources.</p>
+        <div><h2>{t('documentaries.heading')}</h2></div>
+        <p>{t('documentaries.intro')}</p>
       </div>
       <DocumentaryRail videos={videos} />
     </section>
 
     <section className="section home-context">
       <div className="shell section-head">
-        <div><h2>Legal freedom is necessary. It is not, on its own, an economic outcome.</h2></div>
-        <p>Explore records across Kamaiya, Haliya, Haruwa-Charuwa, Kamlari, child labour, policy and more, while keeping geography, method, and data limits visible.</p>
+        <div><h2>{t('context.heading')}</h2></div>
+        <p>{t('context.text')}</p>
       </div>
     </section>
 
@@ -61,6 +62,7 @@ export default function HomePage() {
 type Documentary = { id: string; title: string; channel: string };
 
 function DocumentaryRail({ videos }: { videos: Documentary[] }) {
+  const { t } = useTranslation('home');
   const railRef = useRef<HTMLDivElement>(null);
   const [atStart, setAtStart] = useState(true);
   const [atEnd, setAtEnd] = useState(false);
@@ -85,18 +87,20 @@ function DocumentaryRail({ videos }: { videos: Documentary[] }) {
   };
 
   return <div className="shell documentary-rail-wrap">
-    <button type="button" className="rail-nav rail-nav--prev" aria-label="Show previous documentaries" disabled={atStart} onClick={() => nudge(-1)}>‹</button>
-    <div className="documentary-rail" ref={railRef} onScroll={syncEdges} tabIndex={0} role="group" aria-label="Documentary films, scroll horizontally for more">
+    <button type="button" className="rail-nav rail-nav--prev" aria-label={t('documentaries.previous')} disabled={atStart} onClick={() => nudge(-1)}>‹</button>
+    <div className="documentary-rail" ref={railRef} onScroll={syncEdges} tabIndex={0} role="group" aria-label={t('documentaries.railLabel')}>
       {videos.map((video) => <a key={video.id} className="documentary-card" href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer">
-        <img src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`} alt={`Thumbnail for ${video.title}`} loading="lazy" />
-        <div><p className="media-type">YouTube documentary</p><h3>{video.title}</h3><p className="documentary-channel">By {video.channel}</p><span>Watch on YouTube</span></div>
+        <img src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`} alt={t('documentaries.thumbnail', { title: video.title })} loading="lazy" />
+        {/* Film titles and channel names are the publishers' own, so they stay in English. */}
+        <div><p className="media-type">{t('documentaries.mediaType')}</p><h3 lang="en">{video.title}</h3><p className="documentary-channel">{t('documentaries.by', { channel: video.channel })}</p><span>{t('documentaries.watch')}</span></div>
       </a>)}
     </div>
-    <button type="button" className="rail-nav rail-nav--next" aria-label="Show more documentaries" disabled={atEnd} onClick={() => nudge(1)}>›</button>
+    <button type="button" className="rail-nav rail-nav--next" aria-label={t('documentaries.next')} disabled={atEnd} onClick={() => nudge(1)}>›</button>
   </div>;
 }
 
 function IntroNarrative() {
+  const { t } = useTranslation('home');
   const sectionRef = useRef<HTMLElement>(null);
   const [activeScene, setActiveScene] = useState<number | null>(0);
 
@@ -127,28 +131,9 @@ function IntroNarrative() {
     };
   }, []);
 
-  const scenes = [
-    {
-      title: 'Bonded labour in Nepal',
-      text: 'Bonded labour is a form of modern slavery in which people are compelled to work to repay a debt or obligation, often under conditions that make it difficult to leave. In Nepal, it has taken different forms shaped by poverty, social inequality, and economic dependence, affecting marginalised communities across different regions and periods.',
-      marker: 'The record is grounded in',
-      terms: ['Systems', 'Communities', 'History'],
-    },
-    {
-      title: 'Why this repository exists',
-      text: 'A dedicated repository makes scattered research, official records, and credible documentation easier to find, compare, and read with the context needed to interpret it responsibly.',
-      marker: 'Evidence becomes useful through',
-      terms: ['Access', 'Comparison', 'Context'],
-    },
-    {
-      title: 'What the record holds',
-      text: 'Nepal’s first dedicated repository focused exclusively on bonded labour brings together research studies, datasets, reports, government records, and other credible documentation. It covers Kamaiya, Haliya, Haruwa-Charuwa, Kamlari, and other forms of forced and bonded labour, structured by labour system, affected community, geography, historical period, and source type.',
-      marker: 'The collection brings together',
-      terms: ['Research', 'Records', 'Sources'],
-    },
-  ];
+  const scenes = t('narrative.scenes', { returnObjects: true }) as Array<{ title: string; text: string; marker: string; terms: string[] }>;
 
-  return <section ref={sectionRef} className={`repository-narrative repository-narrative--${activeScene === null ? 'exit' : activeScene}`} aria-label="Introduction to the repository">
+  return <section ref={sectionRef} className={`repository-narrative repository-narrative--${activeScene === null ? 'exit' : activeScene}`} aria-label={t('narrative.label')}>
     <div className="repository-narrative-sticky">
       <div className="shell repository-narrative-frame">
         <div className="repository-narrative-scenes">

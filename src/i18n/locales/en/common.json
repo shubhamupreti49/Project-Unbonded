@@ -14,7 +14,8 @@
     "timeline": "Timeline",
     "geography": "Geography",
     "methodology": "How to use",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "researchers": "Researchers: Phase One"
   },
   "language": {
     "label": "Choose language"
@@ -49,5 +50,15 @@
       "report": "Report",
       "legal-text": "Legal text"
     }
-  }
+  },
+  "yearUnknown": "Year not recorded",
+  "originalLanguage": "Source records, titles and findings are shown in their original language (English).",
+  "footer": {
+    "lastCompiled": "Last compiled: {{date}}"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "home": "Return home."
+  },
+  "dataLabels": {}
 }

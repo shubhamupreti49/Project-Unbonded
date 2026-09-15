@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "eyebrow": "Evidence landscape",
+    "title": "Geographic coverage",
+    "lead": "Districts are coloured where repository sources identify a bonded-labour system. Click only the districts with recorded local figures or a scoped study profile."
+  },
+  "legend": {
+    "overlap": "Overlapping coverage"
+  },
+  "indicator": "Map indicator",
+  "metrics": {
+    "identified": "Identified families",
+    "eligible": "Eligible category count",
+    "landRecipients": "Reported recipients",
+    "cash": "Average monetary support (NPR)",
+    "timber": "Average timber (cu. ft.)"
+  },
+  "panelMetrics": {
+    "identified": "Identified families",
+    "eligible": "Eligible category count",
+    "landRecipients": "Reported recipients",
+    "cash": "Average support (NPR)",
+    "timber": "Average timber (cu. ft.)"
+  },
+  "map": {
+    "label": "Map of Nepal showing district-level bonded labour evidence",
+    "viewDistrict": "View evidence for {{district}}",
+    "noCoverage": "{{district}}: no coded coverage",
+    "close": "Close district details",
+    "groupData": "{{system}} data",
+    "noValue": "No comparable district-level value is recorded for this indicator.",
+    "scrollPrompt": "Scroll down for related sources"
+  },
+  "howToRead": {
+    "label": "How to read this map:",
+    "text": "Colour indicates that a repository source identifies the named system in that district. A highlighted but unclickable district has no credible district-level numeric record in this repository. Figures shown in the panel retain their original source scope."
+  },
+  "districtSources": {
+    "eyebrow": "Place-specific sources",
+    "heading": "Sources specifically coded to {{district}}",
+    "empty": "No source record is explicitly coded to this district."
+  }
+}

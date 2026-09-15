@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "title": "How to use the repository",
+    "lead": "Use the hub to find evidence, understand its scope, and follow the original material.",
+    "overview": "Page overview",
+    "ways": "ways to navigate",
+    "limits": "limits to keep visible"
+  },
+  "guide": {
+    "heading": "Work from question to source.",
+    "intro": "Each route is designed to keep the record, its context, and its limits connected.",
+    "steps": [
+      {
+        "title": "Find exactly what you need",
+        "text": "Head over to the Source Catalogue to filter records fast. You can narrow your search by labour system, region, time period, or document type, including government files, research papers, and datasets."
+      },
+      {
+        "title": "See the bigger picture",
+        "text": "Use Timeline or Geography in the top menu to view visual maps and timelines. This helps you trace how laws evolved and see where different labour systems have been documented across Nepal over time."
+      },
+      {
+        "title": "Check the background details",
+        "text": "Open any record to look at it in detail. You will find context such as how a survey was conducted, sample sizes, and local boundaries. Read the complete story before drawing conclusions."
+      },
+      {
+        "title": "Follow original material",
+        "text": "Use the original PDFs and official document links for deeper reading. When using material in your own research or writing, credit the original author or government agency."
+      }
+    ]
+  },
+  "limitations": {
+    "heading": "Read the limits with the evidence.",
+    "intro": "These constraints shape what the repository can help users find and what it cannot establish.",
+    "items": [
+      {
+        "title": "Language limitations",
+        "text": "Searches were conducted in English, so Nepali-language sources may be absent."
+      },
+      {
+        "title": "Curated collection",
+        "text": "This is a curated repository from our team’s work, not an exhaustive systematic review."
+      },
+      {
+        "title": "Paywalled material",
+        "text": "Studies behind paid journal subscriptions may be absent, meaning some existing information is not represented here."
+      },
+      {
+        "title": "No combined averages",
+        "text": "Studies use different definitions and timelines, so this repository does not merge figures into combined averages."
+      },
+      {
+        "title": "Limited sources",
+        "text": "Maps show where research exists in this archive, not the prevalence of bonded labour. Not every document on bonded labour could be covered within this repository’s scope."
+      }
+    ]
+  }
+}

@@ -12,7 +12,10 @@ export type LanguageCode = (typeof SUPPORTED_LANGUAGES)[number]['code'];
 export const DEFAULT_LANGUAGE: LanguageCode = 'en';
 
 /** Translation namespaces. One JSON file per namespace, per language. */
-export const NAMESPACES = ['common', 'home', 'library', 'dashboards', 'oralHistories'] as const;
+export const NAMESPACES = [
+  'common', 'home', 'library', 'dashboards', 'oralHistories', 'researchers',
+  'catalogue', 'timeline', 'geography', 'source', 'methodology', 'contacts',
+] as const;
 export type Namespace = (typeof NAMESPACES)[number];
 
 export function isSupportedLanguage(value: unknown): value is LanguageCode {

@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Organisation contacts",
+    "lead": "Public contact details for organisations represented in this repository. Contact an organisation directly for clarification about its work or publications."
+  },
+  "intro": "These details are drawn from public organisation contact pages and the project’s working contact list. They are provided for research follow-up, not as endorsement or as a substitute for checking the original publication.",
+  "labels": {
+    "website": "Website",
+    "visitWebsite": "Visit website",
+    "email": "Email",
+    "phone": "Phone",
+    "contactPage": "Contact page",
+    "openContact": "Open public contact details"
+  },
+  "team": {
+    "heading": "About Team Unbonded",
+    "text": "This repository was built by Team Unbonded at the Uunchai Summer Mentorship Program, a Nepal-rooted initiative creating pathways for talented students to engage with real-world opportunities.",
+    "listLabel": "Team Unbonded contributors"
+  }
+}
