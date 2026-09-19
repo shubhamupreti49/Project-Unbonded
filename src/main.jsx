@@ -43,7 +43,7 @@ function Header({ active }) {
 }
 function Footer() {
   const { t, i18n } = useTranslation('common');
-  return <p lang="en"><a className="team-link" href="https://shubhamupreti.com.np" target="_blank" rel="noreferrer">Shubham Upreti</a></p>;
+  return <footer className="site-footer"><div className="shell footer-grid"><div><b>Unbonded Archive</b><p lang="en"><a className="team-link" href="https://shubhamupreti.com.np" target="_blank" rel="noreferrer">Shubham Upreti</a></p></div><div><p>{t('footer.lastCompiled', { date: formatDate('2026-08-15', i18n.language) })}</p></div></div></footer>;
 }
 function ScrollToRoute() { const { pathname } = useLocation(); useEffect(() => { window.scrollTo({ top: 0, behavior: 'auto' }); }, [pathname]); return null; }
 function Layout({ active, children, className = '' }) { useLenis(); const { t } = useTranslation('common'); return <><ScrollToRoute/><a className="skip-link" href="#main-content">{t('skipToContent')}</a><Header active={active}/><main id="main-content" tabIndex="-1" className={className}>{children}</main><Footer/></>; }
