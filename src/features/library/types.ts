@@ -23,7 +23,7 @@ export type ArchiveDocument = {
   file?: DocumentFile;
   /** Publisher's page or DOI when the file isn't hosted by the archive. */
   externalUrl?: string;
-  /** Links to the detailed record page at /source?id=… */
+  /** Links to the detailed record page at /source/SRC-…  */
   sourceRecordId?: string;
 };
 

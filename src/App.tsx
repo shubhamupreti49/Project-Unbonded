@@ -1,6 +1,7 @@
-import { lazy, Suspense } from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { lazy, Suspense, useEffect } from 'react';
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import { RouteFallback } from './components/RouteFallback';
+import { RouteMeta } from './components/RouteMeta';
 import { LegacyResearchRedirect } from './features/research/legacyRedirects';
 import HomePage from './pages/HomePage';
 import TimelinePage from './pages/TimelinePage';
@@ -23,8 +24,25 @@ const ResearchersPage = lazy(() => import('./pages/ResearchersPage'));
 // Keeps the header visible while a route chunk downloads.
 const fallback = <Layout><RouteFallback /></Layout>;
 
+/**
+ * main.tsx rewrites an old /#/… address on page load. This catches the same kind of link when
+ * it is followed while the site is already open, which changes only the hash and so does not
+ * reload the page.
+ */
+function LegacyHashLinks() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    const onHashChange = () => { if (window.location.hash.startsWith('#/')) navigate(window.location.hash.slice(1), { replace: true }); };
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, [navigate]);
+  return null;
+}
+
 export default function App() {
   return <Suspense fallback={fallback}>
+    <RouteMeta />
+    <LegacyHashLinks />
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/research" element={<ResearchPage />} />
@@ -34,6 +52,8 @@ export default function App() {
       <Route path="/articles/:slug" element={<ArticlePage />} />
       <Route path="/write-for-us" element={<WriteForUsPage />} />
       <Route path="/how-to-use" element={<MethodologyPage />} />
+      <Route path="/source/:id" element={<SourceDetailPage />} />
+      {/* Former record address, /source?id=SRC-013: redirects to /source/SRC-013. */}
       <Route path="/source" element={<SourceDetailPage />} />
       <Route path="/contacts" element={<ContactsPage />} />
       <Route path="/researchers-phase-one" element={<ResearchersPage />} />

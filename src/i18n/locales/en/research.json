@@ -49,5 +49,10 @@
   "note": {
     "label": "Cataloguing note:",
     "text": "Partial metadata means a core field was absent from the workbook. Verify records before citation."
+  },
+  "download": {
+    "label": "Download the full catalogue:",
+    "fields": "field guide",
+    "updated": "{{count, number}} records, updated {{date}}"
   }
 }

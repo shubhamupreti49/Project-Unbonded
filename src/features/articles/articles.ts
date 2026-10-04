@@ -4,7 +4,7 @@
  * Files are bundled at build time, so publishing an article is: add the .md file, commit,
  * push, and GitHub Pages redeploys in about a minute. Files starting with "_" (the
  * template) and README.md are ignored. The filename, minus ".md", becomes the URL:
- * kamaiya-land-explained.md → /#/articles/kamaiya-land-explained.
+ * kamaiya-land-explained.md → /articles/kamaiya-land-explained.
  */
 export type Article = {
   slug: string;

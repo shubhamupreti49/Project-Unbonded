@@ -5,7 +5,7 @@ Each volunteer article is one Markdown (`.md`) file in this folder. Publishing o
 1. Review the submission from the Google Form (linked on the site's **Write for us** page).
 2. Copy `_template.md` to a new file named after the article, in lowercase with hyphens,
    e.g. `kamaiya-land-twenty-years-on.md`. The filename becomes the web address:
-   `unbondedarchive.org/#/articles/kamaiya-land-twenty-years-on`.
+   `unbondedarchive.org/articles/kamaiya-land-twenty-years-on`.
 3. Fill in the details between the two `---` lines, then paste the article text below them.
 4. Commit and push to `main`. GitHub Pages redeploys the site in about a minute.
 
@@ -26,7 +26,8 @@ Each volunteer article is one Markdown (`.md`) file in this folder. Publishing o
 
 Standard Markdown works: `## Heading`, `**bold**`, `*italic*`, `- bullet lists`,
 `1. numbered lists`, `> quotes` and `[link text](https://example.org)`.
-To link to a paper in this archive, use `[the ILO study](#/source?id=SRC-002)`.
+To link to a paper in this archive, use `[the ILO study](/source/SRC-002)`.
+Cite sources in the text as described in the volunteers' Citation Guide (Chicago author-date, with links).
 
 Raw HTML is removed when the article is shown, so paste plain text, not formatted HTML.
 Files starting with `_` and this README are never published.

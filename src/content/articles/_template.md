@@ -13,4 +13,4 @@ Opening paragraph.
 
 ## A section heading
 
-More text. Link to a paper in this archive like [this](#/source?id=SRC-013).
+More text. Link to a paper in this archive like [this](/source/SRC-013).

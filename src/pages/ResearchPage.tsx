@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { OriginalLanguageNotice } from '../components/OriginalLanguageNotice';
 import { PageHero } from '../components/PageHero';
 import { useDataLabel } from '../i18n/useDataLabel';
-import { localizeDigits } from '../lib/format';
+import { formatDate, localizeDigits } from '../lib/format';
+import { CATALOGUE_FILES, CATALOGUE_UPDATED } from '../seo/site.js';
 import { ResearchCard } from '../features/research/ResearchCard';
 import { ResearchFilters } from '../features/research/ResearchFilters';
 import { FACETS, useResearchFilters, type FacetId, type SortOrder } from '../features/research/useResearchFilters';
@@ -114,6 +115,17 @@ export default function ResearchPage() {
 
             <p className="mt-8 mb-0 rounded-lg border-l-4 border-coral bg-[#fff2ed] px-4 py-3 text-sm text-ink">
               <b>{t('note.label')}</b> {t('note.text')}
+            </p>
+
+            {/* The whole catalogue as files, written at build time (scripts/prerender.mjs). */}
+            <p className="mt-4 mb-0 text-sm text-ink">
+              <b>{t('download.label')}</b>{' '}
+              <a href={CATALOGUE_FILES.csv} download className="font-bold text-navy">CSV</a>
+              {' · '}
+              <a href={CATALOGUE_FILES.json} download className="font-bold text-navy">JSON</a>
+              {' · '}
+              <a href={CATALOGUE_FILES.readme} className="font-bold text-navy">{t('download.fields')}</a>
+              {' '}({t('download.updated', { count: total, date: formatDate(CATALOGUE_UPDATED, i18n.language) })})
             </p>
           </section>
         </div>

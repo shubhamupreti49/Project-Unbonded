@@ -19,7 +19,10 @@ export const PHASE_ONE_RESEARCHERS: Researcher[] = [
   { name: 'Shushant Upreti', contributorKey: 'Shusant' },
 ];
 
-/** Number of source records each researcher catalogued, read from the source workbook data. */
+/**
+ * Number of source records each researcher catalogued, read from the source workbook data.
+ * Records later retired as duplicates (data.retired) still count: the cataloguing was done.
+ */
 export function countCataloguedRecords(researcher: Researcher): number {
-  return data.sources.filter((source) => source.contributor?.includes(researcher.contributorKey)).length;
+  return [...data.sources, ...(data.retired ?? [])].filter((source) => source.contributor?.includes(researcher.contributorKey)).length;
 }

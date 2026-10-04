@@ -2,11 +2,20 @@ import DOMPurify from 'dompurify';
 import { marked } from 'marked';
 import { useMemo } from 'react';
 
-// Links to other sites open in a new tab; links inside the archive (#/source?id=…) stay put.
+// Links to other sites open in a new tab; links inside the archive (/source/SRC-002) stay put.
+// Articles written before the move to real addresses used #/source?id=SRC-002; those are rewritten.
 DOMPurify.addHook('afterSanitizeAttributes', (node) => {
-  if (node.tagName === 'A' && /^https?:\/\//i.test(node.getAttribute('href') ?? '')) {
+  if (node.tagName !== 'A') return;
+  const href = node.getAttribute('href') ?? '';
+  if (/^https?:\/\//i.test(href)) {
     node.setAttribute('target', '_blank');
     node.setAttribute('rel', 'noreferrer');
+    return;
+  }
+  const legacy = /^#(\/.*)$/.exec(href);
+  if (legacy) {
+    const record = /^\/source\?id=([^&#]+)/.exec(legacy[1]);
+    node.setAttribute('href', record ? `/source/${record[1]}` : legacy[1]);
   }
 });
 

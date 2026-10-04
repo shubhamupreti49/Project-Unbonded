@@ -5,6 +5,7 @@ import { useDataLabel } from '../../i18n/useDataLabel';
 import { formatBytes, formatYear } from '../../lib/format';
 import { useVocabLabel } from '../library/useVocabLabel';
 import { COMMUNITY_STYLES } from '../library/vocabulary';
+import { recordPath } from '../../seo/site.js';
 import { SYSTEM_COMMUNITY, type ResearchRecord } from './researchIndex';
 
 /*
@@ -36,7 +37,7 @@ export function ResearchCard({ record }: { record: ResearchRecord }) {
   const dataLabel = useDataLabel();
   const vocabLabel = useVocabLabel();
   const { source, document, pdf, originalUrl } = record;
-  const recordUrl = `/source?id=${encodeURIComponent(source.id)}`;
+  const recordUrl = recordPath(source.id);
   const year = formatYear(source.year, language) ?? t('card.yearUnknown');
   const pdfSize = formatBytes(pdf?.sizeBytes, language);
   const finding = source.claims?.[0] || source.claim;

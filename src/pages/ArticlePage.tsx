@@ -6,6 +6,7 @@ import { getArticle } from '../features/articles/articles';
 import { WriteCta } from '../features/articles/WriteCta';
 import { formatDate, formatYear } from '../lib/format';
 import { Layout } from '../main.jsx';
+import { recordPath } from '../seo/site.js';
 
 // Lazy-loaded route (see App.tsx): /articles/:slug, one Markdown file in src/content/articles/.
 export default function ArticlePage() {
@@ -60,7 +61,7 @@ export default function ArticlePage() {
                 <ul className="m-0 grid list-none gap-3 p-0">
                   {related.map((source) => (
                     <li key={source.id} className="rounded-lg border-l-4 border-aqua bg-mint/50 px-4 py-3">
-                      <Link to={`/source?id=${encodeURIComponent(source.id)}`} lang="en" className="font-serif text-lg font-bold text-navy no-underline hover:text-aqua hover:underline">{source.title}</Link>
+                      <Link to={recordPath(source.id)} lang="en" className="font-serif text-lg font-bold text-navy no-underline hover:text-aqua hover:underline">{source.title}</Link>
                       <p lang="en" className="m-0 mt-1 text-sm text-muted">{source.author}{source.year ? ` · ${formatYear(source.year, i18n.language)}` : ''}</p>
                     </li>
                   ))}

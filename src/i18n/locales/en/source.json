@@ -14,6 +14,7 @@
     "themes": "Themes"
   },
   "findings": "Recorded findings",
+  "noFindings": "Findings have not yet been recorded for this source. Read the original before relying on it.",
   "noNote": "No additional repository note recorded.",
   "notFound": {
     "title": "Source record not found",
