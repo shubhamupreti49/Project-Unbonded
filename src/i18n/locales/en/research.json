@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "eyebrow": "Research collection",
+    "title": "Research",
+    "lead": "Find papers, reports, legal texts and datasets on bonded labour in Nepal. Search by topic, place or author, then narrow the list by labour system, theme, method or decade."
+  },
+  "search": {
+    "label": "Search research papers",
+    "placeholder": "Try “Kamaiya land”, “Haliya rehabilitation” or an author",
+    "button": "Search",
+    "hint": "Every word you type must appear in the paper. Spellings such as Halia/Haliya and Harawa/Haruwa are matched."
+  },
+  "filters": {
+    "heading": "Filter papers",
+    "toggle": "Filters",
+    "activeCount_one": "{{count, number}} active",
+    "activeCount_other": "{{count, number}} active",
+    "system": "Labour system",
+    "theme": "Theme",
+    "method": "Method",
+    "decade": "Published",
+    "decadeLabel": "{{decade}}s",
+    "clear": "Clear all",
+    "active": "Active search and filters",
+    "searchChip": "“{{query}}”",
+    "remove": "Remove"
+  },
+  "sort": {
+    "label": "Sort",
+    "relevance": "Best match",
+    "newest": "Newest first",
+    "oldest": "Oldest first"
+  },
+  "results": {
+    "summary": "{{shown, number}} of {{total, number}} papers",
+    "emptyTitle": "No papers match this search.",
+    "emptyBody": "Try fewer or different words, check the spelling, or remove a filter.",
+    "showAll": "Show all papers"
+  },
+  "card": {
+    "yearUnknown": "Year not recorded",
+    "pdf": "PDF",
+    "webPage": "Web page",
+    "openPdf": "Open PDF",
+    "original": "Original source",
+    "details": "Record details",
+    "tags": "Labour systems and themes"
+  },
+  "note": {
+    "label": "Cataloguing note:",
+    "text": "Partial metadata means a core field was absent from the workbook. Verify records before citation."
+  }
+}

@@ -13,11 +13,11 @@ type Pathway = {
   links: Array<{ key: string; to: string }>;
 };
 
-/**
- * Where each audience is sent. Library links pre-apply filters through the URL
- * (see features/library/useDocumentFilters.ts), so a policymaker lands directly on
- * executive summaries rather than the whole archive.
- */
+// Research links pre-apply filters through the URL (see features/research/useResearchFilters.ts),
+// so each reader lands on a relevant slice of the collection rather than all of it.
+const research = (filters: Record<string, string>) => `/research?${new URLSearchParams(filters)}`;
+
+/** Where each audience is sent. */
 const PATHWAYS: Pathway[] = [
   {
     id: 'policymakers',
@@ -25,8 +25,9 @@ const PATHWAYS: Pathway[] = [
     iconColor: 'text-coral',
     icon: <path d="M4 20h16M6 20V10m4 10V10m4 10V10m4 10V10M3 10l9-6 9 6" />,
     links: [
-      { key: 'summaries', to: '/library?type=executive-summary&type=policy-brief' },
-      { key: 'dashboards', to: '/dashboards' },
+      { key: 'policy', to: research({ theme: 'Legal abolition & policy' }) },
+      { key: 'rehabilitation', to: research({ theme: 'Rehabilitation' }) },
+      { key: 'map', to: '/geography' },
     ],
   },
   {
@@ -35,9 +36,9 @@ const PATHWAYS: Pathway[] = [
     iconColor: 'text-aqua',
     icon: <path d="M4 19V5m0 14h16M8 15l3-4 3 2 5-6" />,
     links: [
-      { key: 'datasets', to: '/library?type=dataset' },
-      { key: 'econometrics', to: '/library?type=econometric-analysis' },
-      { key: 'archive', to: '/library' },
+      { key: 'surveys', to: research({ method: 'Survey / quantitative' }) },
+      { key: 'qualitative', to: research({ method: 'Qualitative / mixed methods' }) },
+      { key: 'all', to: '/research' },
     ],
   },
   {
@@ -47,7 +48,7 @@ const PATHWAYS: Pathway[] = [
     icon: <path d="M12 3v18M5 7h7m0 5h7M5 17h7M3 7a2 2 0 1 0 4 0 2 2 0 0 0-4 0Zm14 5a2 2 0 1 0 4 0 2 2 0 0 0-4 0ZM3 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0Z" />,
     links: [
       { key: 'timeline', to: '/timeline' },
-      { key: 'oralHistories', to: '/oral-histories' },
+      { key: 'articles', to: '/articles' },
       { key: 'geography', to: '/geography' },
     ],
   },
@@ -92,7 +93,7 @@ export function AudiencePathways() {
                       className="group/link flex min-h-11 items-center justify-between gap-3 rounded-lg px-2 font-bold text-navy no-underline hover:bg-mint focus-visible:bg-mint"
                     >
                       {/* Link keys differ per audience, so this one dynamic key is cast for TypeScript. */}
-                      {t(`audiences.${id}.links.${link.key}` as 'audiences.researchers.links.archive')}
+                      {t(`audiences.${id}.links.${link.key}` as 'audiences.researchers.links.all')}
                       <span aria-hidden="true" className="text-aqua transition-transform motion-safe:group-hover/link:translate-x-1">→</span>
                     </Link>
                   </li>

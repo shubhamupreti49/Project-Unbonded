@@ -1,0 +1,67 @@
+{
+  "list": {
+    "eyebrow": "Articles",
+    "title": "Articles",
+    "lead": "Plain-language writing by volunteers on bonded labour, rehabilitation and life after liberation in Nepal. Each article links to the research it discusses.",
+    "commentary": "Articles are written by volunteers and reviewed by the editorial team. They are commentary, not research evidence: check the research they cite.",
+    "by": "By {{author}}",
+    "read": "Read article",
+    "emptyTitle": "The first articles are on their way.",
+    "emptyBody": "Volunteers are writing the first pieces for this section. Have something to share? We would love to read it.",
+    "count_one": "{{count, number}} article",
+    "count_other": "{{count, number}} articles"
+  },
+  "article": {
+    "eyebrow": "Volunteer article",
+    "back": "← All articles",
+    "by": "By {{author}}",
+    "aboutAuthor": "About the author",
+    "related": "Papers discussed in this article",
+    "relatedIntro": "Read the original research behind this article.",
+    "notFoundTitle": "Article not found",
+    "notFoundBack": "See all articles."
+  },
+  "cta": {
+    "heading": "Write for Unbonded Archive",
+    "text": "Volunteers help explain the research to a wider audience. If you have studied, worked on or lived alongside these issues, we welcome your writing.",
+    "button": "How to submit an article"
+  },
+  "write": {
+    "eyebrow": "Get involved",
+    "title": "Write for us",
+    "lead": "Share research-informed writing on bonded labour, rehabilitation and life after liberation in Nepal. Approved articles are published here with your name.",
+    "publishHeading": "What we publish",
+    "publish": [
+      "Plain-language explainers of a paper, report or law in this collection",
+      "Field notes and reflections from work with affected communities",
+      "Policy commentary grounded in the evidence",
+      "Summaries of new research on bonded labour in Nepal"
+    ],
+    "guidelinesHeading": "Guidelines",
+    "guidelines": [
+      "600–1,500 words, in English or Nepali.",
+      "Back up factual claims with sources, and link to papers in Research wherever you can.",
+      "Get consent from anyone you name or quote, and leave out details that could identify or endanger people.",
+      "Send original work. If it has appeared elsewhere, tell us where.",
+      "We may edit for clarity and length, and we may decline pieces that do not fit the archive."
+    ],
+    "stepsHeading": "How it works",
+    "steps": [
+      {
+        "title": "Submit",
+        "text": "Fill in the submission form and share your draft as a Google Docs or Word link."
+      },
+      {
+        "title": "Review",
+        "text": "The editorial team reads every submission and contacts you by email with feedback or questions."
+      },
+      {
+        "title": "Publish",
+        "text": "Approved articles appear in Articles with your name and a short bio, linked to the papers they discuss."
+      }
+    ],
+    "submit": "Open the submission form",
+    "submitNote": "Opens Google Forms in a new tab.",
+    "formPending": "The submission form opens soon. Please check back shortly."
+  }
+}

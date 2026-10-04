@@ -8,16 +8,16 @@
     "close": "नेभिगेसन बन्द गर्नुहोस्",
     "closeShort": "बन्द",
     "home": "गृहपृष्ठ",
-    "library": "पुस्तकालय",
-    "catalogue": "स्रोत सूची",
-    "dashboards": "ड्यासबोर्ड",
+    "research": "अनुसन्धान",
     "oralHistories": "मौखिक इतिहास",
     "timeline": "समयरेखा",
-    "geography": "भूगोल",
+    "geography": "नक्सा तथा तथ्याङ्क",
+    "articles": "लेखहरू",
     "methodology": "प्रयोग विधि",
     "contacts": "सम्पर्क",
     "researchers": "अनुसन्धानकर्ता: पहिलो चरण",
-    "about": "हाम्रो बारेमा"
+    "about": "हाम्रो बारेमा",
+    "writeForUs": "हाम्रा लागि लेख्नुहोस्"
   },
   "language": {
     "label": "भाषा छान्नुहोस्"

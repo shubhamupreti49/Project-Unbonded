@@ -15,8 +15,6 @@
     "retry": "Try again",
     "openNewTab": "Open in a new tab",
     "staticVersion": "View static summary",
-    "notPublished": "This dashboard has not been published yet.",
-    "interim": "Until it is published, the same district figures can be explored on the Geography map.",
-    "interimLink": "Open the Geography map"
+    "notPublished": "This dashboard has not been published yet."
   }
 }

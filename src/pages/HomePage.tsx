@@ -1,9 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AudiencePathways } from '../features/home/AudiencePathways';
+import { useDataLabel } from '../i18n/useDataLabel';
 import { localizeDigits } from '../lib/format';
 import { Layout } from '../main.jsx';
+
+// One-click routes into Research for the four systems the archive centres on.
+const systemShortcuts = ['Kamaiya', 'Haliya', 'Haruwa-Charuwa', 'Kamlari'];
 
 const videos = [
   { id: 'TUPh9pJV1pg', title: 'The Bridge Project: combatting bonded labour in Nepal', channel: 'International Labour Organization' },
@@ -15,6 +19,7 @@ export default function HomePage() {
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
   const { t, i18n } = useTranslation('home');
+  const dataLabel = useDataLabel();
 
   return <Layout active="home">
     <section className="hero">
@@ -22,10 +27,14 @@ export default function HomePage() {
         <p className="hero-index">{t('hero.eyebrow')}</p>
         <h1><Trans t={t} i18nKey="hero.title" components={{ em: <em /> }} /></h1>
         <p className="lead">{t('hero.lead')}</p>
-        <form className="search-orbit" role="search" onSubmit={(event) => { event.preventDefault(); navigate(`/catalogue${query.trim() ? `?q=${encodeURIComponent(query.trim())}` : ''}`); }}>
+        <form className="search-orbit" role="search" onSubmit={(event) => { event.preventDefault(); navigate(`/research${query.trim() ? `?q=${encodeURIComponent(query.trim())}` : ''}`); }}>
           <input value={query} onChange={(event) => setQuery(event.target.value)} aria-label={t('hero.searchLabel')} placeholder={t('hero.searchPlaceholder')} />
           <button type="submit">{t('hero.searchButton')}</button>
         </form>
+        <nav className="hero-shortcuts" aria-label={t('hero.browse')}>
+          <span>{t('hero.browse')}</span>
+          {systemShortcuts.map((system) => <Link key={system} to={`/research?system=${encodeURIComponent(system)}`}>{dataLabel(system)}</Link>)}
+        </nav>
         <p className="disclaimer"><Trans t={t} i18nKey="hero.disclaimer" components={{ b: <b /> }} /></p>
       </div>
       <section className="metrics" aria-label={t('metrics.label')}>

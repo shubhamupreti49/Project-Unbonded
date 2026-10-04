@@ -8,12 +8,12 @@ export type DashboardConfig = {
 } & Pick<ShinyEmbedProps, 'src' | 'estimatedSize' | 'staticVersionUrl' | 'loadStrategy'>;
 
 /**
- * Dashboards shown on /dashboards.
+ * Dashboards shown on the Map & data page (/geography), below the map.
  *
  * To publish a Shiny app: deploy it (e.g. rsconnect::deployApp()), paste its URL into
  * `src`, and add integrations/shiny/unbonded_embed.R to its UI so it auto-resizes.
  * Measure `estimatedSize` in Chrome DevTools → Network ("transferred" total, cache disabled).
- * Entries with an empty `src` render a "not yet published" placeholder.
+ * Entries with an empty `src` are not shown; the section appears once one has a `src`.
  */
 export const DASHBOARDS: DashboardConfig[] = [
   {

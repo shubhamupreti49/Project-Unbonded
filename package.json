@@ -11,8 +11,10 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
     "@vitejs/plugin-react": "latest",
+    "dompurify": "^3.4.16",
     "i18next": "^26.4.2",
     "lenis": "latest",
+    "marked": "^18.0.14",
     "react": "latest",
     "react-dom": "latest",
     "react-i18next": "^17.0.14",

@@ -6,7 +6,8 @@
     "searchLabel": "Search the evidence hub",
     "searchPlaceholder": "Search a place, system, author, or theme",
     "searchButton": "Search evidence",
-    "disclaimer": "<b>Read with care:</b> this is a curated student repository, not a systematic review or a causal evaluation."
+    "disclaimer": "<b>Read with care:</b> this is a curated student repository, not a systematic review or a causal evaluation.",
+    "browse": "Browse by labour system:"
   },
   "metrics": {
     "label": "Repository coverage",
@@ -21,29 +22,30 @@
     "policymakers": {
       "label": "For policymakers",
       "title": "Evidence for decisions",
-      "description": "Short executive summaries, policy submissions and dashboards tracking rehabilitation across districts.",
+      "description": "Legal texts, policy submissions and rehabilitation evidence, with district figures on the map.",
       "links": {
-        "summaries": "Executive summaries & policy briefs",
-        "dashboards": "Data dashboards"
+        "policy": "Law & policy evidence",
+        "rehabilitation": "Rehabilitation studies",
+        "map": "District figures on the map"
       }
     },
     "researchers": {
       "label": "For researchers",
       "title": "Data and methods",
-      "description": "Datasets, econometric analyses and the full document archive, with the metadata needed to judge each source.",
+      "description": "Surveys, qualitative studies and the full research collection, with the method and sample behind every source.",
       "links": {
-        "datasets": "Datasets",
-        "econometrics": "Econometric analyses",
-        "archive": "Full document archive"
+        "surveys": "Survey & quantitative studies",
+        "qualitative": "Qualitative & mixed-methods studies",
+        "all": "Full research collection"
       }
     },
     "public": {
       "label": "For the public & educators",
-      "title": "The history, in people’s words",
-      "description": "How the Kamaiya, Haliya and Haruwa-Charuwa systems were abolished, told through timelines, places and the voices of freed families.",
+      "title": "The history, explained",
+      "description": "How the Kamaiya, Haliya, Haruwa-Charuwa and Kamlari systems were abolished, told through timelines, places and articles by volunteers.",
       "links": {
         "timeline": "Timeline of abolition & policy",
-        "oralHistories": "Oral histories",
+        "articles": "Articles by volunteers",
         "geography": "Map of affected districts"
       }
     }

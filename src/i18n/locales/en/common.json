@@ -8,16 +8,16 @@
     "close": "Close navigation",
     "closeShort": "Close",
     "home": "Home",
-    "library": "Library",
-    "catalogue": "Source catalogue",
-    "dashboards": "Dashboards",
+    "research": "Research",
     "oralHistories": "Oral histories",
     "timeline": "Timeline",
-    "geography": "Geography",
+    "geography": "Map & data",
+    "articles": "Articles",
     "methodology": "How to use",
     "contacts": "Contacts",
     "researchers": "Researchers: Phase One",
-    "about": "About"
+    "about": "About",
+    "writeForUs": "Write for us"
   },
   "language": {
     "label": "Choose language"

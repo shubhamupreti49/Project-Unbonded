@@ -2,7 +2,7 @@
   "page": {
     "eyebrow": "Team Unbonded",
     "title": "Researchers: Phase One",
-    "lead": "The student researchers who built the first phase of the Unbonded Archive by finding, reading and cataloguing the source records behind the catalogue, timeline and map."
+    "lead": "The student researchers who built the first phase of the Unbonded Archive by finding, reading and cataloguing the source records behind the research collection, timeline and map."
   },
   "summary": {
     "label": "Phase one at a glance",
@@ -23,5 +23,5 @@
     "heading": "The project continues",
     "text": "Phase one is complete. The Unbonded Archive continues under the leadership of project lead Shubham Upreti."
   },
-  "browse": "Browse the source catalogue"
+  "browse": "Browse the research collection"
 }

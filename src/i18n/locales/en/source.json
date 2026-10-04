@@ -1,6 +1,6 @@
 {
   "eyebrow": "Source record",
-  "back": "← Back to catalogue",
+  "back": "← Back to Research",
   "noCitation": "Citation not yet recorded.",
   "viewOriginal": "View original paper / source ↗",
   "noOriginal": "No stable original-paper link is recorded for this source.",
@@ -17,7 +17,7 @@
   "noNote": "No additional repository note recorded.",
   "notFound": {
     "title": "Source record not found",
-    "back": "Return to the catalogue."
+    "back": "Return to Research."
   },
   "related": {
     "eyebrow": "Explore related evidence",
@@ -31,5 +31,14 @@
     "text": "Questions about this organisation’s work or publication may be directed through its public contact channels.",
     "website": "Organisation website ↗",
     "contact": "Contact details ↗"
+  },
+  "cite": {
+    "copy": "Copy citation",
+    "copied": "Citation copied",
+    "failed": "Couldn’t copy. Select the citation on the original source instead."
+  },
+  "articles": {
+    "eyebrow": "Read more",
+    "heading": "Articles about this paper"
   }
 }

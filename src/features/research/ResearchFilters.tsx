@@ -2,13 +2,13 @@ import { useId, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { toLanguageCode } from '../../i18n/languages';
 import { formatNumber } from '../../lib/format';
-import { FACETS, type FacetId } from './useDocumentFilters';
-import { useVocabLabel } from './useVocabLabel';
+import { FACETS, type FacetId } from './useResearchFilters';
 
-type DocumentFiltersProps = {
+type ResearchFiltersProps = {
   selection: Record<FacetId, ReadonlySet<string>>;
   counts: Record<FacetId, Map<string, number>>;
   activeCount: number;
+  optionLabel: (facet: FacetId, value: string) => string;
   onToggle: (facet: FacetId, value: string) => void;
   onClear: () => void;
 };
@@ -17,18 +17,18 @@ type DocumentFiltersProps = {
  * Filter sidebar.
  *  - Mobile (default): collapsed behind a "Filters" button so results are visible first.
  *  - lg and up: always-visible sticky sidebar.
- * Each facet is a native <fieldset> of checkboxes — keyboard and screen-reader support
- * come for free, and there is no custom dropdown JavaScript to download.
+ * Each filter is a native <fieldset> of checkboxes showing how many papers each option
+ * leaves; options that would leave none are disabled, so readers never click into an
+ * empty result.
  */
-export function DocumentFilters({ selection, counts, activeCount, onToggle, onClear }: DocumentFiltersProps) {
-  const { t, i18n } = useTranslation('library');
-  const vocabLabel = useVocabLabel();
+export function ResearchFilters({ selection, counts, activeCount, optionLabel, onToggle, onClear }: ResearchFiltersProps) {
+  const { t, i18n } = useTranslation('research');
   const language = toLanguageCode(i18n.resolvedLanguage);
   const [isOpen, setIsOpen] = useState(false);
   const panelId = useId();
 
   return (
-    <aside className="ua lg:sticky lg:top-24 lg:self-start" aria-labelledby={`${panelId}-heading`}>
+    <aside className="ua lg:sticky lg:top-24 lg:max-h-[calc(100vh-7rem)] lg:self-start lg:overflow-y-auto" aria-labelledby={`${panelId}-heading`} data-lenis-prevent>
       <button
         type="button"
         className="flex min-h-11 w-full items-center justify-between rounded-lg border border-rule bg-paper px-4 font-bold text-navy lg:hidden"
@@ -60,7 +60,7 @@ export function DocumentFilters({ selection, counts, activeCount, onToggle, onCl
             <legend className="tw-eyebrow float-left mb-2 w-full p-0 font-mono text-xs font-bold tracking-wider text-coral uppercase">
               {t(`filters.${facet.id}`)}
             </legend>
-            <ul className="clear-both m-0 list-none space-y-1 p-0">
+            <ul className="clear-both m-0 list-none space-y-0.5 p-0">
               {facet.options.map((option) => {
                 const count = counts[facet.id].get(option) ?? 0;
                 const checked = selection[facet.id].has(option);
@@ -75,7 +75,7 @@ export function DocumentFilters({ selection, counts, activeCount, onToggle, onCl
                         disabled={disabled}
                         onChange={() => onToggle(facet.id, option)}
                       />
-                      <span className="grow">{vocabLabel(facet.id, option)}</span>
+                      <span className="grow">{optionLabel(facet.id, option)}</span>
                       <span className="font-mono text-xs text-muted tabular-nums">{formatNumber(count, language)}</span>
                     </label>
                   </li>

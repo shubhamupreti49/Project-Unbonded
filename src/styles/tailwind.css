@@ -18,8 +18,10 @@
  */
 @source "../components";
 @source "../features";
-@source "../pages/LibraryPage.tsx";
-@source "../pages/DashboardsPage.tsx";
+@source "../pages/ResearchPage.tsx";
+@source "../pages/ArticlesPage.tsx";
+@source "../pages/ArticlePage.tsx";
+@source "../pages/WriteForUsPage.tsx";
 @source "../pages/OralHistoriesPage.tsx";
 @source "../pages/ResearchersPage.tsx";
 
@@ -138,9 +140,10 @@ label:lang(ne),
 
 /* ---------------------------------------------------------------------------
  * Site header.
- * Desktop shows six primary links plus an "About" menu (How to use, Contacts, Researchers);
- * the logo doubles as the Home link. That row needs ~1,050px in English and Nepali, so the
- * links collapse into the Menu panel below 1100px. Re-measure if you add or rename a nav item.
+ * Desktop shows four primary links plus an "About" menu (How to use, Write for us, Contacts,
+ * Researchers); the logo doubles as the Home link. That row needs ~830px in Nepali (~810px in
+ * English), so the links collapse into the Menu panel below 900px. Re-measure if you add or
+ * rename a nav item.
  * ------------------------------------------------------------------------ */
 .site-header .shell {
   max-width: 1400px;
@@ -194,7 +197,7 @@ label:lang(ne),
   outline: 3px solid var(--sun);
   outline-offset: 4px;
 }
-@media (min-width: 1101px) {
+@media (min-width: 901px) {
   .nav-home {
     display: none;
   }
@@ -226,7 +229,7 @@ label:lang(ne),
 .nav-toggle svg {
   display: none;
 }
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .nav-language {
     order: 1;
     margin-left: auto;

@@ -68,7 +68,7 @@ export default function ResearchersPage() {
               <h2 className="m-0 text-2xl text-white">{t('continuing.heading')}</h2>
               <p className="m-0 mt-2 text-[#d9eeee]">{t('continuing.text')}</p>
             </div>
-            <Link to="/catalogue" className="inline-flex min-h-11 shrink-0 items-center self-start rounded-lg bg-sun px-4 font-bold text-night no-underline hover:bg-white sm:self-center">
+            <Link to="/research" className="inline-flex min-h-11 shrink-0 items-center self-start rounded-lg bg-sun px-4 font-bold text-night no-underline hover:bg-white sm:self-center">
               {t('browse')} <span aria-hidden="true" className="ml-2">→</span>
             </Link>
           </aside>
