@@ -11,10 +11,10 @@
   },
   "metrics": {
     "label": "Repository coverage",
-    "papers": "catalogued papers & reports",
-    "claims": "recorded source claims",
+    "papers": "catalogued source records",
+    "claims": "recorded findings",
     "years": "publication years represented",
-    "districts": "named districts & regions"
+    "districts": "districts named in the records"
   },
   "audiences": {
     "heading": "Start from what you need.",

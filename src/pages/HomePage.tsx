@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
 import { AudiencePathways } from '../features/home/AudiencePathways';
+import { COVERAGE } from '../features/home/coverage';
 import { useDataLabel } from '../i18n/useDataLabel';
 import { localizeDigits } from '../lib/format';
 import { Layout } from '../main.jsx';
@@ -38,10 +39,11 @@ export default function HomePage() {
         <p className="disclaimer"><Trans t={t} i18nKey="hero.disclaimer" components={{ b: <b /> }} /></p>
       </div>
       <section className="metrics" aria-label={t('metrics.label')}>
-      <div><strong>{localizeDigits('40+', i18n.language)}</strong><span>{t('metrics.papers')}</span></div>
-      <div><strong>{localizeDigits('70+', i18n.language)}</strong><span>{t('metrics.claims')}</span></div>
-      <div><strong>{localizeDigits('2000–25', i18n.language)}</strong><span>{t('metrics.years')}</span></div>
-      <div><strong>{localizeDigits('20+', i18n.language)}</strong><span>{t('metrics.districts')}</span></div>
+      {/* Exact figures, calculated from the catalogue (features/home/coverage.ts). */}
+      <div><strong>{localizeDigits(String(COVERAGE.records), i18n.language)}</strong><span>{t('metrics.papers')}</span></div>
+      <div><strong>{localizeDigits(String(COVERAGE.findings), i18n.language)}</strong><span>{t('metrics.claims')}</span></div>
+      <div><strong>{localizeDigits(`${COVERAGE.firstYear}–${COVERAGE.lastYear}`, i18n.language)}</strong><span>{t('metrics.years')}</span></div>
+      <div><strong>{localizeDigits(String(COVERAGE.districts), i18n.language)}</strong><span>{t('metrics.districts')}</span></div>
       </section>
     </section>
 
