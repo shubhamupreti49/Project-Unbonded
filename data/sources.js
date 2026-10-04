@@ -1219,13 +1219,13 @@ export const data = {
   "districts": [
     {
       "name": "Dang",
-      "lat": 28.0,
+      "lat": 28,
       "lon": 82.3,
       "identified": 1426,
       "eligible": 705,
       "landRecipients": 507,
       "cash": 8000,
-      "timber": 35.0,
+      "timber": 35,
       "note": "Recipient count is below the listed Red/Blue category count."
     },
     {
@@ -1236,7 +1236,7 @@ export const data = {
       "eligible": 1921,
       "landRecipients": 2147,
       "cash": 9421,
-      "timber": 35.0,
+      "timber": 35,
       "note": "Recipients exceed Red/Blue category count; categories are not aligned."
     },
     {
@@ -1247,7 +1247,7 @@ export const data = {
       "eligible": 11551,
       "landRecipients": 13931,
       "cash": 9086,
-      "timber": 0.0,
+      "timber": 0,
       "note": "Recipients exceed Red/Blue category count; categories are not aligned."
     },
     {
@@ -1269,7 +1269,7 @@ export const data = {
       "eligible": 4418,
       "landRecipients": 4506,
       "cash": 9506,
-      "timber": 35.0,
+      "timber": 35,
       "note": "Recipients exceed Red/Blue category count; categories are not aligned."
     }
   ],
