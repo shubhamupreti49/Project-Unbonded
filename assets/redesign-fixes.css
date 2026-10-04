@@ -1,7 +1,3 @@
-@media (max-width: 800px) {
-  .nav-links { top: 70px; }
-}
-
 /* The evidence counts sit on the hero's soft photographic dissolve, not against a hard edge. */
 .hero { position: relative; padding-bottom: 0; }
 .hero > .shell { position: relative; z-index: 2; }
@@ -56,7 +52,7 @@
 .team-link:hover, .team-link:focus-visible { color: var(--coral); outline: none; }
 
 /* Repository narrative: one petrol-to-ink field, deepening rather than changing themes. */
-.repository-narrative { --narrative-ink: .28; --scene-heading: var(--paper); --scene-copy: #d9e5db; --scene-line: var(--sun); --scene-numeral: rgba(230, 241, 232, .075); --marker-copy: #d9e5db; --marker-rule: rgba(230, 241, 232, .32); position: relative; height: 360vh; overflow: clip; isolation: isolate; background: radial-gradient(ellipse 80% 76% at 92% 6%, rgba(101, 167, 171, .38), transparent 66%), radial-gradient(ellipse 66% 74% at 6% 100%, rgba(23, 103, 120, .34), transparent 70%), linear-gradient(145deg, #16495a 0%, #123d51 51%, #0d3047 100%); }
+.repository-narrative { --narrative-ink: .28; --scene-heading: var(--paper); --scene-copy: #d9e5db; --scene-line: var(--sun); --scene-numeral: rgba(230, 241, 232, .075); --marker-copy: #d9e5db; --marker-rule: rgba(230, 241, 232, .32); position: relative; height: 280vh; overflow: clip; isolation: isolate; background: radial-gradient(ellipse 80% 76% at 92% 6%, rgba(101, 167, 171, .38), transparent 66%), radial-gradient(ellipse 66% 74% at 6% 100%, rgba(23, 103, 120, .34), transparent 70%), linear-gradient(145deg, #16495a 0%, #123d51 51%, #0d3047 100%); }
 .repository-narrative--1 { --narrative-ink: .64; }
 .repository-narrative--2, .repository-narrative--exit { --narrative-ink: 1; }
 .repository-narrative::before { content: ''; position: absolute; z-index: 0; inset: 0; background: radial-gradient(ellipse 76% 72% at 96% 4%, rgba(48, 122, 137, .68), transparent 67%), radial-gradient(ellipse 62% 70% at 4% 100%, rgba(113, 65, 76, .52), transparent 68%), linear-gradient(138deg, #071321 0%, #102e45 48%, #071b30 100%); opacity: var(--narrative-ink); transition: opacity 760ms cubic-bezier(.16, 1, .3, 1); pointer-events: none; }
@@ -138,7 +134,7 @@
 .about-team li:nth-child(even) { padding-left: 20px; border-left: 1px solid #526276; }
 
 @media (max-width: 800px) {
-  .repository-narrative { height: 330vh; }
+  .repository-narrative { height: 260vh; }
   .repository-narrative::after { right: -37vw; bottom: -52vw; width: 110vw; }
   .repository-narrative-frame, .repository-narrative-scenes { min-height: 100svh; }
   .repository-scene { width: auto; right: 0; left: 0; }
@@ -167,3 +163,157 @@
   .limitations-list p { margin-top: 12px; }
   .about-team { padding: 64px 0; }
 }
+
+/* ---------------------------------------------------------------------------
+ * UI polish pass (October 2026): footer, geography layout, search, forms and record pages.
+ * ------------------------------------------------------------------------ */
+
+/* Search boxes: the global input margin pushed the field 6px below its button. */
+.search-orbit input { margin: 0; }
+@media (max-width: 560px) {
+  .search-orbit { flex-direction: column; gap: 8px; }
+  .search-orbit input { border-radius: 8px; }
+  .search-orbit button { padding: 14px 20px; border-radius: 8px; }
+}
+
+/* Home evidence counts: keep figures on one line and tighten the cells on phones. */
+.metrics strong { white-space: nowrap; }
+@media (max-width: 560px) {
+  .hero .metrics div { padding: 18px 16px; }
+  .hero .metrics strong { font-size: 1.75rem; }
+  .hero .metrics span { font-size: .68rem; line-height: 1.45; }
+}
+
+/* Documentary rail: three films fill the row on desktop instead of leaving a ragged gap. */
+@media (min-width: 801px) {
+  .documentary-rail > .documentary-card { flex-basis: calc((100% - 40px) / 3); min-width: 255px; }
+}
+
+/* Filter dropdowns read in the body face, not the monospace label face they inherited. */
+.filterbar select, .timeline-toolbar select, .map-controls select {
+  min-height: 44px;
+  font: 600 .92rem/1.3 Manrope, Arial, "Noto Sans Devanagari", "Kohinoor Devanagari", "Nirmala UI", sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+/* Catalogue: close the empty band between the filters and the first result. */
+.catalogue-filter-band { padding-bottom: 20px; }
+.catalogue-page .catalogue-results { padding-top: 14px; }
+
+/* Contact cards: brand-coloured links instead of the browser's default blue and purple. */
+.contact-card dd a {
+  color: var(--navy);
+  text-decoration-color: var(--aqua);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.contact-card dd a:hover, .contact-card dd a:focus-visible { color: var(--aqua); }
+
+/* Source record page. */
+.source-record { padding-top: 36px; }
+.back-link {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: var(--navy);
+  font-weight: 800;
+  text-decoration: none;
+}
+.back-link:hover, .back-link:focus-visible { color: var(--aqua); text-decoration: underline; text-underline-offset: 4px; }
+.record-details { margin-top: 30px; }
+.detail-main .record-details h2 { margin-top: 0; }
+.record-details dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #d3e3de;
+  border-radius: 12px;
+  background: #d3e3de;
+}
+.record-details dl > div { padding: 14px 18px; background: #f3f9f6; }
+.record-details dl > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.record-details dt {
+  margin-bottom: 5px;
+  color: #b74f34;
+  font: 800 .68rem/1.2 "DM Mono", monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.record-details dd { margin: 0; color: var(--ink); font-size: .95rem; overflow-wrap: anywhere; }
+.record-detail-note { display: block; margin-top: 3px; color: var(--muted); font-size: .86rem; }
+@media (max-width: 640px) { .record-details dl { grid-template-columns: 1fr; } }
+
+/* Geography: the legend lives inside the description card, so the two can never drift apart. */
+.geo-stage-copy .geo-legend {
+  position: static;
+  width: auto;
+  margin: 14px 0 0;
+  padding: 12px 0 0;
+  border-top: 1px solid rgba(228, 244, 241, .18);
+  border-radius: 0;
+  background: none;
+}
+/* Below 1000px the overlay card would hide central districts, so description, indicator and map stack. */
+@media (max-width: 1000px) {
+  .geo-stage { display: flex; flex-direction: column; gap: 18px; min-height: 0; padding: 24px 20px 28px; overflow: visible; }
+  .geo-stage-copy, .map-controls { position: static; width: auto; }
+  .geo-stage-copy { padding: 18px 20px; }
+  .geo-stage-copy h1 { font-size: clamp(1.9rem, 7vw, 2.35rem); }
+  .map-controls { max-width: 340px; }
+  .map-panel { position: relative; inset: auto; margin: 0 -10px; padding: 0; }
+  .district-map { height: auto; }
+  .map-related-prompt { position: static; width: auto; transform: none; }
+}
+
+/* Footer: brand, site map and credits, so every page ends with a way onward. */
+.site-footer { padding: 56px 0 28px; color: #c8d4cb; font-size: .9rem; }
+.footer-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.4fr) minmax(0, .9fr); gap: 36px 56px; }
+.footer-brand b { display: block; margin-bottom: 10px; color: #fff; font: 700 1.2rem/1.2 "Libre Baskerville", Georgia, serif; }
+.footer-brand p { max-width: 38ch; margin: 0; color: #b9c9cf; line-height: 1.6; }
+.site-footer h2 { margin: 0 0 14px; color: var(--sun); font: 800 .72rem/1.2 "DM Mono", monospace; letter-spacing: .08em; text-transform: uppercase; }
+.site-footer ul { display: grid; gap: 10px 28px; margin: 0; padding: 0; list-style: none; }
+.site-footer nav:first-of-type ul { grid-template-columns: repeat(2, max-content); grid-template-rows: repeat(4, auto); grid-auto-flow: column; }
+.site-footer nav a { color: #e4eef0; text-decoration: none; }
+.site-footer nav a:hover, .site-footer nav a:focus-visible { color: var(--sun); text-decoration: underline; text-underline-offset: 4px; }
+.footer-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; margin-top: 44px; color: #9fb3ba; font-size: .8rem; }
+/* The divider is a full-width flex row, so it spans the text column rather than the shell's padding. */
+.footer-meta::before { content: ""; flex-basis: 100%; height: 1px; margin-bottom: 12px; background: rgba(255, 255, 255, .12); }
+.footer-meta p { margin: 0; }
+@media (max-width: 800px) {
+  .site-footer { padding-top: 44px; }
+  .footer-grid { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 32px 24px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .site-footer nav:first-of-type ul { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-flow: row; }
+  .footer-meta { margin-top: 32px; }
+}
+
+/* Not-found pages (unknown route or source id): a clear way back instead of a bare default link. */
+.not-found { min-height: 46vh; padding-top: 24px; }
+.not-found h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
+.not-found a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+.not-found a:hover, .not-found a:focus-visible { background: var(--aqua); }
+@media (max-width: 560px) {
+  .detail-main h1 { font-size: 1.9rem; line-height: 1.12; }
+}
+@media (max-width: 1000px) {
+  .geo-followup { padding-top: 40px; }
+}
+
+/* One content width everywhere: legacy .shell (padding included) now matches the 1180px
+   content column of the Tailwind pages, so edges line up from page to page. */
+.shell { max-width: 1236px; }
+
+/* Short pages: the footer sits at the bottom of the window instead of floating mid-screen. */
+#root { display: flex; flex-direction: column; min-height: 100vh; }
+#root > main { flex: 1 0 auto; }

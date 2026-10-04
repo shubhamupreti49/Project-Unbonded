@@ -101,6 +101,8 @@ label:lang(ne),
 .methodology-hero-counts span:lang(ne),
 .methodology-step-number:lang(ne),
 .limitations-list article:lang(ne)::before,
+.record-details dt:lang(ne),
+.site-footer h2:lang(ne),
 .font-mono:lang(ne) {
   font-family: Manrope, Arial, "Noto Sans Devanagari", "Kohinoor Devanagari", "Nirmala UI", sans-serif !important;
 }
@@ -135,23 +137,23 @@ label:lang(ne),
 }
 
 /* ---------------------------------------------------------------------------
- * Legacy header: make room for the new nav items and the language toggle.
- * The original CSS collapses the menu at 800px. With ten links the English row needs
- * ~1,290px, so the header gets a wider container than page content and the menu
- * collapses below 1360px. Re-measure if you add or rename a nav item.
+ * Site header.
+ * Desktop shows six primary links plus an "About" menu (How to use, Contacts, Researchers);
+ * the logo doubles as the Home link. That row needs ~1,050px in English and Nepali, so the
+ * links collapse into the Menu panel below 1100px. Re-measure if you add or rename a nav item.
  * ------------------------------------------------------------------------ */
 .site-header .shell {
   max-width: 1400px;
 }
-@media (min-width: 1361px) {
-  /* Desktop row only: on phones the brand may wrap to leave room for the toggle and menu. */
-  .brand {
-    flex-shrink: 0;
-    white-space: nowrap;
-  }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 .nav-links {
-  gap: 16px;
+  align-items: center;
+  gap: 18px;
   margin-left: auto;
   font-size: 0.9rem;
 }
@@ -159,41 +161,156 @@ label:lang(ne),
   white-space: nowrap;
 }
 .nav-language {
-  margin-left: 20px;
+  margin-left: 22px;
 }
-@media (max-width: 1360px) {
+.nav-group {
+  position: relative;
+}
+.nav-group-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  font: inherit;
+  white-space: nowrap;
+}
+.nav-group-toggle svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.18s ease-out;
+}
+.nav-group.open .nav-group-toggle svg {
+  transform: rotate(180deg);
+}
+.nav-group-toggle:hover,
+.nav-group-toggle.active,
+.nav-group.open .nav-group-toggle {
+  color: var(--sun);
+}
+.nav-group-toggle:focus-visible {
+  outline: 3px solid var(--sun);
+  outline-offset: 4px;
+}
+@media (min-width: 1101px) {
+  .nav-home {
+    display: none;
+  }
+  .nav-submenu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 22px);
+    right: -12px;
+    min-width: 230px;
+    flex-direction: column;
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    background: var(--night);
+    box-shadow: 0 18px 40px rgba(2, 10, 24, 0.4);
+  }
+  .nav-group.open .nav-submenu {
+    display: flex;
+  }
+  .nav-submenu a {
+    padding: 10px 12px;
+    border-radius: 8px;
+  }
+  .nav-submenu a:hover,
+  .nav-submenu a:focus-visible {
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
+.nav-toggle svg {
+  display: none;
+}
+@media (max-width: 1100px) {
   .nav-language {
     order: 1;
     margin-left: auto;
-    margin-right: 12px;
+    margin-right: 8px;
   }
   .nav-toggle {
     order: 2;
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 44px;
+    padding: 0 4px;
     background: none;
     border: 0;
     color: #fff;
   }
+  .nav-toggle svg {
+    display: block;
+    width: 22px;
+    height: 22px;
+  }
+  /* The panel opens directly under the header, whatever height the header has at this width. */
   .nav-links {
     display: none;
     position: absolute;
-    top: 74px;
+    top: 100%;
     left: 0;
     right: 0;
+    max-height: calc(100vh - 100%);
+    overflow-y: auto;
     margin: 0;
-    padding: 15px 28px;
+    padding: 8px 28px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     background: var(--night);
+    box-shadow: 0 24px 40px rgba(2, 10, 24, 0.35);
     flex-direction: column;
+    align-items: stretch;
+    gap: 0;
     font-size: 1rem;
   }
   .nav-links.open {
     display: flex;
   }
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    min-height: 46px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  /* In the panel the "About" links are listed in full, so the toggle is not needed. */
+  .nav-group-toggle {
+    display: none;
+  }
+  .nav-submenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-submenu a:last-child {
+    border-bottom: 0;
+  }
 }
 @media (max-width: 800px) {
-  /* Matches the mobile header offset set in assets/redesign-fixes.css. */
   .nav-links {
-    top: 70px;
-    padding: 15px 20px;
+    padding: 8px 20px 18px;
+  }
+}
+/* Small phones: keep the brand on one line beside the language switch and menu button. */
+@media (max-width: 480px) {
+  .brand {
+    font-size: 1rem;
+  }
+  .brand b {
+    width: 32px;
+    height: 32px;
+    margin-right: 7px;
+  }
+  .brand b svg {
+    width: 17px;
+    height: 17px;
+  }
+  .nav-toggle span {
+    display: none;
+  }
+  .nav-language {
+    margin-right: 4px;
   }
 }

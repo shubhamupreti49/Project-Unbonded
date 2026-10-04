@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { PageHero } from '../components/PageHero';
 import { DASHBOARDS } from '../features/dashboards/dashboards';
 import { ShinyEmbed } from '../features/dashboards/ShinyEmbed';
@@ -29,6 +30,11 @@ export default function DashboardsPage() {
                   staticVersionUrl={dashboard.staticVersionUrl}
                   loadStrategy={dashboard.loadStrategy}
                 />
+                {/* Until a dashboard is live, point readers to the map that already shows its district figures. */}
+                {!dashboard.src && <p className="mt-4 mb-0 text-muted">
+                  {t('embed.interim')}{' '}
+                  <Link to="/geography" className="font-bold text-navy underline decoration-aqua decoration-2 underline-offset-4 hover:text-aqua">{t('embed.interimLink')} →</Link>
+                </p>}
               </section>
             );
           })}

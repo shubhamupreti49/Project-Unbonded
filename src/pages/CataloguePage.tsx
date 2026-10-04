@@ -69,7 +69,13 @@ export default function CataloguePage() {
     <section className="catalogue-hero"><div className="shell">
       <p className="catalogue-index">{t('hero.eyebrow')}</p><h1>{t('hero.title')}</h1>
       <p>{t('hero.lead')}</p>
-      <form className="search-orbit" role="search" onSubmit={(event) => event.preventDefault()}>
+      {/* Results filter as the reader types; submitting jumps to them and closes the phone keyboard. */}
+      <form className="search-orbit" role="search" onSubmit={(event) => {
+        event.preventDefault();
+        event.currentTarget.querySelector('input')?.blur();
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        document.getElementById('catalogue-results')?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+      }}>
         <input value={search} onChange={(event) => update('q', event.target.value)} aria-label={t('search.label')} aria-describedby="catalogue-result-count" placeholder={t('search.placeholder')} />
         <button type="submit">{t('search.button')}</button>
       </form>
@@ -87,7 +93,7 @@ export default function CataloguePage() {
       </div>
       {activeFilters.length > 0 && <div className="active-filter-list" aria-label={t('filters.active')}>{activeFilters.map(([key, value, label]) => <button key={`${key}-${value}`} type="button" onClick={() => update(key, false)}>{label}<span aria-hidden="true">×</span><span className="sr-only"> {t('filters.remove')}</span></button>)}</div>}
     </div></section>
-    <section className="section catalogue-results"><div className="shell">
+    <section id="catalogue-results" className="section catalogue-results"><div className="shell">
       <OriginalLanguageNotice />
       <p id="catalogue-result-count" className="result-meta" aria-live="polite">{t('results.count', { shown: filtered.length, total: data.sources.length })}</p>
       <div className="catalogue">{filtered.length ? filtered.map((source) => <SourceCard key={source.id} source={source} />) : <div className="empty-state"><h2>{t('results.emptyTitle')}</h2><p>{t('results.emptyBody')}</p><button className="clear-filters" type="button" onClick={resetFilters}>{t('results.showAll')}</button></div>}</div>

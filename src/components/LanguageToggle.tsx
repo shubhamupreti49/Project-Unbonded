@@ -33,7 +33,7 @@ export function LanguageToggle({ className = '' }: LanguageToggleProps) {
             aria-label={nativeName}
             onClick={() => { if (!isActive) void changeLanguage(code); }}
             className={[
-              'min-h-11 rounded-full border-0 px-3 font-sans text-sm leading-none font-bold transition-colors sm:min-h-9',
+              'min-h-11 rounded-full border-0 px-2.5 font-sans sm:px-3 text-sm leading-none font-bold transition-colors sm:min-h-9',
               'focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-sun',
               isActive ? 'bg-sun text-night' : 'bg-transparent text-white hover:bg-white/10',
             ].join(' ')}

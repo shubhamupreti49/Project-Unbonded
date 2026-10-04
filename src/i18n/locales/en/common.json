@@ -6,6 +6,7 @@
     "menu": "Menu",
     "open": "Open navigation",
     "close": "Close navigation",
+    "closeShort": "Close",
     "home": "Home",
     "library": "Library",
     "catalogue": "Source catalogue",
@@ -15,7 +16,8 @@
     "geography": "Geography",
     "methodology": "How to use",
     "contacts": "Contacts",
-    "researchers": "Researchers: Phase One"
+    "researchers": "Researchers: Phase One",
+    "about": "About"
   },
   "language": {
     "label": "Choose language"
@@ -54,6 +56,8 @@
   "yearUnknown": "Year not recorded",
   "originalLanguage": "Source records, titles and findings are shown in their original language (English).",
   "footer": {
+    "tagline": "A source-led evidence repository on bonded labour, rehabilitation and post-liberation vulnerability in Nepal.",
+    "explore": "Explore",
     "lastCompiled": "Last compiled: {{date}}"
   },
   "notFound": {

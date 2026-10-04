@@ -4,6 +4,15 @@
   "noCitation": "Citation not yet recorded.",
   "viewOriginal": "View original paper / source ↗",
   "noOriginal": "No stable original-paper link is recorded for this source.",
+  "details": {
+    "heading": "Record details",
+    "population": "Study population",
+    "geography": "Geography",
+    "sampleSize": "Sample size",
+    "method": "Method",
+    "systems": "Labour system",
+    "themes": "Themes"
+  },
   "findings": "Recorded findings",
   "noNote": "No additional repository note recorded.",
   "notFound": {

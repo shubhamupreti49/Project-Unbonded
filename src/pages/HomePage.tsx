@@ -86,8 +86,11 @@ function DocumentaryRail({ videos }: { videos: Documentary[] }) {
     if (rail) rail.scrollBy({ left: direction * rail.clientWidth * .8 });
   };
 
+  // When every film fits on screen there is nothing to scroll, so the arrows step aside.
+  const fits = atStart && atEnd;
+
   return <div className="shell documentary-rail-wrap">
-    <button type="button" className="rail-nav rail-nav--prev" aria-label={t('documentaries.previous')} disabled={atStart} onClick={() => nudge(-1)}>‹</button>
+    <button type="button" className="rail-nav rail-nav--prev" aria-label={t('documentaries.previous')} disabled={atStart} hidden={fits} onClick={() => nudge(-1)}>‹</button>
     <div className="documentary-rail" ref={railRef} onScroll={syncEdges} tabIndex={0} role="group" aria-label={t('documentaries.railLabel')}>
       {videos.map((video) => <a key={video.id} className="documentary-card" href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer">
         <img src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`} alt={t('documentaries.thumbnail', { title: video.title })} loading="lazy" />
@@ -95,7 +98,7 @@ function DocumentaryRail({ videos }: { videos: Documentary[] }) {
         <div><p className="media-type">{t('documentaries.mediaType')}</p><h3 lang="en">{video.title}</h3><p className="documentary-channel">{t('documentaries.by', { channel: video.channel })}</p><span>{t('documentaries.watch')}</span></div>
       </a>)}
     </div>
-    <button type="button" className="rail-nav rail-nav--next" aria-label={t('documentaries.next')} disabled={atEnd} onClick={() => nudge(1)}>›</button>
+    <button type="button" className="rail-nav rail-nav--next" aria-label={t('documentaries.next')} disabled={atEnd} hidden={fits} onClick={() => nudge(1)}>›</button>
   </div>;
 }
 
