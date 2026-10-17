@@ -11,10 +11,5 @@
     "phone": "Phone",
     "contactPage": "Contact page",
     "openContact": "Open public contact details"
-  },
-  "team": {
-    "heading": "About Team Unbonded",
-    "text": "This repository was built by Team Unbonded at the Uunchai Summer Mentorship Program, a Nepal-rooted initiative creating pathways for talented students to engage with real-world opportunities.",
-    "listLabel": "Team Unbonded contributors"
   }
 }

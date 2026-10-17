@@ -20,6 +20,7 @@ const ArticlesPage = lazy(() => import('./pages/ArticlesPage'));
 const ArticlePage = lazy(() => import('./pages/ArticlePage'));
 const WriteForUsPage = lazy(() => import('./pages/WriteForUsPage'));
 const ResearchersPage = lazy(() => import('./pages/ResearchersPage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
 
 // Keeps the header visible while a route chunk downloads.
 const fallback = <Layout><RouteFallback /></Layout>;
@@ -57,6 +58,7 @@ export default function App() {
       <Route path="/source" element={<SourceDetailPage />} />
       <Route path="/contacts" element={<ContactsPage />} />
       <Route path="/researchers-phase-one" element={<ResearchersPage />} />
+      <Route path="/about" element={<AboutPage />} />
 
       {/* Former tabs: old links and bookmarks land on their replacement. */}
       <Route path="/library" element={<LegacyResearchRedirect from="library" />} />

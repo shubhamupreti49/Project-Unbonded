@@ -1,0 +1,8 @@
+{
+  "title": "Unbonded Archive Catalogue of Sources on Bonded Labour in Nepal",
+  "upload_type": "dataset",
+  "description": "A curated catalogue of research papers, reports, legal texts and datasets on the Kamaiya, Haliya, Haruwa-Charuwa and Kamlari bonded-labour systems in Nepal, with each source's method, study population, sample, geography, recorded findings, citation and link. The website is at https://unbondedarchive.org/; the catalogue files are built into data/ on the site. Corrections and additions are logged in data/CORRECTIONS.md.",
+  "creators": [{ "name": "Unbonded Archive" }],
+  "license": "cc-by-4.0",
+  "keywords": ["bonded labour", "debt bondage", "forced labour", "Nepal", "Kamaiya", "Haliya", "Haruwa-Charuwa", "Kamlari"]
+}

@@ -85,6 +85,11 @@ function writePage(pagePath, meta, body, extra = {}) {
 }
 
 /* ── Page bodies ──────────────────────────────────────────────────────────────────────── */
+const eventSource = (source) => {
+  const record = source.record && sources.find((entry) => entry.id === source.record);
+  if (record) return `<a href="${recordPath(record.id)}">${esc(record.title.split(':')[0].trim())}</a>${record.year && record.title.includes(String(record.year)) ? '' : ` (${esc(yearOf(record))})`}`;
+  return source.url ? `<a href="${esc(source.url)}">${esc(source.label)}</a>` : esc(source.label);
+};
 const recordLink = (source) => `<li><a href="${recordPath(source.id)}">${esc(source.title)}</a>. ${esc(source.author)}, ${esc(yearOf(source))}.</li>`;
 const byNewest = [...sources].sort((a, b) => (b.year || 0) - (a.year || 0));
 const years = sources.map((source) => source.year).filter(Boolean);
@@ -97,7 +102,7 @@ function staticBody(page) {
     case '/research':
       return `${intro}<p>Download the full catalogue: <a href="${CATALOGUE_FILES.csv}">CSV</a> · <a href="${CATALOGUE_FILES.json}">JSON</a> · <a href="${CATALOGUE_FILES.readme}">field guide</a>. Updated ${CATALOGUE_UPDATED}.</p><h2>All records</h2><ol>${byNewest.map(recordLink).join('')}</ol>`;
     case '/timeline':
-      return `${intro}<ol>${[...data.events].sort((a, b) => b.year - a.year).map((event) => `<li><b>${event.year}: ${event.url ? `<a href="${esc(event.url)}">${esc(event.title)}</a>` : esc(event.title)}.</b> ${esc(event.text)}</li>`).join('')}</ol>`;
+      return `${intro}<ol>${[...data.events].sort((a, b) => a.date.localeCompare(b.date)).map((event) => `<li id="${esc(event.id)}"><b>${esc(event.date)}: ${esc(event.title)}.</b> ${esc(event.text)} Sources: ${event.sources.map(eventSource).join('; ')}.</li>`).join('')}</ol>`;
     case '/articles':
       return `${intro}${articles.length ? `<ul>${articles.map((article) => `<li><a href="${articlePath(article.slug)}">${esc(article.title)}</a>${article.author ? `, by ${esc(article.author)}` : ''}</li>`).join('')}</ul>` : '<p>The first articles are on their way.</p>'}`;
     default:
@@ -140,6 +145,7 @@ const datasetLd = {
   dateModified: CATALOGUE_UPDATED,
   inLanguage: 'en',
   isAccessibleForFree: true,
+  license: 'https://creativecommons.org/licenses/by/4.0/',
   keywords: ['bonded labour', 'debt bondage', 'forced labour', 'Nepal', 'Kamaiya', 'Haliya', 'Haruwa-Charuwa', 'Kamlari', 'rehabilitation'],
   spatialCoverage: { '@type': 'Place', name: 'Nepal' },
   temporalCoverage: `${Math.min(...years)}/${Math.max(...years)}`,
@@ -218,6 +224,7 @@ fs.writeFileSync(path.join(dist, CATALOGUE_FILES.csv), `\uFEFF${csv}\r\n`);
 fs.writeFileSync(path.join(dist, CATALOGUE_FILES.json), `${JSON.stringify({
   name: datasetLd.name,
   version: CATALOGUE_UPDATED,
+  license: 'CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)',
   url: canonicalUrl('/research'),
   recordCount: sorted.length,
   fields: Object.fromEntries(FIELDS.map(([name, description]) => [name, description])),
@@ -245,6 +252,12 @@ READ BEFORE USING
     figures across records into totals or rates.
   - Corrections to the catalogue are logged at
     https://github.com/shubhamupreti49/Project-Unbonded/blob/main/data/CORRECTIONS.md
+
+LICENCE
+  The catalogue data (record details, coding and recorded findings) are shared under the
+  Creative Commons Attribution 4.0 licence (CC BY 4.0): reuse them with credit to
+  ${SITE_NAME}. https://creativecommons.org/licenses/by/4.0/
+  Linked documents remain under their owners' terms.
 
 HOW TO CITE THE CATALOGUE (Chicago author-date)
   ${SITE_NAME}. ${citationYear}. Unbonded Archive Catalogue of Sources on Bonded Labour in Nepal.

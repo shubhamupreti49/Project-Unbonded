@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "eyebrow": "About the project",
+    "title": "About Unbonded Archive",
+    "lead": "A student-led research archive that gathers the evidence on bonded labour in Nepal (the Kamaiya, Haliya, Haruwa-Charuwa and Kamlari systems) and on what has happened to freed labourers since abolition."
+  },
+  "purpose": {
+    "heading": "What the archive is for",
+    "text": "Evidence on bonded labour in Nepal is scattered across journal articles, NGO and government reports, university theses, laws and news reports, in English and Nepali. Much of it is hard to find, and some of it is disappearing from the web. The archive brings it together in one searchable place, records what each source studied and how, and links to the original, so that a researcher, journalist or student can find in an afternoon what would otherwise take weeks."
+  },
+  "holdings": {
+    "heading": "What it holds",
+    "records": "source records",
+    "findings": "records with findings recorded",
+    "events": "dated timeline events",
+    "districts": "districts on the map, each linked to its records"
+  },
+  "process": {
+    "heading": "How sources are added",
+    "steps": [
+      {
+        "title": "Find",
+        "text": "Researchers search academic databases, university repositories and the publications of government bodies and organisations. Searching has so far been mainly in English; Nepali-language searching is being added."
+      },
+      {
+        "title": "Screen",
+        "text": "Every candidate is checked for relevance and for duplicates, and the decision and its reason are recorded in a screening sheet."
+      },
+      {
+        "title": "Verify",
+        "text": "Title, authors, year and publication details are taken from the source itself or the publisher's record, never from a search engine's listing."
+      },
+      {
+        "title": "Catalogue",
+        "text": "A researcher reads the source and records its population, place, sample, method and findings. Until then the record is marked “Partial metadata” and says that its findings are pending."
+      },
+      {
+        "title": "Correct",
+        "text": "Every addition and correction is listed, with its reason, in a public catalogue log."
+      }
+    ],
+    "logLink": "Read the catalogue log"
+  },
+  "team": {
+    "heading": "Who builds it",
+    "text": "Unbonded Archive was started by Team Unbonded at the Uunchai Summer Mentorship Program, a Nepal-rooted initiative that creates pathways for students to work on real-world problems. It is led by Shubham Upreti.",
+    "lead": "Project lead",
+    "researchersLink": "Meet the researchers"
+  },
+  "limits": {
+    "heading": "Read the limits",
+    "text": "This is a curated collection, not a systematic review. Coverage is uneven across systems and languages, figures from different sources are not comparable, and the map shows where evidence exists, not how common bonded labour is.",
+    "link": "How to use the repository"
+  },
+  "cite": {
+    "heading": "How to cite",
+    "intro": "For a substantive claim, cite the original source. To cite the archive itself, or the catalogue as a dataset, use one of these (Chicago author-date):",
+    "site": "The website",
+    "dataset": "The catalogue (dataset)",
+    "inText": "In the text:"
+  },
+  "licence": {
+    "heading": "Licence",
+    "text": "The catalogue data (record details, coding and recorded findings) are shared under a Creative Commons Attribution 4.0 licence (CC BY 4.0): you may reuse them with credit to Unbonded Archive. Linked documents remain under their owners' terms.",
+    "link": "Licence terms"
+  },
+  "contact": {
+    "heading": "Corrections and contact",
+    "text": "If you find an error, or know a source that belongs here, contact the project lead through",
+    "linkText": "shubhamupreti.com.np"
+  }
+}

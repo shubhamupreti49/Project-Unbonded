@@ -36,7 +36,9 @@
   "cite": {
     "copy": "Copy citation",
     "copied": "Citation copied",
-    "failed": "Couldn’t copy. Select the citation on the original source instead."
+    "failed": "Couldn’t copy. Select the citation on the original source instead.",
+    "heading": "Cite this source",
+    "note": "Citation as catalogued (APA). Check it against the original before you use it."
   },
   "articles": {
     "eyebrow": "Read more",

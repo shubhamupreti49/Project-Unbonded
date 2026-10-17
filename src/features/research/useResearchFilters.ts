@@ -15,6 +15,8 @@ export const FACETS = [
   { id: 'theme', options: THEMES, valuesOf: (record: ResearchRecord) => record.source.themes ?? [] },
   { id: 'method', options: METHODS, valuesOf: (record: ResearchRecord) => (record.source.methodType ? [record.source.methodType] : []) },
   { id: 'decade', options: DECADES, valuesOf: (record: ResearchRecord) => (record.decade ? [record.decade] : []) },
+  // Newly catalogued records carry bibliographic details first; their findings are added once someone has read them.
+  { id: 'findings', options: ['recorded', 'pending'], valuesOf: (record: ResearchRecord) => [record.source.claims?.length ? 'recorded' : 'pending'] },
 ] as const;
 
 export type FacetId = (typeof FACETS)[number]['id'];

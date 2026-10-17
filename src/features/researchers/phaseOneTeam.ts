@@ -19,6 +19,11 @@ export const PHASE_ONE_RESEARCHERS: Researcher[] = [
   { name: 'Shushant Upreti', contributorKey: 'Shusant' },
 ];
 
+/** Researchers cataloguing now. */
+export const CURRENT_RESEARCHERS: Researcher[] = [
+  { name: 'Neaya', contributorKey: 'Neaya' },
+];
+
 /**
  * Number of source records each researcher catalogued, read from the source workbook data.
  * Records later retired as duplicates (data.retired) still count: the cataloguing was done.

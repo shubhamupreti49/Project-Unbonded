@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { PageHero } from '../components/PageHero';
-import { countCataloguedRecords, PHASE_ONE_RESEARCHERS } from '../features/researchers/phaseOneTeam';
+import { countCataloguedRecords, CURRENT_RESEARCHERS, PHASE_ONE_RESEARCHERS } from '../features/researchers/phaseOneTeam';
 import { toLanguageCode } from '../i18n/languages';
 import { formatNumber } from '../lib/format';
 import { Layout } from '../main.jsx';
@@ -16,7 +16,10 @@ export default function ResearchersPage() {
   const language = toLanguageCode(i18n.resolvedLanguage);
 
   const researchers = useMemo(
-    () => PHASE_ONE_RESEARCHERS.map((researcher) => ({ ...researcher, records: countCataloguedRecords(researcher) })),
+    () => [
+      ...CURRENT_RESEARCHERS.map((researcher) => ({ ...researcher, current: true, records: countCataloguedRecords(researcher) })),
+      ...PHASE_ONE_RESEARCHERS.map((researcher) => ({ ...researcher, current: false, records: countCataloguedRecords(researcher) })),
+    ],
     [],
   );
   const totalRecords = researchers.reduce((total, researcher) => total + researcher.records, 0);
@@ -52,11 +55,11 @@ export default function ResearchersPage() {
                 </span>
                 <div className="min-w-0">
                   <h2 lang="en" className="m-0 text-xl text-navy">{researcher.name}</h2>
-                  <p className="m-0 mt-1 text-sm font-bold text-coral">{t('card.role')}</p>
+                  <p className="m-0 mt-1 text-sm font-bold text-coral">{t(researcher.current ? 'card.currentRole' : 'card.role')}</p>
                   <p className="m-0 mt-2 text-sm text-muted">{t('card.records', { count: researcher.records })}</p>
                   <p className="m-0 mt-3 inline-flex items-center gap-1.5 rounded-full bg-haruwa/15 px-2.5 py-0.5 text-xs font-bold text-[#1c6660]">
                     <svg viewBox="0 0 16 16" className="size-3.5" fill="currentColor" aria-hidden="true"><path d="M6.4 11.2 3.2 8l1.1-1.1 2.1 2.1 5.3-5.3L12.8 4.8z" /></svg>
-                    {t('card.status')}
+                    {t(researcher.current ? 'card.currentStatus' : 'card.status')}
                   </p>
                 </div>
               </li>

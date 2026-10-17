@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "Evidence landscape",
     "title": "Geographic coverage",
-    "lead": "Districts are coloured where repository sources identify a bonded-labour system. Click only the districts with recorded local figures or a scoped study profile."
+    "lead": "Districts are coloured where a record in the archive documents a bonded-labour system there. Select a coloured district to see its figures and the records behind them."
   },
   "legend": {
     "overlap": "Overlapping coverage"
@@ -29,15 +29,19 @@
     "close": "Close district details",
     "groupData": "{{system}} data",
     "noValue": "No comparable district-level value is recorded for this indicator.",
-    "scrollPrompt": "Scroll down for related sources"
+    "scrollPrompt": "Scroll down for related sources",
+    "figureSource": "Source:",
+    "documentedIn_one": "Documented in {{count}} record",
+    "documentedIn_other": "Documented in {{count}} records"
   },
   "howToRead": {
     "label": "How to read this map:",
-    "text": "Colour indicates that a repository source identifies the named system in that district. A highlighted but unclickable district has no credible district-level numeric record in this repository. Figures shown in the panel retain their original source scope."
+    "text": "Colour shows that at least one record in the archive documents the system in that district. It does not measure prevalence, and a district without colour may simply have no record here yet. Each figure in the district panel names the record it comes from and keeps that source’s scope and date.",
+    "boundaries": "Boundaries: the district outline file used here has no shapes for Dailekh or Rupandehi, so those two districts appear as gaps."
   },
   "districtSources": {
     "eyebrow": "Place-specific sources",
-    "heading": "Sources specifically coded to {{district}}",
+    "heading": "Records that document {{district}}",
     "empty": "No source record is explicitly coded to this district."
   }
 }

@@ -14,7 +14,7 @@ export const DEFAULT_LANGUAGE: LanguageCode = 'en';
 /** Translation namespaces. One JSON file per namespace, per language. */
 export const NAMESPACES = [
   'common', 'home', 'research', 'articles', 'dashboards', 'oralHistories', 'researchers',
-  'timeline', 'geography', 'source', 'methodology', 'contacts',
+  'timeline', 'geography', 'source', 'methodology', 'contacts', 'about',
 ] as const;
 export type Namespace = (typeof NAMESPACES)[number];
 

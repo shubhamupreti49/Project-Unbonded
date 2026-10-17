@@ -15,9 +15,10 @@
     "articles": "Articles",
     "methodology": "How to use",
     "contacts": "Contacts",
-    "researchers": "Researchers: Phase One",
+    "researchers": "Researchers",
     "about": "About",
-    "writeForUs": "Write for us"
+    "writeForUs": "Write for us",
+    "aboutProject": "About the project"
   },
   "language": {
     "label": "Choose language"
@@ -64,5 +65,7 @@
     "title": "Page not found",
     "home": "Return home."
   },
-  "dataLabels": {}
+  "dataLabels": {
+    "Unspecified": "Method not yet recorded"
+  }
 }

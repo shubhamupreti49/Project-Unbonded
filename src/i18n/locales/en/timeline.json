@@ -2,13 +2,23 @@
   "hero": {
     "eyebrow": "Evidence in time",
     "title": "History & policy timeline",
-    "lead": "Laws, abolition dates and policy milestones for Nepal’s bonded-labour systems, newest first.",
+    "lead": "Laws, government declarations, movements and research on bonded labour in Nepal, from 1926 to today, oldest first. Every entry names its source.",
     "papersLink": "Looking for papers by year? Browse Research, sorted by date"
   },
   "history": {
     "label": "Policy and historical timeline",
-    "recordType": "Policy / historical record",
-    "legalText": "Open official legal text"
+    "sources": "Sources:"
+  },
+  "filters": {
+    "label": "Show events by type"
+  },
+  "kinds": {
+    "all": "All",
+    "law": "Law & constitution",
+    "declaration": "Government declaration",
+    "movement": "Movement",
+    "international": "International commitment",
+    "research": "Research"
   },
   "events": {}
 }

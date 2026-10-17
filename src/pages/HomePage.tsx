@@ -3,9 +3,11 @@ import { Trans, useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
 import { AudiencePathways } from '../features/home/AudiencePathways';
 import { COVERAGE } from '../features/home/coverage';
+import { data } from '../../data/sources.js';
 import { useDataLabel } from '../i18n/useDataLabel';
-import { localizeDigits } from '../lib/format';
+import { formatYear, localizeDigits } from '../lib/format';
 import { Layout } from '../main.jsx';
+import { recordPath } from '../seo/site.js';
 
 // One-click routes into Research for the four systems the archive centres on.
 const systemShortcuts = ['Kamaiya', 'Haliya', 'Haruwa-Charuwa', 'Kamlari'];
@@ -13,7 +15,7 @@ const systemShortcuts = ['Kamaiya', 'Haliya', 'Haruwa-Charuwa', 'Kamlari'];
 const videos = [
   { id: 'TUPh9pJV1pg', title: 'The Bridge Project: combatting bonded labour in Nepal', channel: 'International Labour Organization' },
   { id: 'Ng5yiiRoPt0', title: 'Ending Agricultural Bonded Labour in Nepal (EABL) Project', channel: 'ActionAid Nepal' },
-  { id: 'zRUTiZ6qW58', title: 'Documentary perspective on bonded labour in Nepal', channel: 'The Freedom Fund' },
+  { id: 'zRUTiZ6qW58', title: 'The Harawa-Charawa journey to liberation', channel: 'The Freedom Fund' },
 ];
 
 export default function HomePage() {
@@ -50,6 +52,8 @@ export default function HomePage() {
     {/* Audience entry points come straight after the hero so each reader is routed quickly. */}
     <AudiencePathways />
 
+    <RecentlyAdded />
+
     <IntroNarrative />
 
     <section className="section documentary-section">
@@ -68,6 +72,33 @@ export default function HomePage() {
     </section>
 
   </Layout>;
+}
+
+// Record ids are assigned in the order records are catalogued, so the highest ids are the newest additions.
+const RECENT = [...data.sources].sort((a, b) => Number(b.id.slice(4)) - Number(a.id.slice(4))).slice(0, 6);
+
+function RecentlyAdded() {
+  const { t, i18n } = useTranslation('home');
+  const dataLabel = useDataLabel();
+  return <section className="ua bg-mint px-5 py-14 sm:px-7 lg:py-16" aria-labelledby="recently-added-title">
+    <div className="mx-auto max-w-[1180px]">
+      <div className="flex flex-wrap items-end justify-between gap-4">
+        <div className="max-w-2xl">
+          <h2 id="recently-added-title" className="m-0 text-3xl text-navy">{t('recent.heading')}</h2>
+          <p className="m-0 mt-2 text-muted">{t('recent.intro')}</p>
+        </div>
+        <Link to="/research" className="font-bold text-navy">{t('recent.all')} <span aria-hidden="true">→</span></Link>
+      </div>
+      <ul className="m-0 mt-8 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
+        {RECENT.map((source) => <li key={source.id} className="flex flex-col rounded-2xl border border-rule bg-paper p-5">
+          <p className="m-0 font-mono text-xs text-muted">{source.id} · {formatYear(source.year, i18n.language) ?? 'n.d.'}</p>
+          <h3 lang="en" className="m-0 mt-2 text-lg leading-snug"><Link to={recordPath(source.id)} className="text-navy no-underline hover:underline">{source.title}</Link></h3>
+          <p lang="en" className="m-0 mt-1 text-sm font-bold text-coral">{source.author}</p>
+          <p className="m-0 mt-auto pt-3 text-xs text-muted">{(source.systems ?? []).map(dataLabel).join(' · ')}</p>
+        </li>)}
+      </ul>
+    </div>
+  </section>;
 }
 
 type Documentary = { id: string; title: string; channel: string };

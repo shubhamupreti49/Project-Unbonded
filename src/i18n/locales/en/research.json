@@ -23,7 +23,10 @@
     "clear": "Clear all",
     "active": "Active search and filters",
     "searchChip": "“{{query}}”",
-    "remove": "Remove"
+    "remove": "Remove",
+    "findings": "Findings",
+    "findingsRecorded": "Findings recorded",
+    "findingsPending": "Findings not yet recorded"
   },
   "sort": {
     "label": "Sort",
@@ -44,7 +47,8 @@
     "openPdf": "Open PDF",
     "original": "Original source",
     "details": "Record details",
-    "tags": "Labour systems and themes"
+    "tags": "Labour systems and themes",
+    "findingsPending": "Findings pending"
   },
   "note": {
     "label": "Cataloguing note:",

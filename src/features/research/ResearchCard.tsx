@@ -55,7 +55,7 @@ export function ResearchCard({ record }: { record: ResearchRecord }) {
       </h3>
       <p lang="en" className="m-0 text-sm font-bold text-coral">{source.author}</p>
       {source.geography && <p lang="en" className="mt-1 mb-0 text-sm text-muted">{source.geography}</p>}
-      {finding && <p lang="en" className="mt-3 mb-0 line-clamp-3 text-[0.97rem] text-ink/90">{finding}</p>}
+      {finding ? <p lang="en" className="mt-3 mb-0 line-clamp-3 text-[0.97rem] text-ink/90">{finding}</p> : <p className="mt-3 mb-0"><span className="findings-pending">{t('card.findingsPending')}</span></p>}
 
       <ul className="m-0 mt-4 flex list-none flex-wrap gap-2 p-0" aria-label={t('card.tags')}>
         {(source.systems ?? []).map((system) => {

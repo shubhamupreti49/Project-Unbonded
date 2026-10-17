@@ -16,6 +16,7 @@ import type geography from './locales/en/geography.json';
 import type source from './locales/en/source.json';
 import type methodology from './locales/en/methodology.json';
 import type contacts from './locales/en/contacts.json';
+import type about from './locales/en/about.json';
 
 declare module 'i18next' {
   interface CustomTypeOptions {
@@ -33,6 +34,7 @@ declare module 'i18next' {
       source: typeof source;
       methodology: typeof methodology;
       contacts: typeof contacts;
+      about: typeof about;
     };
   }
 }

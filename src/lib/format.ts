@@ -55,3 +55,8 @@ export function formatDate(isoDate: string, language: string): string {
 export function formatNumber(value: number, language: string): string {
   return localizeDigits(new Intl.NumberFormat(intlLocaleFor(language)).format(value), language);
 }
+
+/** "July 1998" / "जुलाई १९९८", for dates known only to the month ("1998-07"). */
+export function formatMonth(isoYearMonth: string, language: string): string {
+  return localizeDigits(new Intl.DateTimeFormat(intlLocaleFor(language), { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${isoYearMonth}-01`)), language);
+}

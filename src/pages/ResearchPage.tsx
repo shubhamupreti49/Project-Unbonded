@@ -23,9 +23,11 @@ export default function ResearchPage() {
   const resultsId = useId();
   const sortId = useId();
 
-  const optionLabel = useCallback((facet: FacetId, value: string) => (
-    facet === 'decade' ? localizeDigits(t('filters.decadeLabel', { decade: value }), i18n.language) : dataLabel(value)
-  ), [dataLabel, i18n.language, t]);
+  const optionLabel = useCallback((facet: FacetId, value: string) => {
+    if (facet === 'decade') return localizeDigits(t('filters.decadeLabel', { decade: value }), i18n.language);
+    if (facet === 'findings') return t(value === 'recorded' ? 'filters.findingsRecorded' : 'filters.findingsPending');
+    return dataLabel(value);
+  }, [dataLabel, i18n.language, t]);
 
   const activeChips = FACETS.flatMap((facet) => [...selection[facet.id]].map((value) => ({ facet: facet.id, value })));
 

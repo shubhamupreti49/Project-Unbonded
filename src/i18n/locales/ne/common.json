@@ -15,9 +15,10 @@
     "articles": "लेखहरू",
     "methodology": "प्रयोग विधि",
     "contacts": "सम्पर्क",
-    "researchers": "अनुसन्धानकर्ता: पहिलो चरण",
+    "researchers": "अनुसन्धानकर्ता",
     "about": "हाम्रो बारेमा",
-    "writeForUs": "हाम्रा लागि लेख्नुहोस्"
+    "writeForUs": "हाम्रा लागि लेख्नुहोस्",
+    "aboutProject": "परियोजनाबारे"
   },
   "language": {
     "label": "भाषा छान्नुहोस्"
@@ -84,7 +85,7 @@
     "Law / policy document": "कानुन / नीति दस्तावेज",
     "Qualitative / mixed methods": "गुणात्मक / मिश्रित विधि",
     "Survey / quantitative": "सर्वेक्षण / परिमाणात्मक",
-    "Unspecified": "उल्लेख नभएको",
+    "Unspecified": "विधि अझै अभिलेख नगरिएको",
     "Complete metadata": "पूर्ण मेटाडेटा",
     "Partial metadata": "आंशिक मेटाडेटा"
   }

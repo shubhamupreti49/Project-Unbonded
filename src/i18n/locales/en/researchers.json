@@ -1,23 +1,25 @@
 {
   "page": {
     "eyebrow": "Team Unbonded",
-    "title": "Researchers: Phase One",
-    "lead": "The student researchers who built the first phase of the Unbonded Archive by finding, reading and cataloguing the source records behind the research collection, timeline and map."
+    "title": "Researchers",
+    "lead": "The student researchers who find, read and catalogue the source records behind the research collection, timeline and map."
   },
   "summary": {
-    "label": "Phase one at a glance",
+    "label": "At a glance",
     "researchers_one": "researcher",
     "researchers_other": "researchers",
     "records_one": "source record catalogued",
     "records_other": "source records catalogued",
     "status": "Phase one completed"
   },
-  "listLabel": "Phase one researchers",
+  "listLabel": "Researchers",
   "card": {
     "role": "Phase one researcher",
     "records_one": "Catalogued {{count, number}} source record",
     "records_other": "Catalogued {{count, number}} source records",
-    "status": "Research completed"
+    "status": "Research completed",
+    "currentRole": "Current researcher",
+    "currentStatus": "Research ongoing"
   },
   "continuing": {
     "heading": "The project continues",

@@ -71,6 +71,10 @@ const VARIANTS: Record<string, string[]> = {
   charuwa: ['charawa'], charawa: ['charuwa'],
   kamlari: ['kamlahari'], kamlahari: ['kamlari'],
   labour: ['labor'], labor: ['labour'],
+  bonded: ['bondage'], bondage: ['bonded'],
+  // Nepali names for the systems and for bonded labour, so they work in either language view.
+  'हलिया': ['haliya', 'halia'], 'कमैया': ['kamaiya'], 'कमलरी': ['kamlari', 'kamlahari'],
+  'हरुवा': ['haruwa', 'harawa'], 'चरुवा': ['charuwa', 'charawa'], 'बँधुवा': ['bonded', 'bondage'],
 };
 
 export function tokenize(text: string): string[] {

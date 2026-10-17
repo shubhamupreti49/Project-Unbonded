@@ -3,15 +3,6 @@ import { Layout } from '../main.jsx';
 import { contacts } from '../../data/contacts.js';
 import { OriginalLanguageNotice } from '../components/OriginalLanguageNotice';
 
-const team = [
-  { name: 'Shubham Upreti', url: 'https://shubhamupreti.com.np' },
-  { name: 'Aaspad Lamichhane' },
-  { name: 'Melish Prasai' },
-  { name: 'Shushant Upreti' },
-  { name: 'Kritika Luitel' },
-  { name: 'Nirjhara Shrestha' },
-];
-
 export default function ContactsPage() {
   const { t } = useTranslation('contacts');
 
@@ -40,16 +31,5 @@ export default function ContactsPage() {
       </div>
     </section>
 
-    <section className="about-team" aria-labelledby="about-team-title">
-      <div className="shell about-team-inner">
-        <div>
-          <h2 id="about-team-title">{t('team.heading')}</h2>
-          <p>{t('team.text')}</p>
-        </div>
-        <ul aria-label={t('team.listLabel')}>
-          {team.map((member) => <li key={member.name} lang="en">{member.url ? <a className="team-link" href={member.url} target="_blank" rel="noreferrer">{member.name}</a> : member.name}</li>)}
-        </ul>
-      </div>
-    </section>
   </Layout>;
 }
