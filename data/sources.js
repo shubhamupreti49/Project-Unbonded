@@ -1184,6 +1184,623 @@ export const data = {
         "The Committee was concerned that many Kamaiya children remained unreleased and continued to work as bonded labourers.",
         "It also noted reports of many thousands of Dalit haliya bonded labourers, including children, working in agriculture in Western Nepal and the plains."
       ]
+    },
+    {
+      "id": "SRC-041",
+      "contributor": "Neaya",
+      "author": "Sanjita Chaudhary",
+      "title": "Changing Livelihood: A Study of Freed Bonded Labourer (Mukta Kamaiya) of Shivnagar Sivir, Tikapur-1, Kailali District",
+      "year": 2022,
+      "population": "Freed Kamaiya (Mukta Kamaiya) households",
+      "geography": "Shivnagar Sivir (camp), Tikapur-1, Kailali District, Nepal",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Livelihood change among freed Kamaiya in a Kailali camp",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-015). Bibliographic details checked against the thesis title page on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Chaudhary, S. (2022). Changing livelihood: A study of freed bonded labourer (Mukta Kamaiya) of Shivnagar Sivir, Tikapur-1, Kailali District [Master's thesis, Tribhuvan University]. https://elibrary.tucl.edu.np/bitstreams/dfbb1313-609b-4758-aa5d-be83acf19b53/download",
+      "url": "https://elibrary.tucl.edu.np/bitstreams/dfbb1313-609b-4758-aa5d-be83acf19b53/download",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Land & livelihoods",
+        "Rehabilitation"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-042",
+      "contributor": "Neaya",
+      "author": "Nabin Kumar Karna",
+      "title": "A Market Analysis and Beneficiary Needs Assessment for a Livelihoods Support Programme for Haruwa-Charuwa in Siraha and Saptari Districts (Province 2)",
+      "year": 2021,
+      "population": "Haruwa-Charuwa households",
+      "geography": "Siraha and Saptari districts, Province 2 (Madhesh), Nepal",
+      "sampleSize": "",
+      "methodology": "Market analysis and beneficiary needs assessment",
+      "methodType": "Assessment / evaluation",
+      "claim": "",
+      "topicSentence": "Livelihood options for Haruwa-Charuwa in Siraha and Saptari",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-017). Bibliographic details checked against the report cover on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Karna, N. K. (2021). A market analysis and beneficiary needs assessment for a livelihoods support programme for Haruwa-Charuwa in Siraha and Saptari districts (Province-2) [Report submitted to the Bridge Project, ILO Country Office for Nepal]. https://www.dol.gov/sites/dolgov/files/ILAB/G11.%20Nepal_Market%20Assessment_Haruwa%20Charuwa.pdf",
+      "url": "https://www.dol.gov/sites/dolgov/files/ILAB/G11.%20Nepal_Market%20Assessment_Haruwa%20Charuwa.pdf",
+      "systems": [
+        "Haruwa-Charuwa"
+      ],
+      "themes": [
+        "Land & livelihoods",
+        "Rehabilitation"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-043",
+      "contributor": "Neaya",
+      "author": "Bishnu Rimal",
+      "title": "Curbing Precarious Informal Employment and Bonded Labour in the Agriculture Sector of Nepal: GEFONT's Initiative to Liberate Kamaiyas",
+      "year": 2019,
+      "population": "",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "GEFONT's campaign to free Kamaiya labourers",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-028). Bibliographic details checked against the ILO working-paper record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original. The ILO catalogues the author as 'Vishṇu Rimāla', a transliteration of Bishnu Rimal.",
+      "citation": "Rimal, B. (2019). Curbing precarious informal employment and bonded labour in the agriculture sector of Nepal: GEFONT's initiative to liberate Kamaiyas [Working paper]. International Labour Organization. https://econpapers.repec.org/paper/iloilowps/995635831402676.htm",
+      "url": "https://econpapers.repec.org/paper/iloilowps/995635831402676.htm",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Forced labour & debt",
+        "Legal abolition & policy"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-044",
+      "contributor": "Neaya",
+      "author": "Ranju Gyawaly",
+      "title": "Study of Health and Sanitation Facility of Ex-Kamaiya in Rajapur and Dhadawar VDCs of Bardiya District",
+      "year": 2011,
+      "population": "Ex-Kamaiya households",
+      "geography": "Rajapur and Dhadawar VDCs, Bardiya District, Nepal",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Health and sanitation among ex-Kamaiya households in Bardiya",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-031). Bibliographic details checked against the thesis title page on 17 October 2026. Findings, method and sample have not yet been recorded: read the original. The online file holds only the preliminary pages.",
+      "citation": "Gyawaly, R. (2011). Study of health and sanitation facility of ex-Kamaiya in Rajapur and Dhadawar VDCs of Bardiya District [Master's thesis, Tribhuvan University]. https://elibrary.tucl.edu.np/bitstreams/4166d3e6-d336-4883-b1d3-02be18b59af2/download",
+      "url": "https://elibrary.tucl.edu.np/bitstreams/4166d3e6-d336-4883-b1d3-02be18b59af2/download",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Rehabilitation"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-045",
+      "contributor": "Neaya",
+      "author": "Maycock, Matthew William",
+      "title": "Hegemonic at Home and Subaltern Abroad: Kamaiya Masculinities and Changing Mobility in Nepal",
+      "year": 2017,
+      "population": "Kamaiya men",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Kamaiya masculinities and labour mobility",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-035). Bibliographic details checked against the publisher's DOI record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Maycock, M. W. (2017). Hegemonic at home and subaltern abroad: Kamaiya masculinities and changing mobility in Nepal. Gender, Place & Culture, 24(6), 812–822. https://doi.org/10.1080/0966369X.2015.1058761",
+      "url": "https://doi.org/10.1080/0966369X.2015.1058761",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Gender & social exclusion",
+        "Migration"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-046",
+      "contributor": "Neaya",
+      "author": "Upendra D. Acharya",
+      "title": "A Trinity of Culture, Law and Politics: Legal Anthropology of the Bonded Labor System in Nepal",
+      "year": 2017,
+      "population": "",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Legal anthropology of bonded labour in Nepal",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-037). Bibliographic details checked against the publisher's record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original. Book editors not yet recorded.",
+      "citation": "Acharya, U. D. (2017). A trinity of culture, law and politics: Legal anthropology of the bonded labor system in Nepal. In Comparative law and anthropology (pp. 361–378). Edward Elgar Publishing. https://doi.org/10.4337/9781781955185.00025",
+      "url": "https://doi.org/10.4337/9781781955185.00025",
+      "systems": [
+        "Cross-system / general"
+      ],
+      "themes": [
+        "Legal abolition & policy",
+        "Forced labour & debt"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-047",
+      "contributor": "Neaya",
+      "author": "Michael Hoffmann",
+      "title": "Unfree Labour after the Maoist Revolution in Western Nepal",
+      "year": 2017,
+      "population": "",
+      "geography": "Western Nepal",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Unfree labour in western Nepal after the Maoist revolution",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-038). Bibliographic details checked against the publisher's DOI record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Hoffmann, M. (2017). Unfree labour after the Maoist revolution in western Nepal. Contributions to Indian Sociology, 51(2), 139–162. https://doi.org/10.1177/0069966717697417",
+      "url": "https://doi.org/10.1177/0069966717697417",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Forced labour & debt"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-048",
+      "contributor": "Neaya",
+      "author": "Suresh Kumar Kathariya",
+      "title": "Problem Faced by Ex-Kamaiya Students in Learning Mathematics (A Case Study of Tharu Children in Kailali District)",
+      "year": 2015,
+      "population": "Ex-Kamaiya (Tharu) students",
+      "geography": "Kailali District, Nepal",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Mathematics learning among ex-Kamaiya children",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-044). Bibliographic details checked against the thesis title page on 17 October 2026. Findings, method and sample have not yet been recorded: read the original. The online file holds only the preliminary pages.",
+      "citation": "Kathariya, S. K. (2015). Problem faced by ex-Kamaiya students in learning mathematics (A case study of Tharu children in Kailali District) [Master's thesis, Tribhuvan University]. https://elibrary.tucl.edu.np/bitstreams/1a02e558-67d5-4e6c-891e-65b3218e30a7/download",
+      "url": "https://elibrary.tucl.edu.np/bitstreams/1a02e558-67d5-4e6c-891e-65b3218e30a7/download",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Child labour & education"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-049",
+      "contributor": "Neaya",
+      "author": "Raju Thapa",
+      "title": "Liberation Induced Conflict: The Case of Kamaiya Emancipation in Nepal",
+      "year": 2014,
+      "population": "",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Conflict after Kamaiya emancipation",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-048). Bibliographic details checked against the journal issue on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Thapa, R. (2014). Liberation induced conflict: The case of Kamaiya emancipation in Nepal. Journal of Indian Research, 2(2), 113–124. http://mujournal.mewaruniversity.org/JIR%202-2/JIR2-2.pdf",
+      "url": "http://mujournal.mewaruniversity.org/JIR%202-2/JIR2-2.pdf#page=121",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Legal abolition & policy",
+        "Rehabilitation"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-050",
+      "contributor": "Neaya",
+      "author": "Gyanendra Prasad Pandeya",
+      "title": "Change in Socio-Economic Status of Ex-Kamaiyas after Liberation: A Case Study of Kattha Rehabilitation Sivir (Camp), Geta VDC, Kailali",
+      "year": 2013,
+      "population": "Ex-Kamaiya households",
+      "geography": "Kattha Rehabilitation Sivir (camp), Geta VDC, Kailali District, Nepal",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Socio-economic change among ex-Kamaiyas in a Kailali rehabilitation camp",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-054). Bibliographic details checked against the thesis title page on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Pandeya, G. P. (2013). Change in socio-economic status of ex-Kamaiyas after liberation: A case study of Kattha Rehabilitation Sivir (camp), Geta VDC, Kailali [Master's thesis, Tribhuvan University]. https://elibrary.tucl.edu.np/bitstreams/95629bc9-f0dc-4ba3-bcbd-9a2e36651860/download",
+      "url": "https://elibrary.tucl.edu.np/bitstreams/95629bc9-f0dc-4ba3-bcbd-9a2e36651860/download",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Rehabilitation",
+        "Land & livelihoods"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-051",
+      "contributor": "Neaya",
+      "author": "Sahadev Chaudhary",
+      "title": "Socio-Economic and Livelihood Status of Freed Kamaiya (A Case Study of Suryapatuwa VDC, Bardiya District)",
+      "year": 2012,
+      "population": "Freed Kamaiya households",
+      "geography": "Suryapatuwa VDC, Bardiya District, Nepal",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Livelihoods of freed Kamaiya in Bardiya",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-062). Bibliographic details checked against the TU e-library record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Chaudhary, S. (2012). Socio-economic and livelihood status of freed Kamaiya (A case study of Suryapatuwa VDC, Bardiya District) [Thesis, Department of Population Studies, Tribhuvan University]. https://elibrary.tucl.edu.np/items/132d57c1-5330-4653-814f-dd34be8bf2c3",
+      "url": "https://elibrary.tucl.edu.np/items/132d57c1-5330-4653-814f-dd34be8bf2c3",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Land & livelihoods",
+        "Rehabilitation"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-052",
+      "contributor": "Neaya",
+      "author": "Pan-Suk Kim and Vikas Rawal",
+      "title": "Kamaiyas in Nepal and the Role of Ex-Kamaiyas in the Development of Western Nepal",
+      "year": 2012,
+      "population": "",
+      "geography": "Western Nepal",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Ex-Kamaiyas and development in western Nepal",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-063). Bibliographic details checked against the journal's DBpia record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Kim, P.-S., & Rawal, V. (2012). Kamaiyas in Nepal and the role of ex-Kamaiyas in the development of western Nepal. South Asian Studies [남아시아연구], 18(2), 233–263. https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE02233982",
+      "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE02233982",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Rehabilitation",
+        "Land & livelihoods"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-053",
+      "contributor": "Neaya",
+      "author": "Narad Awasthi",
+      "title": "Freed Bonded Labour in the Far Western Tarai",
+      "year": 2012,
+      "population": "",
+      "geography": "Far-western Tarai, Nepal",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Freed bonded labourers in the far-western Tarai",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-064). Bibliographic details checked against the NepJOL record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Awasthi, N. (2012). Freed bonded labour in the far western Tarai. The Third Pole: Journal of Geography Education, 11, 29–33. https://doi.org/10.3126/ttp.v11i0.11527",
+      "url": "https://doi.org/10.3126/ttp.v11i0.11527",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Rehabilitation",
+        "Land & livelihoods"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-054",
+      "contributor": "Neaya",
+      "author": "Kopila Dangol",
+      "title": "Status of Tharu Girl Children in Kamalari System of Dang District in Nepal",
+      "year": 2010,
+      "population": "Tharu girls in the Kamlari system",
+      "geography": "Dang District, Nepal",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Tharu girls in the Kamlari system in Dang",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-082). Bibliographic details checked against the TU e-library record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Dangol, K. (2010). Status of Tharu girl children in Kamalari system of Dang District in Nepal [Thesis, Department of Rural Development, Tribhuvan University]. https://elibrary.tucl.edu.np/items/c681d3ef-6447-49ff-a8e1-435726594152",
+      "url": "https://elibrary.tucl.edu.np/items/c681d3ef-6447-49ff-a8e1-435726594152",
+      "systems": [
+        "Kamlari",
+        "Child labour"
+      ],
+      "themes": [
+        "Child labour & education",
+        "Gender & social exclusion"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-055",
+      "contributor": "Neaya",
+      "author": "Sharada Banstola",
+      "title": "An Assessment of Lifestyle Change among the Kamaiya after Liberation (A Case Study of Bankhet, Rajhena VDC of Banke)",
+      "year": 2009,
+      "population": "Freed Kamaiya households",
+      "geography": "Bankhet, Rajhena VDC, Banke District, Nepal",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Lifestyle change among Kamaiya after liberation in Banke",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-088). Bibliographic details checked against the thesis title page on 17 October 2026. Findings, method and sample have not yet been recorded: read the original. The online file holds only the preliminary pages.",
+      "citation": "Banstola, S. (2009). An assessment of lifestyle change among the Kamaiya after liberation (A case study of Bankhet, Rajhena VDC of Banke) [Master's thesis, Prithvi Narayan Campus, Tribhuvan University]. https://elibrary.tucl.edu.np/JQ99OgQIizUxyjI9nB0on9OyLkqsGIf4/api/core/bitstreams/f9fee4fc-8e9c-4022-921f-0dca3e5fa279/content",
+      "url": "https://elibrary.tucl.edu.np/JQ99OgQIizUxyjI9nB0on9OyLkqsGIf4/api/core/bitstreams/f9fee4fc-8e9c-4022-921f-0dca3e5fa279/content",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Rehabilitation",
+        "Land & livelihoods"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-056",
+      "contributor": "Neaya",
+      "author": "Yagya Raj Gyawali",
+      "title": "कैलाली टीकापुरका मुक्त थारु कमैयाहरुको शिक्षामा पहुँच कम हुनुमा समाजशास्त्रीय अध्ययन (A sociological study of the low access to education among freed Tharu Kamaiyas of Tikapur, Kailali)",
+      "year": 2007,
+      "population": "Freed Tharu Kamaiyas",
+      "geography": "Tikapur, Kailali District, Nepal",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Access to education among freed Tharu Kamaiyas in Tikapur",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-099). Bibliographic details checked against the TU e-library record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original. Written in Nepali; the English title is a translation.",
+      "citation": "Gyawali, Y. R. (2007). Kailali Tikapurka mukta Tharu kamaiyaharuko shikshama pahunch kam hunuma samajshastriya adhyayan [A sociological study of the low access to education among freed Tharu Kamaiyas of Tikapur, Kailali] [Thesis, Tribhuvan University]. In Nepali. https://elibrary.tucl.edu.np/items/5016bc4e-96f4-4f15-a6c9-f66f4fa50973",
+      "url": "https://elibrary.tucl.edu.np/items/5016bc4e-96f4-4f15-a6c9-f66f4fa50973",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Child labour & education"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-057",
+      "contributor": "Neaya",
+      "author": "Espen Villanger",
+      "title": "Is Bonded Labor Voluntary? Responses from Kamaiyas on Why They Chose to Stay",
+      "year": 2007,
+      "population": "",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Why some Kamaiyas stayed with their landlords",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-100). Bibliographic details checked against the Chr. Michelsen Institute record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original. Seminar slides, not a written paper.",
+      "citation": "Villanger, E. (2007, January 18). Is bonded labor voluntary? Responses from Kamaiyas on why they chose to stay [Seminar presentation]. Lessons from the liberation of the Kamaiyas of Nepal, Chr. Michelsen Institute, Bergen, Norway. https://www.cmi.no/publications/file/2602-is-bonded-labor-voluntary.pdf",
+      "url": "https://www.cmi.no/publications/file/2602-is-bonded-labor-voluntary.pdf",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Forced labour & debt"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-058",
+      "contributor": "Neaya",
+      "author": "Ram B. Chhetri",
+      "title": "The Plight of the Tharu Kamaiyas in Nepal: A Review of the Social, Economic and Political Facets",
+      "year": 2005,
+      "population": "",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Review of the social, economic and political position of Tharu Kamaiyas",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-105). Bibliographic details checked against the NepJOL record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Chhetri, R. B. (2005). The plight of the Tharu Kamaiyas in Nepal: A review of the social, economic and political facets. Occasional Papers in Sociology and Anthropology, 9, 22–46. https://doi.org/10.3126/opsa.v9i0.1134",
+      "url": "https://doi.org/10.3126/opsa.v9i0.1134",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Land & livelihoods",
+        "Rehabilitation",
+        "Forced labour & debt"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-059",
+      "contributor": "Neaya",
+      "author": "Krishna Upadhyaya",
+      "title": "Bonded Labour in South Asia: India, Nepal and Pakistan",
+      "year": 2004,
+      "population": "",
+      "geography": "India, Nepal and Pakistan",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "Comparative overview of bonded labour in South Asia",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-110). Bibliographic details checked against the publisher's DOI record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original. Book editor not yet recorded.",
+      "citation": "Upadhyaya, K. (2004). Bonded labour in South Asia: India, Nepal and Pakistan. In The political economy of new slavery (pp. 118–136). Palgrave Macmillan. https://doi.org/10.1057/9781403937865_8",
+      "url": "https://doi.org/10.1057/9781403937865_8",
+      "systems": [
+        "Cross-system / general"
+      ],
+      "themes": [
+        "Forced labour & debt",
+        "Legal abolition & policy"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-060",
+      "contributor": "Neaya",
+      "author": "Shiva Lal Sharma Bhusal",
+      "title": "Examining a Rights Based Approach to the Development of the Ex-Kamaiyas of Western Nepal",
+      "year": 2004,
+      "population": "Ex-Kamaiyas",
+      "geography": "Western Nepal",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "A rights-based approach to ex-Kamaiya development",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-111). Bibliographic details checked against the thesis title page on 17 October 2026. Findings, method and sample have not yet been recorded: read the original. The online file holds the title page and abstract only.",
+      "citation": "Bhusal, S. L. S. (2004). Examining a rights based approach to the development of the ex-Kamaiyas of western Nepal [Master's thesis, Mahidol University]. http://mulinet11.li.mahidol.ac.th/thesis/2547/cd367/4537161.pdf",
+      "url": "http://mulinet11.li.mahidol.ac.th/thesis/2547/cd367/4537161.pdf",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Rehabilitation",
+        "Legal abolition & policy"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-061",
+      "contributor": "Neaya",
+      "author": "Arjun K. Karki",
+      "title": "Movements from Below: Land Rights Movement in Nepal",
+      "year": 2002,
+      "population": "",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "The land rights movement in Nepal",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-119). Bibliographic details checked against the publisher's DOI record on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Karki, A. K. (2002). Movements from below: Land rights movement in Nepal. Inter-Asia Cultural Studies, 3(2), 201–217. https://doi.org/10.1080/1464937022000000129",
+      "url": "https://doi.org/10.1080/1464937022000000129",
+      "systems": [
+        "Cross-system / general"
+      ],
+      "themes": [
+        "Land & livelihoods"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-062",
+      "contributor": "Neaya",
+      "author": "Shiva Sharma (with Devendra Chhetry, Manasa Thakurathi, Kumar Joshi, Avinendra Shrestha and R. S. Bista)",
+      "title": "The Kamaiya System in Nepal",
+      "year": 1998,
+      "population": "",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "ILO study of the Kamaiya system",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-141). Bibliographic details checked against the report title page on 17 October 2026. Findings, method and sample have not yet been recorded: read the original.",
+      "citation": "Sharma, S., Chhetry, D., Thakurathi, M., Joshi, K., Shrestha, A., & Bista, R. S. (1998). The Kamaiya system in Nepal. International Labour Organization, South Asia Multidisciplinary Advisory Team. https://researchrepository.ilo.org/view/pdfCoverPage?instCode=41ILO_INST&filePid=13117092780002676&download=true",
+      "url": "https://researchrepository.ilo.org/view/pdfCoverPage?instCode=41ILO_INST&filePid=13117092780002676&download=true",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Forced labour & debt",
+        "Land & livelihoods"
+      ],
+      "status": "Partial metadata",
+      "claims": []
+    },
+    {
+      "id": "SRC-063",
+      "contributor": "Neaya",
+      "author": "Padma Raj Lamichhane",
+      "title": "Land Tenure and Kamaiya System in Nepal: A Historical Review",
+      "year": 2015,
+      "population": "",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "",
+      "methodType": "Unspecified",
+      "claim": "",
+      "topicSentence": "History of land tenure and the Kamaiya system",
+      "rebondage": "",
+      "gap": "Added from the Google Scholar collection (screening row CR-160). Bibliographic details checked against the journal issue on 17 October 2026. Findings, method and sample have not yet been recorded: read the original. The issue is dated Chaitra 2071 BS (2015).",
+      "citation": "Lamichhane, P. R. (2015 [BS 2071]). Land tenure and Kamaiya system in Nepal: A historical review. Anusheelan, 7(6), 12–23. https://wms.edigitalnepal.com/wms/files/ws-post-files/1726574692269_3ef24d5b-8a10-4716-b73b-8a2072ede6e6.pdf",
+      "url": "https://wms.edigitalnepal.com/wms/files/ws-post-files/1726574692269_3ef24d5b-8a10-4716-b73b-8a2072ede6e6.pdf#page=20",
+      "systems": [
+        "Kamaiya"
+      ],
+      "themes": [
+        "Land & livelihoods",
+        "Forced labour & debt"
+      ],
+      "status": "Partial metadata",
+      "claims": []
     }
   ],
   "districts": [

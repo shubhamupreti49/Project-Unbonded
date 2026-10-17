@@ -1,6 +1,46 @@
-# Catalogue corrections log
+# Catalogue log
 
-Every change to the records in `data/sources.js` is listed here with the value before and after and the reason. Findings, years, titles and coding are not changed without a reason recorded below. Where a value could not be checked against the original source, it was left as entered and listed under "Open questions".
+Every record added to `data/sources.js`, and every change to an existing record, is listed here with the value before and after and the reason. Findings, years, titles and coding are not changed without a reason recorded below. Where a value could not be checked against the original source, it was left as entered and listed under "Open questions".
+
+## 2026-10-17: 23 records added from the Google Scholar collection
+
+Source: the "Combined Relevant" tab of Neaya's Google Scholar collection (searches for "haliya" and "kamaiya", 8 October 2026), screened on 17 October 2026 into `2026-10-17_ScreeningQueue_GoogleScholar` (screening rows CR-001 to CR-165, plus CR-B01 to CR-B03).
+
+Prepared with Claude (AI assistant) at the request of Shubham Upreti. Only works marked "Catalogue" whose title, authors, year and publication details could be checked against the source itself, or the publisher's DOI record, were added. Google Scholar's own details were not used where they disagreed with the source; four of them were wrong (see the screening sheet).
+
+Each new record has status "Partial metadata". Findings, method and sample size are left empty, because the Research Intern Handbook (section 5) does not allow unverified summaries on the public site; record pages say "Findings have not yet been recorded". An empty sample size means "not yet recorded"; "Not reported" still means the source gives none. Population and geography are filled in only where the title states them. Labour systems and themes were coded from the title and are open to revision when the record is read.
+
+| New record | Screening row | Author | Year | Title | Details checked against |
+|---|---|---|---|---|---|
+| SRC-041 | CR-015 | Sanjita Chaudhary | 2022 | Changing Livelihood: A Study of Freed Bonded Labourer (Mukta Kamaiya) of Shivnagar Sivir, Tikapur-1, Kailali District | the thesis title page |
+| SRC-042 | CR-017 | Nabin Kumar Karna | 2021 | A Market Analysis and Beneficiary Needs Assessment for a Livelihoods Support Programme for Haruwa-Charuwa in Siraha and Saptari Districts (Province 2) | the report cover |
+| SRC-043 | CR-028 | Bishnu Rimal | 2019 | Curbing Precarious Informal Employment and Bonded Labour in the Agriculture Sector of Nepal: GEFONT's Initiative to Liberate Kamaiyas | the ILO working-paper record |
+| SRC-044 | CR-031 | Ranju Gyawaly | 2011 | Study of Health and Sanitation Facility of Ex-Kamaiya in Rajapur and Dhadawar VDCs of Bardiya District | the thesis title page |
+| SRC-045 | CR-035 | Maycock, Matthew William | 2017 | Hegemonic at Home and Subaltern Abroad: Kamaiya Masculinities and Changing Mobility in Nepal | the publisher's DOI record |
+| SRC-046 | CR-037 | Upendra D. Acharya | 2017 | A Trinity of Culture, Law and Politics: Legal Anthropology of the Bonded Labor System in Nepal | the publisher's record |
+| SRC-047 | CR-038 | Michael Hoffmann | 2017 | Unfree Labour after the Maoist Revolution in Western Nepal | the publisher's DOI record |
+| SRC-048 | CR-044 | Suresh Kumar Kathariya | 2015 | Problem Faced by Ex-Kamaiya Students in Learning Mathematics (A Case Study of Tharu Children in Kailali District) | the thesis title page |
+| SRC-049 | CR-048 | Raju Thapa | 2014 | Liberation Induced Conflict: The Case of Kamaiya Emancipation in Nepal | the journal issue |
+| SRC-050 | CR-054 | Gyanendra Prasad Pandeya | 2013 | Change in Socio-Economic Status of Ex-Kamaiyas after Liberation: A Case Study of Kattha Rehabilitation Sivir (Camp), Geta VDC, Kailali | the thesis title page |
+| SRC-051 | CR-062 | Sahadev Chaudhary | 2012 | Socio-Economic and Livelihood Status of Freed Kamaiya (A Case Study of Suryapatuwa VDC, Bardiya District) | the TU e-library record |
+| SRC-052 | CR-063 | Pan-Suk Kim and Vikas Rawal | 2012 | Kamaiyas in Nepal and the Role of Ex-Kamaiyas in the Development of Western Nepal | the journal's DBpia record |
+| SRC-053 | CR-064 | Narad Awasthi | 2012 | Freed Bonded Labour in the Far Western Tarai | the NepJOL record |
+| SRC-054 | CR-082 | Kopila Dangol | 2010 | Status of Tharu Girl Children in Kamalari System of Dang District in Nepal | the TU e-library record |
+| SRC-055 | CR-088 | Sharada Banstola | 2009 | An Assessment of Lifestyle Change among the Kamaiya after Liberation (A Case Study of Bankhet, Rajhena VDC of Banke) | the thesis title page |
+| SRC-056 | CR-099 | Yagya Raj Gyawali | 2007 | कैलाली टीकापुरका मुक्त थारु कमैयाहरुको शिक्षामा पहुँच कम हुनुमा समाजशास्त्रीय अध्ययन (A sociological study of the low access to education among freed Tharu Kamaiyas of Tikapur, Kailali) | the TU e-library record |
+| SRC-057 | CR-100 | Espen Villanger | 2007 | Is Bonded Labor Voluntary? Responses from Kamaiyas on Why They Chose to Stay | the Chr. Michelsen Institute record |
+| SRC-058 | CR-105 | Ram B. Chhetri | 2005 | The Plight of the Tharu Kamaiyas in Nepal: A Review of the Social, Economic and Political Facets | the NepJOL record |
+| SRC-059 | CR-110 | Krishna Upadhyaya | 2004 | Bonded Labour in South Asia: India, Nepal and Pakistan | the publisher's DOI record |
+| SRC-060 | CR-111 | Shiva Lal Sharma Bhusal | 2004 | Examining a Rights Based Approach to the Development of the Ex-Kamaiyas of Western Nepal | the thesis title page |
+| SRC-061 | CR-119 | Arjun K. Karki | 2002 | Movements from Below: Land Rights Movement in Nepal | the publisher's DOI record |
+| SRC-062 | CR-141 | Shiva Sharma (with Devendra Chhetry, Manasa Thakurathi, Kumar Joshi, Avinendra Shrestha and R. S. Bista) | 1998 | The Kamaiya System in Nepal | the report title page |
+| SRC-063 | CR-160 | Padma Raj Lamichhane | 2015 | Land Tenure and Kamaiya System in Nepal: A Historical Review | the journal issue |
+
+Not added yet (54 works marked "Catalogue" stay in the screening queue):
+
+- 35 are known only from other works' reference lists, 4 only from library catalogue records, and 3 are books found through reviews. Each needs a copy located first.
+- 11 have links that could not be checked automatically (publisher or repository bot protection, or a Google Books page without chapter details). They can be added once someone confirms the details by hand.
+- CR-130 (Carmichael 2001, Colby College) has been withdrawn from the college's repository.
 
 ## 2026-10-03: data-quality pass
 

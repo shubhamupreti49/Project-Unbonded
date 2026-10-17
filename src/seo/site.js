@@ -12,7 +12,7 @@ export const SITE_NAME = 'Unbonded Archive';
 export const SHARE_IMAGE = `${SITE_URL}/og-image.png`;
 
 /** Date the catalogue in data/sources.js was last revised. Update it whenever records change. */
-export const CATALOGUE_UPDATED = '2026-10-03';
+export const CATALOGUE_UPDATED = '2026-10-17';
 
 /** Published copies of the full catalogue (written at build time by scripts/prerender.mjs). */
 export const CATALOGUE_FILES = {
