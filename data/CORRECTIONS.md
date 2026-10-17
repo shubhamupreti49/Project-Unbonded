@@ -2,6 +2,139 @@
 
 Every record added to `data/sources.js`, and every change to an existing record, is listed here with the value before and after and the reason. Findings, years, titles and coding are not changed without a reason recorded below. Where a value could not be checked against the original source, it was left as entered and listed under "Open questions".
 
+## 2026-10-17: open questions resolved, timeline rewritten, map sourced
+
+Prepared with Claude (AI assistant) at the request of Shubham Upreti, after the site review approved that day.
+
+### Record changes
+
+#### SRC-001
+
+| Field | Before | After | Reason |
+|---|---|---|---|
+| themes | “Legal abolition & policy” / “Child labour & education” | “Child labour & education” | A child-nutrition study; "Legal abolition & policy" did not describe it. |
+
+#### SRC-003
+
+| Field | Before | After | Reason |
+|---|---|---|---|
+| claims | “The Report survey indicates that most of the kamaiya households have better financial security due to the utilization of productive lands, cash, and loans they received for investment purposes to generate diversified livelihoods.” | “The Report survey indicates that most of the kamaiya households have better financial security due to the utilization of productive lands, cash, and loans they received for investment purposes to generate diversified livelihoods.” / “Saptari has witnessed a significant decline in bonded labour from approximately 38.4% of households in 2017 to 21.3% in 2022.” | The repository note held a finding from the source, not a limitation; moved to the findings list. |
+| gap | “Saptari has witnessed a significant decline in bonded labour from approximately 38.4% of households in 2017 to 21.3% in 2022.” | (empty) | Moved to findings. |
+
+#### SRC-009
+
+| Field | Before | After | Reason |
+|---|---|---|---|
+| claims | “The report argues that the practice of sending daughters to work in the Kamlari system was often presented as a voluntary decision by parents, as it reduced the financial burden of supporting large families while also contributing to the household's annual income.” | “The report argues that the practice of sending daughters to work in the Kamlari system was often presented as a voluntary decision by parents, as it reduced the financial burden of supporting large families while also contributing to the household's annual income.” / “Government of Nepal officially abolished the Kamlari system in 2013.” | The repository note held a finding from the source, not a limitation; moved to the findings list. |
+| gap | “Government of Nepal officially abolished the Kamlari system in 2013.” | (empty) | Moved to findings. |
+
+#### SRC-011
+
+| Field | Before | After | Reason |
+|---|---|---|---|
+| claims | “Lack of formation of trade unions and awareness of the current minimum wage rates & labour rights have made children more vulnerable to forced labour in brick kilns, internal and cross-border migrations.” | “Lack of formation of trade unions and awareness of the current minimum wage rates & labour rights have made children more vulnerable to forced labour in brick kilns, internal and cross-border migrations.” / “Children account for approximately 10% (17,738) of total workers” | The repository note held a finding from the source, not a limitation; moved to the findings list. |
+| gap | “Children account for approximately 10% (17,738) of total workers” | (empty) | Moved to findings. |
+
+#### SRC-013
+
+| Field | Before | After | Reason |
+|---|---|---|---|
+| year | “2026” | (empty) | The page shows no publication date (checked 17 October 2026); 2026 was the date it was viewed. Recorded as undated. |
+| citation | “Tharu Cultural Museum. (2026). The Kamaiya Movement. https://tharuculturalmuseum.org/the-kamaiya-movement/” | “Tharu Cultural Museum. (n.d.). The Kamaiya Movement. https://tharuculturalmuseum.org/the-kamaiya-movement/” | Undated: see year. |
+| claims | “The report claims that forest clearing, land expansion, malaria eradication, and migration from hill regions led Kamaiya households lose their traditional land and ownership because of no land registration documents & limited awareness of government procedures.” | “The report claims that forest clearing, land expansion, malaria eradication, and migration from hill regions led Kamaiya households lose their traditional land and ownership because of no land registration documents & limited awareness of government procedures.” / “By the end of February 2016, thousands of ex-Kamaiya families had received land or rehabilitation support.” | The repository note held a finding from the source, not a limitation; moved to the findings list. |
+| gap | “By the end of February 2016, thousands of ex-Kamaiya families had received land or rehabilitation support.” | (empty) | Moved to findings. |
+
+#### SRC-014
+
+| Field | Before | After | Reason |
+|---|---|---|---|
+| population | (empty) | “Haliya and Kamaiya child workers and their employers” | From the article abstract (publisher record). |
+| methodology | “Not specified” | “Detailed fieldwork” | From the article abstract. |
+| methodType | “Unspecified” | “Qualitative / mixed methods” | From the article abstract. |
+| geography | “Not specified” | (empty) | "Not specified" here meant "not yet recorded", not that the source omits it; left blank until the source is read. |
+| sampleSize | “Not reported” | (empty) | "Not specified" here meant "not yet recorded", not that the source omits it; left blank until the source is read. |
+
+#### SRC-015
+
+| Field | Before | After | Reason |
+|---|---|---|---|
+| geography | “Not specified” | “Morang and Bardiya districts, Nepal” | From the article abstract (publisher record). |
+| population | (empty) | “Haliya child workers (Musahar, Morang) and Kamaiya child workers (Tharu, Bardiya)” | From the article abstract. In this study "haliya" refers to Musahar ploughmen in Morang, not the far-western Haliya system. |
+| methodology | “Not specified” | “In-depth fieldwork over one year” | From the article abstract. |
+| methodType | “Unspecified” | “Qualitative / mixed methods” | From the article abstract. |
+| sampleSize | “Not reported” | (empty) | Not stated in the abstract; left blank until the article is read. |
+
+#### SRC-016
+
+| Field | Before | After | Reason |
+|---|---|---|---|
+| geography | “Not specified” | (empty) | "Not specified" here meant "not yet recorded", not that the source omits it; left blank until the source is read. |
+| sampleSize | “Not reported” | (empty) | "Not specified" here meant "not yet recorded", not that the source omits it; left blank until the source is read. |
+| methodology | “Not specified” | (empty) | "Not specified" here meant "not yet recorded", not that the source omits it; left blank until the source is read. |
+
+#### SRC-017
+
+| Field | Before | After | Reason |
+|---|---|---|---|
+| geography | “Not specified” | (empty) | "Not specified" here meant "not yet recorded", not that the source omits it; left blank until the source is read. |
+| sampleSize | “Not reported” | (empty) | "Not specified" here meant "not yet recorded", not that the source omits it; left blank until the source is read. |
+| methodology | “Not specified” | (empty) | "Not specified" here meant "not yet recorded", not that the source omits it; left blank until the source is read. |
+
+#### SRC-018
+
+| Field | Before | After | Reason |
+|---|---|---|---|
+| geography | “Not specified” | (empty) | "Not specified" here meant "not yet recorded", not that the source omits it; left blank until the source is read. |
+| sampleSize | “Not reported” | (empty) | "Not specified" here meant "not yet recorded", not that the source omits it; left blank until the source is read. |
+| methodology | “Not specified” | (empty) | "Not specified" here meant "not yet recorded", not that the source omits it; left blank until the source is read. |
+
+#### SRC-022
+
+| Field | Before | After | Reason |
+|---|---|---|---|
+| gap | (empty) | “The ILO article dates the abolition of the Kamaiya system to 2002, the year of the Bonded Labour (Prohibition) Act. The government declared the system illegal on 17 July 2000 (see the timeline).” | Open question resolved: the article does say 2002 (checked 17 October 2026); note added so the finding is read correctly. |
+
+### Timeline
+
+The seven undated, mostly unsourced events were replaced by 17 dated events. Each gives the date as precisely as its source allows and names its sources; most cite records in the archive.
+
+| Date | Event | Sources |
+|---|---|---|
+| 1926 | Slavery abolished in Nepal | SRC-019; SRC-060 |
+| 1990 | Constitution prohibits slavery and serfdom | SRC-019 |
+| 1998-07 | ILO study of the Kamaiya system | SRC-062 |
+| 2000-05-01 | The Kamaiya freedom movement begins | SRC-019 |
+| 2000-07-17 | Government declares the Kamaiya system illegal | SRC-019; SRC-049; SRC-026 |
+| 2002-01 | Nepal ratifies the ILO Forced Labour Convention | ILO press release, 4 September 2007 |
+| 2002 | Bonded Labour (Prohibition) Act, 2058 | SRC-038; Nepal Law Commission |
+| 2007-08-16 | Parliament approves ILO Convention No. 105 | ILO press release, 4 September 2007 |
+| 2008-09-06 | Government declares the Haliya system abolished | SRC-007 |
+| 2010 | Bonded Labour (Prohibition) Regulations, 2067 | Nepal Law Commission (the official file was not reachable online on 17 October 2026) |
+| 2013 | National survey of forced labour in agriculture | SRC-002 |
+| 2013-06-27 | Government declares the Kamlari system abolished | SRC-009; SRC-005; The Himalayan Times, 9 September 2024 |
+| 2015-09-20 | Constitution of Nepal: right against exploitation | Constitution of Nepal, 2015 (Constitute Project) |
+| 2021-01 | National survey of brick-kiln labour | SRC-036 |
+| 2022-07-18 | Government declares Haruwa-Charuwa labourers free | SRC-012; The Freedom Fund, 18 July 2022 |
+| 2025-06-17 | ILO analysis of freed Haliyas in Karnali | SRC-037 |
+| 2026-08-07 | Nepal ratifies the Protocol to the Forced Labour Convention | ILO news, 11 August 2026 |
+
+The 2010 Regulations link pointed to repository.lawcommission.gov.np, which did not respond on 17 October 2026 and has no Internet Archive copy; the event now names the Nepal Law Commission without a link. The Haruwa-Charuwa declaration, previously dated only "2022", is dated 18 July 2022 from the Freedom Fund announcement.
+
+### Map
+
+- **districts.** Before: [{"name":"Dang","lat":28,"lon":82.3,"identified":1426,"eligible":705,"landRecipients":507,"cash":8000,"timber":35,"note":"Recipient count is below the listed Red/Blue category count."},{"name":"Banke","lat":28.05,"lon":81.62,"identified":2316,"eligible":1921,"landRecipients":2147,"cash":9421,"timber":35,"note":"Recipients exceed Red/Blue category count; categories are not aligned."},{"name":"Bardiya","lat":28.3,"lon":81.37,"identified":14499,"eligible":11551,"landRecipients":13931,"cash":9086,"timber":0,"note":"Recipients exceed Red/Blue category count; categories are not aligned."},{"name":"Kailali","lat":28.7,"lon":80.9,"identified":9762,"eligible":8975,"landRecipients":7392,"cash":10000,"timber":31.7,"note":"Listed eligible group is not fully reached."},{"name":"Kanchanpur","lat":28.84,"lon":80.33,"identified":4506,"eligible":4418,"landRecipients":4506,"cash":9506,"timber":35,"note":"Recipients exceed Red/Blue category count; categories are not aligned."}] plus unsourced Haliya figures for Bajhang (2,945 / 2,945 / 2,848), Dadeldhura (2,551 / 2,551 / 2,267) and Kanchanpur (2,516 / 1,991 / 1,830) typed into the map code. After: Kamaiya figures unchanged and attributed to SRC-026 (all values match its tables). Haliya figures replaced with registered freed Haliyas for five districts from SRC-027: Baitadi 2,147; Bajhang 2,945; Dadeldhura 2,551; Doti 1,321; Kanchanpur 2,699. Each figure on the map now has a cited source. No source could be found for the previous Haliya eligibility and land-recipient figures, and its Kanchanpur count differed from SRC-027.
+- **coverage.** Before: 25 districts coloured from a hand-typed list, without sources. After: 16 districts coloured, each linked to the records that document that system there. The map now follows the records. Districts dropped for lack of a record naming them: Achham, Bajura, Kailali (Haliya), Mahottari, Sarlahi, Rautahat, Bara, Parsa, Sunsari, Jhapa. They can return when a record documents them.
+- **Boundary file.** In data/nepal-districts.js two polygons were labelled "Saptari" and two "Bara"; by position, the western ones are Siraha and Parsa and were renamed. Misspelled names were corrected (Dadeidhura, Baijura, Synagja, Kabherepalanchok, Chitawan, Tanahu, Makawanpur, Kapilbastu, Nawalapur, Rukum_E, Rukum_W), which had stopped Dadeldhura and Bajura from being coloured. The file has no polygons for Dailekh or Rupandehi; the map page says so.
+
+### Decisions on the remaining open questions
+
+- **SRC-037**: keep 2025 (ILO publication page dated 17 June 2025).
+- **SRC-006, SRC-019, SRC-021, SRC-026**: still undated; none of the pages shows a publication date.
+- **SRC-016 and SRC-017**: keep both. SRC-017 is the edited book and SRC-016 the chapter on Nepal; they are separate works.
+- **SRC-016 to SRC-018**: findings, method and geography still to be recorded from the full texts.
+- **Citations**: catalogue records keep APA, consistently across all records. The Chicago author-date guide applies to volunteer articles and to citing the archive itself.
+- **Giri (SRC-014, SRC-015, SRC-031, SRC-032)**: kept the sources’ term "haliya"; SRC-015 now says in its population that these are Musahar ploughmen in Morang.
+
 ## 2026-10-17: 23 records added from the Google Scholar collection
 
 Source: the "Combined Relevant" tab of Neaya's Google Scholar collection (searches for "haliya" and "kamaiya", 8 October 2026), screened on 17 October 2026 into `2026-10-17_ScreeningQueue_GoogleScholar` (screening rows CR-001 to CR-165, plus CR-B01 to CR-B03).

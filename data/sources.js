@@ -22,7 +22,6 @@ export const data = {
         "Child labour"
       ],
       "themes": [
-        "Legal abolition & policy",
         "Child labour & education"
       ],
       "status": "Complete metadata",
@@ -78,7 +77,7 @@ export const data = {
       "claim": "The Report survey indicates that most of the kamaiya households have better financial security due to the utilization of productive lands, cash, and loans they received for investment purposes to generate diversified livelihoods.",
       "topicSentence": "",
       "rebondage": "advance-payment labor in construction/ agriculture",
-      "gap": "Saptari has witnessed a significant decline in bonded labour from approximately 38.4% of households in 2017 to 21.3% in 2022.",
+      "gap": "",
       "citation": "Freedom Fund. (2024). From liberation to livelihood. https://www.freedomfund.org/news/from-liberation-to-livelihood/",
       "url": "https://www.freedomfund.org/news/from-liberation-to-livelihood/",
       "systems": [
@@ -92,7 +91,8 @@ export const data = {
       ],
       "status": "Complete metadata",
       "claims": [
-        "The Report survey indicates that most of the kamaiya households have better financial security due to the utilization of productive lands, cash, and loans they received for investment purposes to generate diversified livelihoods."
+        "The Report survey indicates that most of the kamaiya households have better financial security due to the utilization of productive lands, cash, and loans they received for investment purposes to generate diversified livelihoods.",
+        "Saptari has witnessed a significant decline in bonded labour from approximately 38.4% of households in 2017 to 21.3% in 2022."
       ]
     },
     {
@@ -266,7 +266,7 @@ export const data = {
       "claim": "The report argues that the practice of sending daughters to work in the Kamlari system was often presented as a voluntary decision by parents, as it reduced the financial burden of supporting large families while also contributing to the household's annual income.",
       "topicSentence": "",
       "rebondage": "",
-      "gap": "Government of Nepal officially abolished the Kamlari system in 2013.",
+      "gap": "",
       "citation": "Nepal Youth Foundation. (2014). The History of Kamlari in Nepal. https://nepalyouthfoundation.org/wp-content/uploads/2014/05/NYF-FactSheet-History_of_Kamlari-May2014.pdf",
       "url": "https://nepalyouthfoundation.org/wp-content/uploads/2014/05/NYF-FactSheet-History_of_Kamlari-May2014.pdf",
       "systems": [
@@ -278,7 +278,8 @@ export const data = {
       ],
       "status": "Complete metadata",
       "claims": [
-        "The report argues that the practice of sending daughters to work in the Kamlari system was often presented as a voluntary decision by parents, as it reduced the financial burden of supporting large families while also contributing to the household's annual income."
+        "The report argues that the practice of sending daughters to work in the Kamlari system was often presented as a voluntary decision by parents, as it reduced the financial burden of supporting large families while also contributing to the household's annual income.",
+        "Government of Nepal officially abolished the Kamlari system in 2013."
       ]
     },
     {
@@ -324,7 +325,7 @@ export const data = {
       "claim": "Lack of formation of trade unions and awareness of the current minimum wage rates & labour rights have made children more vulnerable to forced labour in brick kilns, internal and cross-border migrations.",
       "topicSentence": "",
       "rebondage": "advance-payment labor in construction/ agriculture",
-      "gap": "Children account for approximately 10% (17,738) of total workers",
+      "gap": "",
       "citation": "UNICEF. (2021). Ending forced and child labour in Nepal’s brick industry. https://www.unicef.org/nepal/press-releases/ending-forced-and-child-labour-nepals-brick-industry-need-holistic-approach",
       "url": "https://www.unicef.org/nepal/press-releases/ending-forced-and-child-labour-nepals-brick-industry-need-holistic-approach",
       "systems": [
@@ -338,7 +339,8 @@ export const data = {
       ],
       "status": "Complete metadata",
       "claims": [
-        "Lack of formation of trade unions and awareness of the current minimum wage rates & labour rights have made children more vulnerable to forced labour in brick kilns, internal and cross-border migrations."
+        "Lack of formation of trade unions and awareness of the current minimum wage rates & labour rights have made children more vulnerable to forced labour in brick kilns, internal and cross-border migrations.",
+        "Children account for approximately 10% (17,738) of total workers"
       ]
     },
     {
@@ -377,7 +379,7 @@ export const data = {
       "contributor": "Melish",
       "author": "Tharu Cultural Museum",
       "title": "The Kamaiya Movement",
-      "year": 2026,
+      "year": null,
       "population": "Kamaiya",
       "geography": "Nepal’s western region (Dang, Banke, Bardiya, Kailali, and Kanchanpur)",
       "sampleSize": "Not reported",
@@ -386,8 +388,8 @@ export const data = {
       "claim": "The report claims that forest clearing, land expansion, malaria eradication, and migration from hill regions led Kamaiya households lose their traditional land and ownership because of no land registration documents & limited awareness of government procedures.",
       "topicSentence": "",
       "rebondage": "",
-      "gap": "By the end of February 2016, thousands of ex-Kamaiya families had received land or rehabilitation support.",
-      "citation": "Tharu Cultural Museum. (2026). The Kamaiya Movement. https://tharuculturalmuseum.org/the-kamaiya-movement/",
+      "gap": "",
+      "citation": "Tharu Cultural Museum. (n.d.). The Kamaiya Movement. https://tharuculturalmuseum.org/the-kamaiya-movement/",
       "url": "https://tharuculturalmuseum.org/the-kamaiya-movement/",
       "systems": [
         "Kamaiya"
@@ -399,7 +401,8 @@ export const data = {
       ],
       "status": "Complete metadata",
       "claims": [
-        "The report claims that forest clearing, land expansion, malaria eradication, and migration from hill regions led Kamaiya households lose their traditional land and ownership because of no land registration documents & limited awareness of government procedures."
+        "The report claims that forest clearing, land expansion, malaria eradication, and migration from hill regions led Kamaiya households lose their traditional land and ownership because of no land registration documents & limited awareness of government procedures.",
+        "By the end of February 2016, thousands of ex-Kamaiya families had received land or rehabilitation support."
       ]
     },
     {
@@ -408,11 +411,11 @@ export const data = {
       "author": "Birendra Raj Giri",
       "title": "Bonded Labour Practice in Nepal: The Promise of Education as a Magnet of Child Bondedness",
       "year": 2010,
-      "population": "",
-      "geography": "Not specified",
-      "sampleSize": "Not reported",
-      "methodology": "Not specified",
-      "methodType": "Unspecified",
+      "population": "Haliya and Kamaiya child workers and their employers",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "Detailed fieldwork",
+      "methodType": "Qualitative / mixed methods",
       "claim": "",
       "topicSentence": "",
       "rebondage": "",
@@ -436,11 +439,11 @@ export const data = {
       "author": "Birendra Giri",
       "title": "The Bonded Labour System in Nepal: Perspectives of Haliya and Kamaiya Child Workers",
       "year": 2009,
-      "population": "",
-      "geography": "Not specified",
-      "sampleSize": "Not reported",
-      "methodology": "Not specified",
-      "methodType": "Unspecified",
+      "population": "Haliya child workers (Musahar, Morang) and Kamaiya child workers (Tharu, Bardiya)",
+      "geography": "Morang and Bardiya districts, Nepal",
+      "sampleSize": "",
+      "methodology": "In-depth fieldwork over one year",
+      "methodType": "Qualitative / mixed methods",
       "claim": "",
       "topicSentence": "",
       "rebondage": "",
@@ -466,9 +469,9 @@ export const data = {
       "title": "Haliya and Kamaiya Bonded Child Labourers in Nepal",
       "year": 2010,
       "population": "",
-      "geography": "Not specified",
-      "sampleSize": "Not reported",
-      "methodology": "Not specified",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "",
       "methodType": "Unspecified",
       "claim": "",
       "topicSentence": "",
@@ -495,9 +498,9 @@ export const data = {
       "title": "Child Slavery Now: A Contemporary Reader",
       "year": 2010,
       "population": "",
-      "geography": "Not specified",
-      "sampleSize": "Not reported",
-      "methodology": "Not specified",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "",
       "methodType": "Unspecified",
       "claim": "",
       "topicSentence": "",
@@ -521,9 +524,9 @@ export const data = {
       "title": "Bonded Servitude to Freedom: Education as an Apparatus for the Empowerment of Bonded Slave Kamlari Girls of Nepal",
       "year": 2018,
       "population": "",
-      "geography": "Not specified",
-      "sampleSize": "Not reported",
-      "methodology": "Not specified",
+      "geography": "",
+      "sampleSize": "",
+      "methodology": "",
       "methodType": "Unspecified",
       "claim": "",
       "topicSentence": "",
@@ -657,7 +660,7 @@ export const data = {
       "claim": "The Kamaiya system was informal bonded agricultural labour involving payment-in-kind and debt bondage that could persist across generations. It was abolished in 2002, with freed families given small plots of land (2–5 kattha), insufficient for subsistence farming. Rehabilitation remains incomplete due to limited rural employment. The ILO's Bridge project (funded by the US Department of Labor) provides skills training and job placement to former bonded labourers, showing notably high female participation in non-traditional trades like carpentry and masonry.",
       "topicSentence": "",
       "rebondage": "",
-      "gap": "",
+      "gap": "The ILO article dates the abolition of the Kamaiya system to 2002, the year of the Bonded Labour (Prohibition) Act. The government declared the system illegal on 17 July 2000 (see the timeline).",
       "citation": "International Labour Organization. (2018, March 20). Breaking bonded labour and gender roles in Nepal.",
       "url": "https://www.ilo.org/resource/article/breaking-bonded-labour-and-gender-roles-nepal",
       "systems": [
@@ -1806,8 +1809,8 @@ export const data = {
   "districts": [
     {
       "name": "Dang",
-      "lat": 28,
-      "lon": 82.3,
+      "system": "Kamaiya",
+      "source": "SRC-026",
       "identified": 1426,
       "eligible": 705,
       "landRecipients": 507,
@@ -1817,8 +1820,8 @@ export const data = {
     },
     {
       "name": "Banke",
-      "lat": 28.05,
-      "lon": 81.62,
+      "system": "Kamaiya",
+      "source": "SRC-026",
       "identified": 2316,
       "eligible": 1921,
       "landRecipients": 2147,
@@ -1828,8 +1831,8 @@ export const data = {
     },
     {
       "name": "Bardiya",
-      "lat": 28.3,
-      "lon": 81.37,
+      "system": "Kamaiya",
+      "source": "SRC-026",
       "identified": 14499,
       "eligible": 11551,
       "landRecipients": 13931,
@@ -1839,8 +1842,8 @@ export const data = {
     },
     {
       "name": "Kailali",
-      "lat": 28.7,
-      "lon": 80.9,
+      "system": "Kamaiya",
+      "source": "SRC-026",
       "identified": 9762,
       "eligible": 8975,
       "landRecipients": 7392,
@@ -1850,60 +1853,283 @@ export const data = {
     },
     {
       "name": "Kanchanpur",
-      "lat": 28.84,
-      "lon": 80.33,
+      "system": "Kamaiya",
+      "source": "SRC-026",
       "identified": 4506,
       "eligible": 4418,
       "landRecipients": 4506,
       "cash": 9506,
       "timber": 35,
       "note": "Recipients exceed Red/Blue category count; categories are not aligned."
+    },
+    {
+      "name": "Baitadi",
+      "system": "Haliya",
+      "source": "SRC-027",
+      "identified": 2147,
+      "note": "Freed Haliyas registered, from Land Revenue Office records (Felm Nepal, ESCR Yearbook 2022, Annex 3)."
+    },
+    {
+      "name": "Bajhang",
+      "system": "Haliya",
+      "source": "SRC-027",
+      "identified": 2945,
+      "note": "Freed Haliyas registered, from Land Revenue Office records (Felm Nepal, ESCR Yearbook 2022, Annex 3)."
+    },
+    {
+      "name": "Dadeldhura",
+      "system": "Haliya",
+      "source": "SRC-027",
+      "identified": 2551,
+      "note": "Freed Haliyas registered, from Land Revenue Office records (Felm Nepal, ESCR Yearbook 2022, Annex 3)."
+    },
+    {
+      "name": "Doti",
+      "system": "Haliya",
+      "source": "SRC-027",
+      "identified": 1321,
+      "note": "Freed Haliyas registered, from Land Revenue Office records (Felm Nepal, ESCR Yearbook 2022, Annex 3)."
+    },
+    {
+      "name": "Kanchanpur",
+      "system": "Haliya",
+      "source": "SRC-027",
+      "identified": 2699,
+      "note": "Freed Haliyas registered, from Land Revenue Office records (Felm Nepal, ESCR Yearbook 2022, Annex 3)."
     }
   ],
   "events": [
     {
-      "year": 2025,
-      "title": "Freed-Haliya assessment in Karnali",
-      "text": "ILO assessment records ongoing barriers for freed-Haliya households in Surkhet, Jajarkot and Humla.",
-      "sourceHint": "Analysis of situation of the freed-Haliyas in Karnali Province of Nepal"
+      "id": "slavery-abolished-1926",
+      "date": "1926",
+      "kind": "law",
+      "title": "Slavery abolished in Nepal",
+      "text": "The government of Prime Minister Chandra Shumsher Rana abolishes slavery. Debt bondage in agriculture, including the Kamaiya system, continues.",
+      "sources": [
+        {
+          "record": "SRC-019"
+        },
+        {
+          "record": "SRC-060"
+        }
+      ]
     },
     {
-      "year": 2022,
-      "title": "Haruwa-Charuwa liberation",
-      "text": "The repository records post-liberation demands and continuing rehabilitation concerns in the eastern Tarai.",
-      "sourceHint": "The Harawa-Charawa’s liberation"
+      "id": "constitution-1990",
+      "date": "1990",
+      "kind": "law",
+      "title": "Constitution prohibits slavery and serfdom",
+      "text": "The 1990 Constitution of the Kingdom of Nepal prohibits slavery and serfdom, but no law follows to end bonded labour in practice.",
+      "sources": [
+        {
+          "record": "SRC-019"
+        }
+      ]
     },
     {
-      "year": 2013,
-      "title": "Kamlari system formally abolished",
-      "text": "The source catalogue documents post-abolition concerns relating to reintegration, education and livelihoods.",
-      "sourceHint": "Kamlahari Movement in Nepal"
+      "id": "ilo-kamaiya-study-1998",
+      "date": "1998-07",
+      "kind": "research",
+      "title": "ILO study of the Kamaiya system",
+      "text": "The ILO publishes a study of the Kamaiya system of bonded labour in Nepal.",
+      "sources": [
+        {
+          "record": "SRC-062"
+        }
+      ]
     },
     {
-      "year": 2010,
-      "title": "Bonded Labour (Prohibition) Regulations, 2067",
-      "text": "The regulations provide the implementation framework for the Bonded Labour (Prohibition) Act, 2058.",
-      "sourceHint": "Bonded Labour (Prohibition) Regulations, 2067",
-      "url": "https://repository.lawcommission.gov.np/np/wp-content/uploads/2021/04/%E0%A4%95%E0%A4%AE%E0%A5%88%E0%A4%AF%E0%A4%BE-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A4%AE-%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A5%87%E0%A4%A7-%E0%A4%97%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A5%87-%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AC%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A5%80-%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%AE%E0%A4%BE%E0%A4%B5%E0%A4%B2%E0%A5%80-%E0%A5%A8%E0%A5%A6%E0%A5%AC%E0%A5%AD.pdf"
+      "id": "kamaiya-movement-2000",
+      "date": "2000-05-01",
+      "kind": "movement",
+      "title": "The Kamaiya freedom movement begins",
+      "text": "Nineteen Kamaiyas petition the Geta VDC office in Kailali, demanding the government minimum wage from their landlord. By June, 676 Kamaiyas in five districts have filed petitions for freedom.",
+      "sources": [
+        {
+          "record": "SRC-019"
+        }
+      ]
     },
     {
-      "year": 2008,
-      "title": "Haliya system declared abolished",
-      "text": "Source records document calls for a legal framework and monitored rehabilitation after the declaration.",
-      "sourceHint": "Freedom for 20,000 people as Nepal abolishes bonded labour practice"
+      "id": "kamaiya-declaration-2000",
+      "date": "2000-07-17",
+      "kind": "declaration",
+      "title": "Government declares the Kamaiya system illegal",
+      "text": "The cabinet decides to make the Kamaiya system of bonded labour illegal. By 2002, 32,509 Kamaiya families are identified in Dang, Banke, Bardiya, Kailali and Kanchanpur.",
+      "sources": [
+        {
+          "record": "SRC-019"
+        },
+        {
+          "record": "SRC-049"
+        },
+        {
+          "record": "SRC-026"
+        }
+      ]
     },
     {
-      "year": 2002,
+      "id": "ilo-c29-2002",
+      "date": "2002-01",
+      "kind": "international",
+      "title": "Nepal ratifies the ILO Forced Labour Convention",
+      "text": "Nepal ratifies ILO Convention No. 29 on forced labour.",
+      "sources": [
+        {
+          "label": "ILO press release, 4 September 2007",
+          "url": "https://www.ilo.org/asia/info/public/pr/WCMS_BK_PR_213_EN/lang--en/index.htm"
+        }
+      ]
+    },
+    {
+      "id": "bonded-labour-act-2002",
+      "date": "2002",
+      "kind": "law",
       "title": "Bonded Labour (Prohibition) Act, 2058",
-      "text": "The Act prohibited bonded labour, voided bonded debts and set out rehabilitation and monitoring structures.",
-      "sourceHint": "Bonded Labour (Prohibition) Act, 2058 (2002)",
-      "url": "https://lawcommission.gov.np/content/12751/12751-bonded-labour-prohibition-ac/"
+      "text": "The Act prohibits bonded labour, cancels outstanding bonded debts and provides for the rehabilitation of freed labourers.",
+      "sources": [
+        {
+          "record": "SRC-038"
+        },
+        {
+          "label": "Nepal Law Commission",
+          "url": "https://lawcommission.gov.np/content/12751/12751-bonded-labour-prohibition-ac/"
+        }
+      ]
     },
     {
-      "year": 2000,
-      "title": "Kamaiya liberation movement and declaration",
-      "text": "Repository records document mobilisation in the western Terai and the immediate challenges of land and support.",
-      "sourceHint": "Freedom Movement"
+      "id": "ilo-c105-2007",
+      "date": "2007-08-16",
+      "kind": "international",
+      "title": "Parliament approves ILO Convention No. 105",
+      "text": "Nepal's Legislative Parliament approves ratification of the ILO Abolition of Forced Labour Convention.",
+      "sources": [
+        {
+          "label": "ILO press release, 4 September 2007",
+          "url": "https://www.ilo.org/asia/info/public/pr/WCMS_BK_PR_213_EN/lang--en/index.htm"
+        }
+      ]
+    },
+    {
+      "id": "haliya-declaration-2008",
+      "date": "2008-09-06",
+      "kind": "declaration",
+      "title": "Government declares the Haliya system abolished",
+      "text": "The government abolishes the Haliya system of bonded labour in the western hills and cancels Haliya debts. About 20,000 people are affected.",
+      "sources": [
+        {
+          "record": "SRC-007"
+        }
+      ]
+    },
+    {
+      "id": "regulations-2010",
+      "date": "2010",
+      "kind": "law",
+      "title": "Bonded Labour (Prohibition) Regulations, 2067",
+      "text": "Regulations set out how the 2002 Act is to be implemented.",
+      "sources": [
+        {
+          "label": "Nepal Law Commission (the official file was not reachable online on 17 October 2026)"
+        }
+      ]
+    },
+    {
+      "id": "ilo-forced-labour-survey-2013",
+      "date": "2013",
+      "kind": "research",
+      "title": "National survey of forced labour in agriculture",
+      "text": "An ILO survey of 12 districts finds forced labour in 12 per cent of households, rising to 94 per cent of Haruwa-Charuwa and Haliya households.",
+      "sources": [
+        {
+          "record": "SRC-002"
+        }
+      ]
+    },
+    {
+      "id": "kamlari-declaration-2013",
+      "date": "2013-06-27",
+      "kind": "declaration",
+      "title": "Government declares the Kamlari system abolished",
+      "text": "The government declares an end to the Kamlari system, under which Tharu girls were sent to work as bonded domestic servants.",
+      "sources": [
+        {
+          "record": "SRC-009"
+        },
+        {
+          "record": "SRC-005"
+        },
+        {
+          "label": "The Himalayan Times, 9 September 2024",
+          "url": "https://thehimalayantimes.com/nepal/defending-abolished-practice-and-derailing-the-critical-issue"
+        }
+      ]
+    },
+    {
+      "id": "constitution-2015",
+      "date": "2015-09-20",
+      "kind": "law",
+      "title": "Constitution of Nepal: right against exploitation",
+      "text": "The new Constitution guarantees a right against exploitation (Article 29), prohibiting trafficking and forced labour.",
+      "sources": [
+        {
+          "label": "Constitution of Nepal, 2015 (Constitute Project)",
+          "url": "https://www.constituteproject.org/constitution/Nepal_2015.pdf?lang=en"
+        }
+      ]
+    },
+    {
+      "id": "brick-kiln-survey-2021",
+      "date": "2021-01",
+      "kind": "research",
+      "title": "National survey of brick-kiln labour",
+      "text": "A national survey of 301 brick kilns finds 6,229 workers in forced labour and 1,035 in bonded labour, and 17,032 children in child labour.",
+      "sources": [
+        {
+          "record": "SRC-036"
+        }
+      ]
+    },
+    {
+      "id": "haruwa-charuwa-declaration-2022",
+      "date": "2022-07-18",
+      "kind": "declaration",
+      "title": "Government declares Haruwa-Charuwa labourers free",
+      "text": "Prime Minister Sher Bahadur Deuba declares Haruwa-Charuwa agricultural bonded labourers free, the first such declaration for this group.",
+      "sources": [
+        {
+          "record": "SRC-012"
+        },
+        {
+          "label": "The Freedom Fund, 18 July 2022",
+          "url": "https://www.freedomfund.org/news/harawa-charawa_liberation_announcement/"
+        }
+      ]
+    },
+    {
+      "id": "ilo-karnali-haliya-2025",
+      "date": "2025-06-17",
+      "kind": "research",
+      "title": "ILO analysis of freed Haliyas in Karnali",
+      "text": "An ILO assessment in Surkhet, Jajarkot and Humla finds that almost all ID-card-holding families received some government rehabilitation support, but most did not receive the full package.",
+      "sources": [
+        {
+          "record": "SRC-037"
+        }
+      ]
+    },
+    {
+      "id": "ilo-protocol-2026",
+      "date": "2026-08-07",
+      "kind": "international",
+      "title": "Nepal ratifies the Protocol to the Forced Labour Convention",
+      "text": "Nepal deposits its ratification of the ILO's 2014 Protocol to the Forced Labour Convention.",
+      "sources": [
+        {
+          "label": "ILO news, 11 August 2026",
+          "url": "https://www.ilo.org/resource/news/nepal-ratifies-key-ilo-instruments-labour-inspection-and-forced-labour"
+        }
+      ]
     }
   ],
   "retired": [
@@ -1941,5 +2167,117 @@ export const data = {
       "retiredOn": "2026-10-03",
       "retiredReason": "Duplicate of SRC-001 (same DOI: 10.3389/fpubh.2015.00011). Kept here for provenance; links to SRC-035 redirect to SRC-001."
     }
-  ]
+  ],
+  "mapCoverage": {
+    "Dang": {
+      "Kamaiya": [
+        "SRC-026",
+        "SRC-029",
+        "SRC-030"
+      ]
+    },
+    "Banke": {
+      "Kamaiya": [
+        "SRC-026",
+        "SRC-029",
+        "SRC-030",
+        "SRC-001",
+        "SRC-055"
+      ]
+    },
+    "Bardiya": {
+      "Kamaiya": [
+        "SRC-026",
+        "SRC-029",
+        "SRC-030",
+        "SRC-015",
+        "SRC-034",
+        "SRC-044",
+        "SRC-051"
+      ]
+    },
+    "Kailali": {
+      "Kamaiya": [
+        "SRC-026",
+        "SRC-029",
+        "SRC-030",
+        "SRC-033",
+        "SRC-041",
+        "SRC-048",
+        "SRC-050",
+        "SRC-056"
+      ]
+    },
+    "Kanchanpur": {
+      "Kamaiya": [
+        "SRC-026",
+        "SRC-029",
+        "SRC-030"
+      ],
+      "Haliya": [
+        "SRC-027"
+      ]
+    },
+    "Baitadi": {
+      "Haliya": [
+        "SRC-027"
+      ]
+    },
+    "Bajhang": {
+      "Haliya": [
+        "SRC-027"
+      ]
+    },
+    "Dadeldhura": {
+      "Haliya": [
+        "SRC-027"
+      ]
+    },
+    "Doti": {
+      "Haliya": [
+        "SRC-027"
+      ]
+    },
+    "Surkhet": {
+      "Haliya": [
+        "SRC-037"
+      ]
+    },
+    "Jajarkot": {
+      "Haliya": [
+        "SRC-037"
+      ]
+    },
+    "Humla": {
+      "Haliya": [
+        "SRC-037"
+      ]
+    },
+    "Morang": {
+      "Haliya": [
+        "SRC-015",
+        "SRC-031",
+        "SRC-032"
+      ]
+    },
+    "Dhanusha": {
+      "Haruwa-Charuwa": [
+        "SRC-004"
+      ]
+    },
+    "Siraha": {
+      "Haruwa-Charuwa": [
+        "SRC-042"
+      ]
+    },
+    "Saptari": {
+      "Haruwa-Charuwa": [
+        "SRC-042"
+      ]
+    }
+  },
+  "districtNotes": {
+    "Kamaiya": "Ex-Kamaiya households as of 2002 (BASE, Rehabilitation Status). \"Eligible\" counts Red and Blue ID-card holders; cash and timber are averages from a survey of about 80 households per district.",
+    "Haliya": "Freed Haliyas registered, from Land Revenue Office records (Felm Nepal, ESCR Yearbook 2022, Annex 3)."
+  }
 };
